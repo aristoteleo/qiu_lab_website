@@ -8,18 +8,21 @@ title: "Come to work with us!"
     .container {
       display: flex;
       justify-content: space-between;
-      max-width: 1149px; /* Set this to match your image width */
+      flex-wrap: wrap; /* Ensure it wraps on smaller screens */
       margin: 0 auto;
     }
+    .contact-section, .image-section, .address-section {
+      flex: 1; /* Each section will take equal width */
+      margin: 10px; /* Add some space around the sections */
+    }
     .contact-section {
-      flex-basis: 50%;
-      padding-right: 10px;
+      order: 1; /* Positioning order for flex items */
     }
     .image-section {
-      flex-basis: 25%;
+      order: 2;
     }
     .address-section {
-      flex-basis: 25%;
+      order: 3;
     }
     h1 {
       text-transform: uppercase;
@@ -27,11 +30,37 @@ title: "Come to work with us!"
     img {
       max-width: 100%;
       height: auto;
-      padding: 1px;
-      border: thin solid blue;
+      display: block; /* Ensure the image is block-level */
+      margin-bottom: 10px; /* Add some space below the image */
+    }
+    .get-directions {
+      background: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      margin-top: 10px; /* Space it from the contact info */
+    }
+    .displayAddress {
+      margin-bottom: 10px;
+    }
+    .directions-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      background: #eee;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .directions-link:hover {
+      background: #ddd;
+    }
+    .fa-directions {
+      margin-right: 5px;
     }
   </style>
 </head>
+
 
 <div class="container">
   <div class="contact-section">
@@ -39,45 +68,50 @@ title: "Come to work with us!"
     <p>
       PI (Xiaojie Qiu): <a href="mailto:xiaojie@stanford.edu">xiaojie@stanford.edu</a><br>
       Admin. Contact (Hadley Bickford): <a href="mailto:hadleyb@stanford.edu">hadleyb@stanford.edu</a><br>
-      <!-- Lab Manager (xxx): <a href="mailto:xxx@stanford.edu">xxx@stanford.edu</a> -->
     </p>
-    <p>
-      <a href="http://www.gs.washington.edu/office/directions.htm">Driving Directions to the Foege South</a><br>
-      <a href="http://www.washington.edu/maps/?l=GNOM">Foege South on Interactive UW Campus Map</a>
-    </p>
-    <p>
-      Main Lab Phone - (206) 685-3720<br>
-      PI (Jay Shendure) Office Phone - (206) 685-8543<br>
-      Fax - (206) 685-7301
-    </p>
-    <p>
-      If you are here for a meeting, please call 5-3720 (Lab), or 5-8543 (PI) from the house phone in the Foege South lobby
-    </p>
+    <div class="get-directions">
+      <div class="displayAddress">
+        <span>BioMedical Innovations Building</span><br>  
+        <span>240 Pasteur Drive</span><br />
+        <span>Palo Alto</span><br />
+        <span>California</span><br />
+        <span>ZIP code: 94304</span><br />
+      </div>
+      <p></p>
+      <a href="https://maps.google.com/maps?q=from%3A+current+location+to%3A+240+Pasteur+Drive+Palo+Alto+CA+94304+USA" target="_blank" class="directions-link">
+        <i class="fa fa-external-link" aria-hidden="true"></i>
+        Google Map
+      </a>
+    </div>
   </div>
-  
+
   <div class="image-section">
-    <a href="http://www.washington.edu/maps/?l=GNOM">
-      <img src="images/William-H-Foege-Genome-Sciences-GNOM.jpg" alt="Stanford Campus Image">
+    <a href="https://med.stanford.edu/base.html?tab=proxy">
+      <img src="assets/images/bmi-exterior.jpg" alt="Stanford BMI Image">
     </a>
-  </div>
-  
-  <div class="address-section">
     <p>
-      <strong>Mailing Address:</strong><br>
-      Xiaojie Qiu<br>
+      <strong>Stanford BMI exterior</strong><br>
+<!--       Xiaojie Qiu<br>
       Room 3753<br>
       Biomedical Innovation Building<br>
       240 Pasteur Drive<br>
       Stanford University<br>
-      CA 94305
+      CA 94305 -->
     </p>
+  </div>
+
+  <div class="address-section">
+    <a href="https://campus-map.stanford.edu/?id=07-600&lat=37.432896&lng=-122.177414&zoom=17&srch=biome">
+      <img src="assets/images/BMI_campus_map.png" alt="Stanford BMI Image">
+    </a>
     <p>
-      <strong>Shipping Address:</strong><br>
-      Qiu Lab<br>
+      <strong>Stanford interactive campus map</strong><br>
+<!--       Qiu Lab<br>
       Biomedical Innovation Building<br>
       240 Pasteur Drive<br>
       Stanford University<br>
-      CA 94305
+      CA 94305 -->
     </p>
   </div>
 </div>
+

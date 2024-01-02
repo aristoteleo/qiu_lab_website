@@ -1,0 +1,70 @@
+---
+layout: "wrapper"
+title: "Meet the People"
+---
+
+<div class="people">
+  <!-- 'section' for the current members of the team. -->
+  <section class="current-members py-4">
+    <div class="container d-flex align-items-center flex-column">
+      <h1>Current Members</h1>
+      <div
+        class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
+      >
+        <!-- Liquid 'for' loop iterating thru the 'people' data file and creating a similar layout for each person marked as a current member. -->
+        <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
+        <!-- Checks if the person has a linked headshot picture, uses a generic default if not. -->
+        <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
+        {% for person in site.data.people %} {% if person.current == true %}
+        <div
+          class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
+        >
+          <div class="row">
+            <img
+              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
+              alt="{{ person.name }}"
+              class="img-fluid headshot"
+            />
+          </div>
+          <div class="row">
+            <div class="col-8 polaroid-text">
+              <h2>{{ person.name }}</h2>
+              <span class="lab-position"> {{ person.position }}</span>
+            </div>
+            <div class="col-4 polaroid-icons d-flex justify-content-end">
+              {% if person.linkedin %}
+              <a href="{{ person.linkedin }}" class="linkedin-icon">
+                <img
+                  src="assets/images/icons/linkedin.svg"
+                  alt="LinkedIn logo"
+                />
+              </a>
+              {% endif %} {% if person.website %}
+              <a href="{{ person.website }}" class="external-site-icon">
+                <img
+                  src="assets/images/icons/external.svg"
+                  alt="External website logo"
+                />
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- 'section' for the team alumni. -->
+  <!-- It works similarly to the current members section, but it only includes people marked as non-current members in the data file. -->
+  <section class="alumni py-4">
+    <div class="container d-flex align-items-center flex-column mb-2">
+      <h1>Lab Alumni</h1>
+      <div class="container d-flex flex-column align-items-center">
+        {% for person in site.data.people %} {% if person.current == false %}
+        <h2>{{ person.name }}</h2>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

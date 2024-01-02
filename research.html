@@ -1,0 +1,74 @@
+---
+layout: "wrapper"
+title: "Predictives Biology Lab of Single Cell/Spatial Genomics"
+---
+
+<!-- This is a Jekyll front matter that specifies the layout for this page. -->
+
+<!-- This section is for the hero image. Bootstrap classes are used for positioning. -->
+
+
+<!-- This section is for the 'About' part of the site. -->
+<section class="about" id="about">
+  <div
+    class="container d-flex flex-column align-items-center justify-content-center py-5"
+  >
+    <div class="text-center about-body mt-1 mb-2">
+      <!-- Similar 'include' tag for the body text in the 'About' section. -->
+      {% include text-content/research-text.md %}
+    </div>
+    <!-- This include is for a button. The 'alt' and 'classes' parameters are passed to the included HTML. -->
+    {% include button.html alt=false classes="about-button mb-3"%}
+  </div>
+</section>
+
+<!-- This section is for displaying different research areas of the lab -->
+<section class="research-areas">
+  <div class="container py-md-5 pt-5">
+    <div class="row">
+      <!-- Each 'ra-col' div represents one research area. -->
+      <!-- Bootstrap classes are used to adjust the layout for different screen sizes. -->
+      <div class="ra-col col-sm-12 col-md-4">
+        <!-- The rest of the HTML structure inside each 'ra-col' div is similar. -->
+        <div class="ra-card d-flex flex-column align-items-center">
+          <img
+            src="/assets/images/icons/keyboard.svg"
+            alt="Keyboard icon"
+            class="ra-card-icon"
+          />
+          <h2 class="mt-1">Computation</h2>
+          <p class="ra-description">
+            <!-- 'include' tag to insert a description for each research area. -->
+            {% include text-content/ra-computation.md %}
+          </p>
+        </div>
+      </div>
+      <!-- Similar structure for the second and third research area. -->
+      <div class="ra-col col-sm-12 col-md-4">
+        <div class="ra-card d-flex flex-column align-items-center">
+          <img
+            src="/assets/images/icons/controller.svg"
+            alt="Video game controller icon"
+            class="ra-card-icon"
+          />
+          <h2 class="mt-3">Experimentation</h2>
+          <p class="ra-description">{% include text-content/ra-experimentation.md %}</p>
+        </div>
+      </div>
+      <div class="ra-col col-sm-12 col-md-4">
+        <div class="ra-card d-flex flex-column align-items-center">
+          <img
+            src="/assets/images/icons/fist.svg"
+            alt="Fist icon"
+            class="ra-card-icon"
+          />
+          <h2 class="mt-3">Prediction</h2>
+          <p class="ra-description">
+            {% include text-content/ra-prediction.md %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

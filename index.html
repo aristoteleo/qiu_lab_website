@@ -1,0 +1,109 @@
+---
+layout: "wrapper"
+---
+
+<!-- This is a Jekyll front matter that specifies the layout for this page. -->
+
+<!-- This section is for the hero image. Bootstrap classes are used for positioning. -->
+<section class="hero d-flex justify-content-center">
+<!--   <img
+    id="hero-img"
+    class="img-fluid"
+    src="assets/images/final_uploaded_lab_office_image.png"
+    alt="Group of students working in a computer lab"
+    width="1904"
+    height="640"
+  /> -->
+  <img
+    id="hero-img"
+    class="img-fluid"
+    src="assets/images/Stanford_campus.jpeg"
+    alt="Group of students working in a computer lab"
+    width="auto"
+    height="440"
+  />
+</section>
+
+<!-- This section is for the 'About' part of the site. -->
+<section class="about" id="about">
+  <div
+    class="container d-flex flex-column align-items-center justify-content-center py-5"
+  >
+    <div class="d-flex flex-column align-items-center about-heading">
+      <!-- This 'include' tag inserts content from the specified markdown file using Jekyll's Liquid templating engine. -->
+      {% include text-content/about-heading.md %}
+    </div>
+    <div class="text-center about-body mt-1 mb-2">
+      <!-- Similar 'include' tag for the body text in the 'About' section. -->
+      {% include text-content/about-body.md %}
+    </div>
+    <!-- This include is for a button. The 'alt' and 'classes' parameters are passed to the included HTML. -->
+    {% include button.html alt=false classes="about-button mb-3"%}
+  <div class="text-center about-body mt-1 mb-2">
+      {% include text-content/software-text.md %}
+  </div>
+  </div>
+</section>
+
+<!-- This section is for a 'Get Involved' call to action. -->
+<section class="get-involved" id="get-involved">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-7 mb-sm-4">
+        <h2>Software</h2>
+        <!-- This 'include' tag inserts the text content for this section. -->
+        <div class="gi-text mt-2 mb-4">
+          {% include text-content/gi-text.md %}
+        </div>
+
+      </div>
+      <!-- This div is for three software's logos on the right side of the 'software' section. each row has two logos and the buttom go with the third image and is on the right side -->
+      <div class="col-sm-12 col-md-5" align-items-center>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <div class="container">
+          <div class="row">
+            <!-- First Row of Images -->
+            <div class="col-6">
+              <button class="btn btn-cta" type="button" style="width: 100%;">
+                <a href="https://github.com/aristoteleo/dynamo-release">
+                  <img src="/assets/images/software/dynamo.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  Dynamo
+                </a>
+              </button>
+            </div>
+            <!-- Second Row of Images -->
+            <div class="col-6">
+              <button class="btn btn-cta" type="button" style="width: 100%;">
+                <a href="https://github.com/aristoteleo/spateo-release">
+                  <img src="/assets/images/software/spateo_processed.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  Spateo
+                </a>
+              </button>
+            </div>
+    
+            <p>&nbsp;</p>
+    
+            <div class="col-6">
+              <button class="btn btn-cta" type="button" style="width: 100%;">
+                <a href="https://github.com/aristoteleo/dynast-release">
+                  <img src="/assets/images/software/dynast_final_edit2.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  Dynast
+                </a>
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-cta" type="button" style="width: 100%;">
+                <a href="https://github.com/aristoteleo">
+                  <img src="/assets/images/software/Aristotle.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  Aristotle ecosystem
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

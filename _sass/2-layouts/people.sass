@@ -1,0 +1,55 @@
+.people
+  h1
+    text-align: center
+    font-size: 2rem
+
+  section
+    &:nth-child(even)
+      background-color: $off-white
+
+    &:nth-child(odd)
+      background-color: $white
+
+  .current-members
+
+    .polaroid
+      background: $white
+      padding: 1rem
+
+      .row
+        width: 100%
+        padding: 0
+
+        .headshot
+          max-width: 350px
+          padding: 0 0 1rem 0
+
+        .polaroid-text
+          padding-left: 0
+          h2
+            font-size: 1rem
+            color: $brown
+            margin-bottom: 0
+        .polaroid-icons
+          padding-right: 0
+          a img
+            height: 24px
+          .external-site-icon
+            margin-left: 0.75em
+    .other-members .polaroid
+      margin: 0.5rem
+
+  .alumni
+    .container
+      width: 50%
+      margin-top: 1rem
+      text-align: center
+
+      h2
+        margin-bottom: 1.5rem
+        font-size: 1rem
+        color: $brown
+        margin-bottom: 1rem
+
+        &:nth-child(even)
+          color: $red

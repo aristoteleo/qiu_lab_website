@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Footer Example</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+  .footer {
+    background-color: #AC3E3B; /* Adjust to match the color in the image */
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 14px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    max-width: 1200px;
+    max-height: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF; /* Adjust the color as needed */
+  }
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+  .footer-links a {
+    text-decoration: none;
+    color: #FFFFFF; /* Adjust the color as needed */
+    font-size: 14px;
+  }
+  .footer-contact p,
+  .footer-contact a {
+    margin-bottom: 5px;
+    color: #FFFFFF; /* Adjust the color as needed */
+    text-decoration: none;
+  }
+  .social-icons {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  .social-icons li {
+    margin-right: 10px;
+  }
+  .social-icons a {
+    font-size: 24px;
+    color: #FFFFFF; /* Adjust the color as needed */
+  }
+  .footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+  }
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-contact, .footer-section h3 {
+      text-align: center;
+    }
+    .social-icons {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<footer class="footer">
+
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Qiu Lab @ Stanford</h3>
+      <ul class="social-icons">
+        <li><a href="https://github.com/aristoteleo" target="_blank"><i class="fab fa-xxx"></i></a></li>  <!-- Fake to ensure the symbols are centered below the text above -->
+        <li><a href="https://github.com/aristoteleo" target="_blank"><i class="fab fa-xxx"></i></a></li>  <!-- Fake to ensure the symbols are centered below the text above -->
+        <li><img src="assets/images/Qiu_lab_logo_transparent.png" alt="QIU Lab Logo" style="width: 33px;"> </li> <!-- Adjust width as needed -->
+        <li><a href="https://github.com/aristoteleo" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/Xiaojie_Qiu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://scholar.google.com/citations?user=XlMd8TAAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>HELPFUL LINKS</h3>
+      <ul class="footer-links">
+        <li><a href="https://med.stanford.edu/base.html?tab=proxy"><u>BASE</u></a></li>
+        <li><a href="https://med.stanford.edu/genetics.html?tab=proxy"><u>Department of Genetics</u></a></li>
+        <li><a href="https://med.stanford.edu/?tab=all"><u>Stanford School of Medicine</u></a></li>
+        <li><a href="https://www.cs.stanford.edu/"><u>Stanford Computer Science</u></a></li>
+        <li><a href="#">Map and direction</a></li>
+      </ul>
+    </div>
+    <div class="footer-section footer-contact">
+      <h3>CONTACT US</h3>
+      <p>Room 3753</p>
+      <p>Biomedical Innovation Building</p>
+      <p>240 Pasteur Drive</p>
+      <p>Stanford University</p>
+      <p>CA 94305</p>
+      <p></p>
+      <a href="mailto:xiaojie@stanford.edu">Email: xiaojie at stanford.edu</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

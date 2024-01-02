@@ -1,0 +1,3 @@
+<!-- Bii -->
+
+We actively apply and develop novel single-cell and spatial genomics approaches. Our techniques include time-resolved, metabolic labeling-enabled scRNA-seq, extra-high resolution spatial transcriptomics that is also characteristic with high RNA capture and expansive fields of view. Pushing the boundaries of functional genomics, we're exploring multi-omics, long-read sequencing, imaging-based spatial transcriptomics, Perturb-seq, lineage tracing, and more. Our focus extends to heart evolution, organogenesis, congenital heart diseases, and others, including hematopoiesis and general embryogenesis.

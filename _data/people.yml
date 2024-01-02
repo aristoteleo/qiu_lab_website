@@ -1,0 +1,94 @@
+- name: "Xiaojie Qiu"
+  position: "Principal Investigator"
+  current: true
+  headshot: "xiaojie.jpg"
+  website: "https://scholar.google.com/citations?user=9wKn1A0AAAAJ&hl=en"
+
+- name: "Oriane Rubio"
+  position: "Research Project Manager"
+  current: true
+  headshot: "oriane.jpeg"
+  website: "https://scholar.google.com/citations?user=9wKn1A0AAAAJ&hl=en"
+
+- name: "Hadley Bickford"
+  position: "Administrative Associate"
+  current: true
+  headshot: "hadley.png"
+  website: "https://scholar.google.com/citations?user=9wKn1A0AAAAJ&hl=en"
+
+- name: "Michelle Ameri"
+  position: "Operations Manager"
+  current: true
+  headshot: "michelle.png"
+  website: "https://scholar.google.com/citations?user=9wKn1A0AAAAJ&hl=en"
+
+- name: "Yuzhen Mao"
+  position: "Visiting Master Student"
+  current: true
+  headshot: "yuzhen.jpg"
+  website: "https://scholar.google.com/citations?user=9wKn1A0AAAAJ&hl=en"
+
+- name: "Mengchen Wang"
+  position: "Visiting Undergraduate"
+  current: true
+  headshot: "mengchen.png"
+  linkedin: "https://www.linkedin.com/in/jailyn-z-2b322b13a/"
+
+- name: "Jiayuan Ding"
+  position: "Visiting PhD Student"
+  current: true
+  headshot: "jiayuan.png"
+  linkedin: "https://www.linkedin.com/in/giannaewilliams/"
+
+- name: "Yimeng Qiao"
+  position: "Remote Post-Master Assistant"
+  current: true
+  headshot: "yimeng.jpg"
+  linkedin: "https://www.linkedin.com/in/josiezvelebilova"
+
+- name: "Qiaolin Lu"
+  position: "Remote Computational Assistant"
+  current: true
+  headshot: "qiaolin.png"
+  linkedin: "https://www.linkedin.com/in/josiezvelebilova"
+
+- name: "Yifan Lu"
+  position: "visiting PhD Student"
+  current: true
+  headshot: "bethany.png"
+
+- name: "Sichao Yu"
+  position: "Software Engineer"
+  current: true
+  headshot: "sichao.png"
+  linkedin: "https://www.linkedin.com/in/chrooks/"
+  website: "https://chrooks.com/"
+
+- name: "Cinlong Huang"
+  position: "Research Assistant"
+  current: true
+  headshot: "cinlong.png"
+
+- name: "Sijie Chen"
+  position: "Post-doc"
+  current: true
+  headshot: "sijie.png"
+  linkedin: "https://www.linkedin.com/in/chrooks/"
+  website: "https://chrooks.com/"
+
+- name: "Stephen Zhang"
+  position: "Visiting PhD student"
+  current: true
+  headshot: "stephen.png"
+  linkedin: "https://www.linkedin.com/in/chrooks/"
+  website: "https://chrooks.com/"
+
+- name: "Stephen Zhang"
+  position: "Visiting PhD student"
+  current: true
+  headshot: "stephen.png"
+  linkedin: "https://www.linkedin.com/in/chrooks/"
+  website: "https://chrooks.com/"
+
+- name: "Albert Einstein"
+  current: false

@@ -53,12 +53,12 @@
   linkedin: "https://www.linkedin.com/in/josiezvelebilova"
 
 - name: "Yifan Lu"
-  position: "visiting PhD Student"
+  position: "Visiting PhD Student"
   current: true
   headshot: "bethany.png"
 
 - name: "Sichao Yu"
-  position: "Software Engineer"
+  position: "Remote Software Engineer"
   current: true
   headshot: "sichao.png"
   linkedin: "https://www.linkedin.com/in/chrooks/"
@@ -76,19 +76,19 @@
   linkedin: "https://www.linkedin.com/in/chrooks/"
   website: "https://chrooks.com/"
 
-- name: "Stephen Zhang"
-  position: "Visiting PhD student"
-  current: true
-  headshot: "stephen.png"
-  linkedin: "https://www.linkedin.com/in/chrooks/"
-  website: "https://chrooks.com/"
+# - name: "Stephen Zhang"
+#   position: "Visiting PhD Student"
+#   current: true
+#   headshot: "stephen.png"
+#   linkedin: "https://www.linkedin.com/in/chrooks/"
+#   website: "https://chrooks.com/"
 
-- name: "Stephen Zhang"
-  position: "Visiting PhD student"
-  current: true
-  headshot: "stephen.png"
-  linkedin: "https://www.linkedin.com/in/chrooks/"
-  website: "https://chrooks.com/"
+# - name: "Stephen Zhang"
+#   position: "Visiting PhD Student"
+#   current: true
+#   headshot: "stephen.png"
+#   linkedin: "https://www.linkedin.com/in/chrooks/"
+#   website: "https://chrooks.com/"
 
 - name: "Albert Einstein"
   current: false

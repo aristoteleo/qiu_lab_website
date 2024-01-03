@@ -1,7 +1,8 @@
 # Qiu Lab Website
 
-The source code is built on [Ato Lab Website](https://github.com/ato-neulab/Lab-Website)
-A static website made with Jekyll for the ATo Lab, a multidisciplinary research lab at Northeastern University working at the intersections of human-computer interaction, games, and social justice.
+The source code is built on [Ato Lab Website](https://github.com/ato-neulab/Lab-Website). 
+
+A static website made with Jekyll for the Qiu Lab, a multidisciplinary research lab at Stanford University working at the intersections of single cell/spatial genomics, machine learning, with a focus on the heart evolution, development and disease.
 
 ## Tech Stack
 

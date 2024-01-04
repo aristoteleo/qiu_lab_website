@@ -55,19 +55,20 @@
 - name: "Yifan Lu"
   position: "Visiting PhD Student"
   current: true
-  headshot: "bethany.png"
+  headshot: "yifan.jpeg"
+  linkedin: "https://www.linkedin.com/in/josiezvelebilova"
 
 - name: "Sichao Yu"
   position: "Remote Software Engineer"
   current: true
-  headshot: "sichao.png"
+  headshot: "placeholder-headshot.png"
   linkedin: "https://www.linkedin.com/in/chrooks/"
   website: "https://chrooks.com/"
 
 - name: "Cinlong Huang"
   position: "Research Assistant"
   current: true
-  headshot: "cinlong.png"
+  headshot: "placeholder-headshot.png"
 
 - name: "Sijie Chen"
   position: "Post-doc"

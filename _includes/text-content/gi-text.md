@@ -10,5 +10,5 @@ The Qiu Lab has developed a suite of computational software for preprocessing, a
 Currently, Dr. Qiu is leading a dynamic team in developing the <a href="https://github.com/aristoteleo/spateo-release">Spateo</a> framework, which facilitates multi-scale (subcellular to whole-embryo) modeling of emerging spatial genomics datasets. The Qiu lab is also actively engaged in creating differentiable models that map cell state transitions over time and space using graph neural networks, neuralODEs and others. Moreover, the Qiu Lab is committed to constructing foundational models of single cells using attention-based transformers and diffusion models.
 </p>
 <p>
-Ultimately, the Qiu lab aims to develop an end-to-end, predictive foundational software ecosystem, <a href="https://github.com/aristoteleo/">Aristotle</a>, for quantitative spatiotemporal modeling of spatial and single-cell multiomics:
+Ultimately, the Qiu lab aims to develop an end-to-end, predictive foundational software ecosystem, <a href="https://github.com/aristoteleo/">Aristotle</a>, for quantitative spatiotemporal modeling of spatial and single-cell multiomics.
 </p>

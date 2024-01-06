@@ -8,6 +8,7 @@ title: "Predictive Biology Lab of Single Cell/Spatial Genomics"
 <!-- This section is for the hero image. Bootstrap classes are used for positioning. -->
 
 <!-- This section is for the 'About' part of the site. -->
+
 <section class="about" id="our_vision">
   <div
     class="container d-flex flex-column align-items-center justify-content-center py-5"
@@ -74,66 +75,11 @@ title: "Predictive Biology Lab of Single Cell/Spatial Genomics"
     <!-- This section to bring up the backgrounds -->
     <!-- background point 1 -->
     <div class="container py-5">
-      <div class="row">
-        <div class="col-sm-12 col-md-1">
-          <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0092867422003993?showall=true">
-            <img
-              id="gi-img"
-              class="img-fluid my-2"
-              src="assets/images/papers/stereo_seq.jpeg"
-              alt="Stereo-seq cover paper"
-            />
-          </a>
-        </div>
-        <div class="col-sm-12 col-md-11 mb-sm-4">
-          <h6>Thanks to the recent progress in single-cell and spatial genomics, we are now able to profile transcriptomes and other “omics” from millions of cells.</h6>
-          <p style="font-size: 14px;">On the cover: Stereo-seq dissects cell-type composition in an E16.5 mouse embryo sagittal section. In this issue, Chen et al. combined DNA nanoball (DNB)-patterned arrays and in situ RNA capture to create spatial enhanced resolution omics sequencing (Stereo-seq), which was applied to generate the Mouse Organogenesis Spatiotemporal Transcriptomic Atlas (MOSTA) with high sensitivity at single-cell resolution. This cover is taken from one of the representative single-cell segmentation results in a developing E16.5 mouse embryo section, and each color represents a cell type.</p>
-
-        </div>
-      </div>
-
-      <!-- background point 2 -->
-      <div class="row">
-        <div class="col-sm-12 col-md-1">
-          <a href="https://www.nature.com/articles/s41586-021-03819-2">
-            <img
-              id="gi-img"
-              class="img-fluid my-2"
-              src="assets/images/papers/alpha_fold2.jpeg"
-              alt="Stereo-seq cover paper"
-            />
-          </a>
-        </div>
-        <div class="col-sm-12 col-md-11 mb-sm-4">
-          <h6>In parallel, the world has also witnessed breakthroughs in machine learning, epitomized by AlphaFold, ChatGPT and others. Thus the integration  of single-cell genomics with machine learning algorithms has enormous potential.</h6>
-
-          <p style="font-size: 11px;">On the cover: Proteins are essential to life, and understanding their 3D structure is key to unpicking their function. To date, only 17% of the human proteome is covered by an experimentally determined structure. Two papers in this week’s issue dramatically expand our structural understanding of proteins. Researchers at DeepMind, Google’s London-based sister company, present the latest version of their AlphaFold neural network. Using an entirely new architecture informed by intuitions about protein physics and geometry, it makes highly accurate structure predictions, and was recognized at the 14th Critical Assessment of Techniques for Protein Structure Prediction last December as a solution to the long-standing problem of protein-structure prediction. The team applied AlphaFold to 20,296 proteins, representing 98.5% of the human proteome. The predictions have been made freely available in partnership with the European Bioinformatics Institute, along with additional predictions for long human proteins and for 20 other model organisms. <strong>Work from DeepMind</strong>. </p>
-
-        </div>
-      </div>
-
-      <!-- background point 3 -->
-      <div class="row">
-        <div class="col-sm-12 col-md-1">
-          <a href="https://www.sciencedirect.com/science/article/pii/S0092867421015774">
-            <img
-              id="gi-img"
-              class="img-fluid my-2"
-              src="assets/images/papers/dynamo.png"
-              alt="Stereo-seq cover paper"
-            />
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-11 mb-sm-4">
-          <h6>To date, however, routine practices to explore single cell datasets in the field of computational biology have been largely descriptive, rather than predictive. The Qiu aim to pioneer in predictive models in single cell and spatial genomics.</h6>
-
-          <p style="font-size: 10px;">Single-cell (sc)RNA-seq, together with RNA velocity and metabolic labeling, reveals cellular states and transitions at unprecedented resolution. Fully exploiting these data, however, requires kinetic models capable of unveiling governing regulatory functions. Here, we introduce an analytical framework dynamo (https://github.com/aristoteleo/dynamo-release), which infers absolute RNA velocity, reconstructs continuous vector fields that predict cell fates, employs differential geometry to extract underlying regulations, and ultimately predicts optimal reprogramming paths and perturbation outcomes. We highlight dynamo’s power to overcome fundamental limitations of conventional splicing-based RNA velocity analyses to enable accurate velocity estimations on a metabolically labeled human hematopoiesis scRNA-seq dataset. Furthermore, differential geometry analyses reveal mechanisms driving early megakaryocyte appearance and elucidate asymmetrical regulation within the PU.1-GATA1 circuit. Leveraging the least-action-path method, dynamo accurately predicts drivers of numerous hematopoietic transitions. Finally, in silico perturbations predict cell-fate diversions induced by gene perturbations. Dynamo, thus, represents an important step in advancing quantitative and predictive theories of cell-state transitions.</p>
-
-        </div>
-      </div>
+      <!-- This 'include' tag inserts content from the specified markdown file using Jekyll's Liquid templating engine. -->
+      {% include text-content/our-vision.md %}
     </div>
   </div>
+
 </section>
 
 <!-- This section is for displaying different research areas of the lab -->
@@ -152,8 +98,9 @@ title: "Predictive Biology Lab of Single Cell/Spatial Genomics"
             src="/assets/images/icons/keyboard.svg"
             alt="Keyboard icon"
             class="ra-card-icon"
+            height="50"
           />
-          <h2 class="mt-1">Computation</h2>
+          <h5 class="mt-3">Computation</h5>
           <p class="ra-description">
             <!-- 'include' tag to insert a description for each research area. -->
             {% include text-content/ra-computation.md %}
@@ -167,8 +114,9 @@ title: "Predictive Biology Lab of Single Cell/Spatial Genomics"
             src="/assets/images/icons/controller.svg"
             alt="Video game controller icon"
             class="ra-card-icon"
-          />
-          <h2 class="mt-3">Experimentation</h2>
+            height="50"
+         />
+          <h5 class="mt-3">Experimentation</h5>
           <p class="ra-description">{% include text-content/ra-experimentation.md %}</p>
         </div>
       </div>
@@ -178,8 +126,9 @@ title: "Predictive Biology Lab of Single Cell/Spatial Genomics"
             src="/assets/images/icons/fist.svg"
             alt="Fist icon"
             class="ra-card-icon"
+            height="50"
           />
-          <h2 class="mt-3">Prediction</h2>
+          <h5 class="mt-3">Prediction</h5>
           <p class="ra-description">
             {% include text-content/ra-prediction.md %}
           </p>
@@ -199,158 +148,30 @@ title: "Predictive Biology Lab of Single Cell/Spatial Genomics"
       <p> </p>
     </div>
 
-    <div class="row">
-      <!-- Direction 1 -->
-      <h6>Combine time-resolved single cell genomics with differentiable machine learning approaches</h6>
-
-      <div class="col-sm-12 col-md-2">
-        <a href="https://www.sciencedirect.com/science/article/pii/S0092867421015774">
-<!--           <img
-            id="gi-img"
-            class="img-fluid my-2"
-            src="assets/images/papers/stereo_seq.jpeg"
-            alt="Stereo-seq cover paper"
-          /> -->
-          <img src="/assets/animations/hsc_fate.gif" alt="Vector field animations" style="width: 220px; height: 225px;">
-        </a>
-      </div>
-<!--       <div class="col-3">
-                <img src="/assets/animations/hsc_fate.gif" style="width: 220px; height: 225px;">
-            </div>
-            <div class="col-3">
-                <img src="/assets/animations/hsc_fate_p.gif" style="width: 220px; height: 225px;">
-            </div> -->
-
-      <div class="col-sm-12 col-md-10 mb-sm-4">
-
-        <p>Emergent single-cell genomics have enabled profiling of cell-state transitions with unprecedented scale. However, due to their destructive nature, it is generally infeasible to follow the same cell over time. Advances in single-cell profiling have fueled the development of computational approaches for inferring cellular dynamics from snapshot measurements, such as pseudotime and RNA velocity approaches. Furthermore, exciting developments in metabolic labeling enabled scRNA-seq approaches now enable us to obtain time-resolved transcriptomic kinetics by directly measuring “new” and “old” RNAs in a controllable manner. We recently developed the Dynamo framework that overcomes fundamental limitations of conventional splicing-based RNA velocity analyses to enable accurate velocity estimations for time-resolved scRNA-seq datasets. Furthermore, we go beyond the discrete RNA velocity vectors to a continuous function that can be used to perform higher-order differentials to gain functional biological insights. Dynamo also establishes itself as one of the first tools to make non-trivial predictions of optimal reprogramming paths and in silico perturbation predictions with single cell datasets. We are continuing this line of research in the lab. </p>
-      </div>
-
-      <p>Major questions we are actively asking  in the lab include: </p>
-        <div class="col-sm-12 col-md-10 mb-sm-4">
-          <li>How to advance Dynamo’s analytical vector field approach to differentiable deep learning frameworks to dissect mechanisms of mammalian cell evolution, differentiation, maintenance, aging, and reprogramming? </li>
-          <li>How to integrate RNA metabolic labeling with multi-omics experimentally, and then extend the RNA velocity approaches to multi-modal velocity of epigenetics, RNA, and protein? </li>
-          <li>How to use methods like machine translation to translate single-cell gene expression states to other modalities, such as chromatin accessibility or proteomics, and vice versa?</li>
-          <li>How to harmonize short-term RNA velocities with long-term cell state transitions measured with CRISPR-Cas9 based or mitochondria mutation-based lineage tracing?</li>
-        </div>
-        <div class="col-sm-12 col-md-2">
-          <a href="https://www.sciencedirect.com/science/article/pii/S0092867421015774">
-  <!--           <img
-              id="gi-img"
-              class="img-fluid my-2"
-              src="assets/images/papers/stereo_seq.jpeg"
-              alt="Stereo-seq cover paper"
-            /> -->
-            <img src="/assets/animations/hsc_fate_p.gif" alt="In silico perturbation based on vector field" style="width: 220px; height: 225px;">
-          </a>
-        </div>
-
+    {% include text-content/current-research-1.md %}
 
       <p></p>
       <p></p>
       <hr>
       <p></p>
       <!-- Direction 2 -->
-      <h6>Leverage spatial genomics to model cell-cell interaction and tissue organization in 3D space</h6>
-      
-      <div class="col-sm-12 col-md-2">
-        <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0092867422003993?showall=true">
-          <img
-            id="gi-img"
-            class="img-fluid my-2"
-            src="assets/images/papers/stereo_seq.jpeg"
-            alt="Stereo-seq cover paper"
-          />
-        </a>
-      </div>
-      <div class="col-sm-12 col-md-10 mb-sm-4">
-        <p>Our Dynamo approach for RNA velocity vector field allows us to gain mechanistic insight into cell state transitions from the temporal axis. However, complex cell fate changes such as embryogenesis are not only temporally controlled but also spatially controlled. Unfortunately, routine single-cell approaches dissociate the cells, resulting in complete loss of spatial information. In order to best model the spatial axis, similar to the Dynamo work, we will apply, optimize, and develop novel technologies, such as Stereo-seq, STARmap and PIXEL-seq, that can generate the ideal spatial data. Although these promising technologies now allow us to profile cell states across subcellular, cellular, tissue, organ, and even whole embryo levels, analytical tools that fully leverage such data remain lacking. We recently developed a general analytical framework, Spateo, to model spatial transcriptomics at a multidimensional scale, ranging from single-cell segmentation, spatial domain clustering and digitization, cell-cell interactions, and 3D morphometric analysis. We will also continue this line of research in the lab.</p>
-      </div>
-
-      <p>Major questions we are actively asking in the lab include: </p>
-      <div class="col-sm-12 col-md-10 mb-sm-4">
-        <li>How can we model RNA subcellular distribution and co-localization of image-based spatial transcriptomics using advanced machine learning techniques such as graph neural networks?</li>
-        <li>How can we properly reconstruct the 3D volumetric structure of whole organs and embryos with serial profiling of spatial transcriptomics using optimal transport and more generalizable and efficient alternatives?</li>
-        <li>How to enable novel 3D analysis of the reconstructed 3D models with 3D computer vision approaches?</li>
-        <li>How to model cell-cell communication at cellular, tissue, and organ levels and in 3D space using spatially aware machine learning models?</li>
-        <li>How can we extend spatial transcriptomics with multi-omics and Perturb-seq to build predictive models for these datasets?</li>
-        </div>
-      <div class="col-sm-12 col-md-2">
-          <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0092867422003993?showall=true">
-            <img src="/assets/animations/E7-9h_merged_completed_model_animation.gif" alt="E7-9h_merged_completed_model_animation" style="width: 200px; height: auto;">
-          </a>
-        </div>
+    {% include text-content/current-research-2.md %}
 
       <p></p>
       <p></p>
       <hr>
       <p></p>
+
       <!-- Direction 3 -->
-      <h6>Joint spatiotemporal modeling of single cells</h6>
-      <div class="col-sm-12 col-md-4">
-        <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0092867422003993?showall=true">
-          <img
-            id="gi-img"
-            class="img-fluid my-2"
-            src="assets/images/spatiotemporal_modeling.png"
-            alt="Stereo-seq cover paper"
-          />
-        </a>
-      </div>
-      <div class="col-sm-12 col-md-8 mb-sm-4">
-        <p>While Dynamo allows us to predict how cells transit in the gene expression space along the temporal axis, the Spateo framework allows us to predict how cells migrate in physical space. But these two spaces are separate. It is thus critical to build computational tools to unify both spaces to jointly learn spatiotemporal kinetics. However, spatiotemporal models, such as  partial differential  equations,  are challenging to directly learn from data, especially for high-dimensional biological systems. Fortunately, breakthroughs in Fourier neural operators, diffusion models, and other generative deep learning approaches, which incorporate functional learning, attention and diffusion process, respectively, have begun to show promise for addressing such challenges. We have achieved promising results with these approaches.</p>
-      </div>
-
-      <p>In the lab, we are pursuing the following key questions:</p>
-
-      <div class="col-sm-12 col-md-8 mb-sm-4">
-        <li>How can we integrate RNA metabolic labeling with spatial transcriptomics to obtain real spatiotemporal datasets to powerful our machine learning model?</li>
-        <li>How can we leverage graph neural networks and neuralODE, or Fourier neural operators and others, to learn spatiotemporal kinetics?</li>
-        <li>How can we jointly model cell growth, division, apoptosis, and migration with whole organ or embryo datasets in 3D space across multiple time points?</li>
-        <li>How to in silico perturb genes at a particular time point at a particular spatial location to predict how such perturbations propagate over time and space?</li>
-      </div>
-
-      <div class="col-sm-12 col-md-2">
-        <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0092867422003993?showall=true">
-          <img
-            id="gi-img"
-            class="img-fluid my-2"
-            src="assets/images/digit_formation.png"
-            alt="Stereo-seq cover paper"
-          />
-        </a>
-      </div>
+    {% include text-content/current-research-3.md %}
 
       <!-- Direction 4 -->
       <p></p>
       <p></p>
       <hr>
       <p></p>
-      <h6>Moving towards cross-species foundational models of single cells</h6>
-      <div class="col-sm-12 col-md-1">
-        <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0092867422003993?showall=true">
-          <img
-            id="gi-img"
-            class="img-fluid my-2"
-            src="assets/images/foundation_model.png"
-            alt="Stereo-seq cover paper"
-          />
-        </a>
-      </div>
-      <div class="col-sm-12 col-md-11 mb-sm-4">
-        <p>Recent advances in machine learning, particularly with powerful, versatile foundational models like ChatGPT, have transformed various fields. These models use attention based transformer and are trained on extensive datasets, enabling them to perform exceptionally well in areas like image, text, and video processing with limited data and minimal computing resources. Advances in single-cell and spatial genomics has accumulated  massive datasets with tens of millions of single cells that provided necessary data to power up foundational models. While there have been several exciting attempts in building these models in biology with specific downstream tasks like batch effect removal and gene regulatory network analysis, their predictive capabilities are still lacking. To fulfill these unmet gaps, we have formed a vibrant team to actively investigating these possibilities.</p>
-      </div>
 
-      <div class="col-sm-12 col-md-8 mb-sm-4">
-        <p>We are pursuing the following key questions:</p>
-        <li>How to overcome the limitations of treating genes as token and cells as sentences in geneFormer, scGPT, scFoundationa and others when building the single cell foundational model?</li>
-        <li>How to extend existing foundational model to multi-modal datasets using machine translation, tabular learning and others?</li>
-        <li>How to build cross-species foundational models so that we can unify the gene and cell embeddings across evolutionary scales? </li>
-        <li>How to utilize spatiotemporal transformers to model the time-resolved and spatially-resolved single cell genomics, and in 3D space? </li>
-        <li>How to perform non-trivial zero-shot downstream predictions, such as in silico perturbations and others, with the foundational model?  </li>
-        <li>How to model cell growth, division, migration and others to simulate a differentiable in silico model of mamalian embryogenesis and organogenesis?  </li>
-      </div>
-
+    {% include text-content/current-research-4.md %}
 
       <div class="col-sm-12 col-md-3">
         <a href="https://www.cell.com/cell/fulltext/S0092-8674(22)00399-3?_returnURL=https://linkinghub.elsevier.com/retrieve/pii/S0092867422003993?showall=true">

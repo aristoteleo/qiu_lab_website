@@ -4,6 +4,12 @@
   headshot: "xiaojie.jpg"
   website: "https://scholar.google.com/citations?user=XlMd8TAAAAAJ&hl=en"
   GitHub: "https://github.com/Xiaojieqiu"
+  Bio: "I’m an Assistant Professor at the Department of Genetics, the BASE program, and the Department of Computer Science at Stanford. 
+  I worked with Dr. Cole Trapnell at the University of Washington during my PhD to develop Monocle 2 and 3 for pseudotemporal trajectory analysis of scRNA-seq data. 
+  During my post-doc, I worked with with Dr. Jonathan Weissman initially at UCSF and then Whitehead Institute and MIT to develop <a href='https://github.com/aristoteleo/dynamo-release'>Dynamo</> 
+  to reconstruct RNA velocity vector field and make reprogramming and in silico perturbation predictions with metabolic labeling enabled single-cell RNA-seq. I recently also
+  lead the development of <a href='https://github.com/aristoteleo/spateo-release'>Spateo</>, for advanced spatiotemporal modeling of single cells. My lab is currently focused 
+  mostly on predictive modeling of single cells through a uniuqe synthesis of genomics and machine learning. Outside the lab, I like going to the gym, run and read all kinds of books."
 
 - name: "Oriane Rubio"
   position: "Research Project Manager"
@@ -28,12 +34,18 @@
   current: true
   headshot: "yuzhen.jpg"
   website: "https://scholar.google.com/citations?user=9wKn1A0AAAAJ&hl=en"
+  bio: "I'm now a visting Computing Science M.Sc. student of Simon Fraser University, Canada. I am interested in leveraging my background in machine learning, 
+  particularly transformer-based models, to reveal the regulatory mechanism of biological processes and disease progression. I earned a B.E. in Computer Science 
+  and Technology from Zhejiang University and a B.S. in Computing Science from Simon Fraser University. When I am not in the lab, I love to explore nature."
 
 - name: "Mengchen Wang"
   position: "Visiting Undergraduate"
   current: true
   headshot: "mengchen.png"
   linkedin: ""
+  bio: "I am a Computer Science undergrad at Tsinghua University, captivated by the synergy of artificial intelligence and biological exploration. My academic journey 
+  has exposed me to the intricate tapestry of artificial intelligence, genomics, and computational biology. Outside the lab, I am interested in reading books and playing 
+  badminton."
 
 - name: "Jiayuan Ding"
   position: "Visiting PhD Student"
@@ -46,18 +58,29 @@
   current: true
   headshot: "yimeng.jpg"
   linkedin: ""
+  bio: "I got my master's degree and bachelor's degree from Fudan University and Shandong University in 2023 and 2020, respectively. Both of them were awarded in Software 
+  Engineering. My future research interest is the application of deep learning in life science, especially in cancer genomics. Outside the lab, I enjoy reading and making 
+  handicrafts. I am interested in learning some new and different things."
 
 - name: "Qiaolin Lu"
   position: "Remote Computational Assistant"
   current: true
   headshot: "qiaolin.png"
   linkedin: ""
+  bio: "I’m a Computer Science master student in Jilin University. Before that, I hold a Bachelor’s degree from the School of Chemistry, with a double major in the School of 
+  Computer Science and Technology, Jilin University. During my undergraduate years, I delved into  total synthesis in natural organic molecules which help me deepen my 
+  understanding of biochemical mechanisms. In my current academic pursuit, I am particularly captivated by the intersection of deep learning, single-cell technologies, and 
+  drug discovery. I am eager to leverage my computational skills to contribute to advancements in these fields. Outside the lab, I enjoy playing guitar and cooking.”"
 
 - name: "Yifan Lu"
   position: "Visiting PhD Student"
   current: true
   headshot: "yifan.jpeg"
   linkedin: ""
+  bio: "I am currently an incoming visiting Ph.D. student at Wuhan University, specializing in Information and Communication Engineering under the guidance of Prof. Jiayi Ma. My earlier research 
+  focused on computer vision and pattern recognition, particularly in 3D vision and feature matching. Intrigued by computational biology, I've shifted my interests towards the 
+  integration of spatial transcriptomics and RNA velocity in single cells, and actively expanding my knowledge in biology. Beyond academics, I enjoy activities like ping pong 
+  and exploring new places through travel."
 
 - name: "Sichao Yu"
   position: "Remote Software Engineer"
@@ -78,6 +101,21 @@
   headshot: "sijie.png"
   linkedin: ""
   website: "https://scholar.google.com/citations?user=bhseUuYAAAAJ&hl=en"
+  bio: "I'm an incoming postdoctoral researcher at the Qiu lab in Stanford. I received my PhD from the Department of Automation at Tsinghua University. During my PhD, I developed 
+  new methods for tracking cellular dynamics, curated ensemble cell atlases, and applied them to immunological studies. My current research focuses on understanding cell 
+  state transitions and exploring how cells give rise to tissues. In particular, I am interested in developing analysis methods for spatiotemporal cell dynamics and building 
+  self-organizing models that perceive internal molecular signals and external interactions, with applications in <i>in-silico</> modeling for mimicking and perturbing organogenesis. 
+  Outside the lab, I enjoy cooking and aquascaping."
+
+- name: "Samuel King"
+  position: "Rotation student"
+  current: true
+  headshot: "samuel.jpg"
+  website: ""
+  bio: "I’m a Bioengineering Ph.D. student rotating in the Qiu lab. My interests are in deciphering the genetic and protein language rules of developmental programs using 
+  synthetic biology, machine learning, and omics approaches. I earned my B.Sc. Hon. in Biology at the University of British Columbia, where I performed research primarily in 
+  the Yachie lab creating technologies to study mammalian morphogenesis and viral evolution. When I’m not in the lab, I greatly enjoy spending time exploring my surroundings, 
+  riding my motorcycle, and working on graphic design projects."
 
 # - name: "Stephen Zhang"
 #   position: "Visiting PhD Student"

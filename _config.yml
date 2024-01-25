@@ -33,6 +33,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  papers:
+    output: true
+    permalink: /papers/:path/
+
 sass:
   sass_dir: _sass
   style: compressed

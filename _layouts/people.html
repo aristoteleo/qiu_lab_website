@@ -1,0 +1,103 @@
+---
+layout: "wrapper"
+---
+
+<div class="container mt-4">
+        <div class="bigspacer"></div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="media d-flex">
+                    <img class="pull-left pad-right media-object" width="120" src="{{ site.baseurl }}/assets/images/headshots/{% if page.headshot %}{{ page.headshot }}{% else %}placeholder-headshot.png{% endif %}">
+                    <div class="media-body">
+                        <div class="bigtitle media-heading">
+                            {{ page.name }}
+                        </div>
+                        <p>
+                            <div class="smallhead">
+                                {{ page.position }}
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bigspacer"></div>
+        <div class="row">
+            <div class="col-lg-3">
+                {% if page.cv_url %}
+                <div class="smallhead">
+                    CV
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fa fa-file-text-o fa-fw"></i>
+                    <a class="off" href="{{ site.baseurl }}/{{ page.cv_url }}">cv.pdf</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.twitter %}
+                <div class="smallhead">
+                    Twitter
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fa fa-twitter fa-fw"></i>
+                    <a class="off" href={{ page.twitter }}>{{ page.name }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.GitHub %}
+                <div class="smallhead">
+                    GitHub
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fa fa-github-alt fa-fw"></i>
+                    <a class="off" href="{{ page.GitHub }}">{{ page.name }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.google_scholar %}
+                <div class="smallhead">
+                    Google Scholar
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fa fa-book fa-fw"></i>
+                    <a class="off" href="{{ page.google_scholar }}">{{ page.name }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.email %}
+                <div class="smallhead">
+                    Email
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fa fa-inbox fa-fw"></i>
+                    {{ page.email }}
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+                {% if page.website %}
+                <div class="smallhead">
+                    Personal Website
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fa fa-globe fa-fw"></i>
+                    <a class="off" href="{{ page.website }}">{{ page.name }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
+            </div>
+            <div class="col-lg-8">
+                <div class="head">Bio</div>
+                <div class="post">
+                  {{ page.bio }}
+                </div>
+                <div class="bigspacer"></div>
+                {{ content }}
+            </div>
+        </div>
+    </div>

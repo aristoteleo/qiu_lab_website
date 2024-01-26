@@ -37,6 +37,9 @@ collections:
   papers:
     output: true
     permalink: /papers/:path/
+  people:
+    output: true
+    permalink: /people/:path/
 
 sass:
   sass_dir: _sass

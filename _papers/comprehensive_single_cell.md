@@ -5,7 +5,7 @@ paper_title: Comprehensive single-cell transcriptional profiling of a multicellu
 author_list: Junyue Cao*, Jonathan S Packer*, Vijay Ramani, Darren A Cusanovich, Chau Huynh, Riza Daza, Xiaojie Qiu, 
     Choli Lee, Scott N Furlan, Frank J Steemers, Andrew Adey, Robert H Waterston+, Cole Trapnell+, Jay Shendure+.
 journal: Science
-doi:
+doi: 10.1126/science.aam8940
 year: 2017
 image_url: /assets/images/papers/cao-combinatorial-indexing.png
 paper_alt: cao-combinatorial-indexing Paper Image

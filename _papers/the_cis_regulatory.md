@@ -6,7 +6,7 @@ author_list: Darren A Cusanovich*, James P Reddington*, David A Garfield*, Riza 
     Raquel Marco-Ferreres, Hannah A Pliner, Lena Christiansen, Xiaojie Qiu, Frank J Steemers, Cole Trapnell, 
     Jay Shendure+, Eileen EM Furlong+.
 journal: Nature
-doi:
+doi: 10.1038/nature25981
 year: 2018
 image_url: /assets/images/papers/cusanovich_fly_embryogenesis.png
 paper_alt: cusanovich_fly_embryogenesis Paper Image

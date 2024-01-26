@@ -7,7 +7,7 @@ author_list: Jorge D Martin-Rufino, Nicole Castano, Michael Pang, Emanuelle I Gr
     Santosh Chaudhary, Susan Black, Chen Weng, Glen Munson, David R Liu, Marcin W Wlodarski, Kacie Sims, Jamie H Oakley, 
     Ross M Fasano, Ramnik J Xavier, Eric S Lander, Daryl E Klein, Vijay G Sankaran+.
 journal: Cell
-doi:
+doi: 10.1016/j.cell.2023.03.035
 year: 2023
 image_url: /assets/images/papers/jorge_cell_2023.png
 paper_alt: jorge_cell_2023 Paper Image

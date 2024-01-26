@@ -8,7 +8,7 @@ author_list: Xiaoyu Wei*, Sulei Fu*, Hanbo Li*, Yang Liu*, Shuai Wang*, Weimin F
     Shang Gao, Ao Chen, Miguel A Esteban, Huanming Yang, Jian Wang, Guangyi Fan, Longqi Liu, Liang Chen+, Xun Xu+, 
     Ji-Feng Fei+, Ying Gu+.
 journal: Science
-doi:
+doi: 10.1126/science.abp9444
 year: 2022
 image_url: /assets/images/papers/xiaoyu_science_2022.png
 paper_alt: xiaoyu_science_2022 Paper Image

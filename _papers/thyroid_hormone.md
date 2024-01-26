@@ -5,7 +5,7 @@ paper_title: Thyroid hormone regulates distinct paths to maturation in pigment c
 author_list: Lauren M Saunders, Abhishek K Mishra, Andrew J Aman, Victor M Lewis, Matthew B Toomey, Jonathan S Packer, 
     Xiaojie Qiu, Jose L McFaline-Figueroa, Joseph C Corbo, Cole Trapnell+, David M Parichy+.
 journal: eLife
-doi:
+doi: 10.7554/eLife.45181
 year: 2019
 image_url: /assets/images/papers/Saunders_elife_2019.png
 paper_alt: Saunders_elife_2019 Paper Image

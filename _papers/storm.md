@@ -4,7 +4,7 @@ title: preprints
 paper_title: "Storm: Incorporating transient dynamics to infer the RNA velocity with metabolic labeling information"
 author_list: Qiangwei Peng, Xiaojie Qiu+, Tiejun Li+
 journal: Biorxiv
-doi:
+doi: 10.1101/2023.06.21.545990
 year: 2023
 image_url: /assets/images/papers/storm.png
 paper_alt: storm Paper Image

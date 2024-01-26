@@ -6,7 +6,7 @@ author_list: Davide Cacchiarelli, Xiaojie Qiu, Sanjay Srivatsan, Anna Manfredi, 
     Antonio Grimaldi, Jonna Grimsby, Prapti Pokharel, Kenneth J Livak, Shuqiang Li, Alexander Meissner,
     Tarjei S Mikkelsen, John L Rinn, Cole Trapnell+.
 journal: Cell Systems
-doi:
+doi: 10.1016/j.cels.2018.07.006
 year: 2018
 image_url: /assets/images/papers/cacchiarelli-hsmm.png
 paper_alt: cacchiarelli-hsmm Paper Image

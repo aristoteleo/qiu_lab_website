@@ -5,7 +5,7 @@ paper_title: Inferring causal gene regulatory networks from coupled single-cell 
 author_list: Xiaojie Qiu*, Arman Rahimzamani*, Li Wang, Bingcheng Ren, Qi Mao, Timothy Durham, José L McFaline-Figueroa, 
     Lauren Saunders, Cole Trapnell+, Sreeram Kannan+.
 journal: Cell Systems
-doi:
+doi: 10.1016/j.cels.2020.02.003
 year: 2020
 image_url: /assets/images/papers/Qiu_etal_Scribe_CellSys_2020.png
 paper_alt: Census Paper Image

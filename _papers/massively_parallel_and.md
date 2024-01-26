@@ -4,7 +4,7 @@ title: selected work
 paper_title: Massively parallel and time-resolved RNA sequencing in single cells with scNT-seq
 author_list: Qi Qiu*, Peng Hu*, Xiaojie Qiu, Kiya W Govek, Pablo G Cámara, Hao Wu+.
 journal: Nature Methods
-doi:
+doi: 10.1038/s41592-020-0935-4
 year: 2020
 image_url: /assets/images/papers/qi_NM_2020.png
 paper_alt: qi_NM_2023 Paper Image

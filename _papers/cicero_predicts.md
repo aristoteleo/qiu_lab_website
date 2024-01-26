@@ -6,7 +6,7 @@ author_list: Hannah A Pliner, Jonathan S Packer, José L McFaline-Figueroa, Darr
     Delasa Aghamirzaie, Sanjay Srivatsan, Xiaojie Qiu, Dana Jackson, Anna Minkina, Andrew C Adey, Frank J Steemers, 
     Jay Shendure+, Cole Trapnell+.
 journal: Molecular Cell
-doi:
+doi: 10.1016/j.molcel.2018.06.044
 year: 2018
 image_url: /assets/images/papers/pliner-cicero.png
 paper_alt: pliner-cicero Paper Image

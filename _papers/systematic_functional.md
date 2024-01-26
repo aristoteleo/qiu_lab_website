@@ -6,7 +6,7 @@ author_list: Sara Sunshine, Andreas S Puschnik, Joseph M Replogle, Matthew T Lau
     James K Nuñez, Janie R Byrum, Aidan H McMorrow, Matthew B Frieman, Juliane Winkler, Xiaojie Qiu, Oren S Rosenberg,
     Manuel D Leonetti, Chun Jimmie Ye, Jonathan S Weissman+, Joseph L DeRisi+, Marco Y Hein+
 journal: Nature Communication
-doi:
+doi: 10.1038/s41467-023-41788-4
 year: 2023
 image_url: /assets/images/papers/sara_NC_2023.png
 paper_alt: sara_NC_2023 Paper Image

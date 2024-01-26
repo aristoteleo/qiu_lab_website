@@ -9,7 +9,7 @@ author_list: Xiaojie Qiu*+, Daniel Y Zhu*, Jiajun Yao*, Zehua Jing*, Lulu Zuo*, 
     Yuxiang Li, Ao Chen, Miguel A Esteban, Ying Gu, Douglas A Lauffenburger, Xun Xu, Longqi Liu, Jonathan S Weissman+, 
     Shiping Liu+, Yinqi Bai+.
 journal: Biorxiv
-doi:
+doi: 10.1101/2022.12.07.519417
 year: 2023
 image_url: /assets/images/papers/spateo.png
 paper_alt: Spateo Paper Image

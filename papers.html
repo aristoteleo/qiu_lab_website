@@ -32,6 +32,9 @@ title: "Read our work"
                             </div>
                             <p class="note"> {{ paper.author_list }} {{ paper.year }}</p>
                             <p class="note"><i>{{ paper.journal }}</i></p>
+                            {% if paper.rank == 1 %}
+                                <p class="note"><sup>*</sup>Equal Contribution, <sup>+</sup>Corresponding Author</p>
+                            {% endif %}
                         </div>
                     </div>
                 </div>

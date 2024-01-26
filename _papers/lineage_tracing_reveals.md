@@ -7,7 +7,7 @@ author_list: Dian Yang*, Matthew G Jones*, Santiago Naranjo, William M Rideout, 
     William A Freed-Pastor, Christopher S McGinnis, David M Patterson, Zev J Gartner, Eric D Chow, Trever G Bivona, 
     Michelle M Chan, Nir Yosef+, Tyler Jacks+, Jonathan S Weissman+.
 journal: Cell
-doi:
+doi: 10.1016/j.cell.2022.04.015
 year: 2022
 image_url: /assets/images/papers/dian_cell_2022.png
 paper_alt: dian_cell_2022 Paper Image

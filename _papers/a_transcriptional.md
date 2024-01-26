@@ -4,7 +4,7 @@ title: previous involved work
 paper_title: A transcriptional dynamic network during Arabidopsis thaliana pollen development
 author_list: Jigang Wang, Xiaojie Qiu*, Yuhua Li, Youping Deng, Tieliu Shi+.
 journal: BMC Systems Biology
-doi:
+doi: 10.1186/1752-0509-5-S3-S8
 year: 2011
 image_url: /assets/images/papers/jigang_BCM_systems_biology_2011.png
 paper_alt: Stereo-seq Paper Image

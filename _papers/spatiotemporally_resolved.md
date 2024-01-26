@@ -6,7 +6,7 @@ author_list: Jingyi Ren*, Haowen Zhou*, Hu Zeng*, Connie Kangni Wang, Jiahao Hua
     Xunwei Wu, Zuwan Lin, Jennifer A Lo, Kamal Maher, Yichun He, Xin Tang, Judson Lam, Hongyu Chen, Brian Li, 
     David E Fisher, Jia Liu, Xiao Wang+.
 journal: Nature Methods
-doi:
+doi: 10.1038/s41592-023-01829-8
 year: 2023
 image_url: /assets/images/papers/jingyi_tempomap.png
 paper_alt: jingyi_tempomap Paper Image

@@ -5,7 +5,7 @@ paper_title: Single-cell transcriptomics reveals receptor transformations during
 author_list: Naresh K Hanchate, Kunio Kondoh, Zhonghua Lu, Donghui Kuang, Xiaolan Ye, Xiaojie Qiu, Lior Pachter, 
     Cole Trapnell+, Linda B Buck+.
 journal: Science
-doi:
+doi: 10.1126/science.aad2456
 year: 2015
 image_url: /assets/images/papers/linda_buck_science.png
 paper_alt: linda_buck_science Paper Image

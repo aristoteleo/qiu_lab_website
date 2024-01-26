@@ -2,6 +2,7 @@
 layout: "wrapper"
 ---
 
+<div class="bigspacer"></div>
 
 <div class="row">
     <div class="col-lg-8 paperbox offset-lg-2 paperbox">
@@ -10,11 +11,10 @@ layout: "wrapper"
             <img class="pull-left pad-right media-object" src="{{ page.image_url }}" style="max-width:150px">
 
             <div class="media-body">
-                <div class="smallhead"><strong>{{ page.paper_title }}</strong></div>
+                <h3><strong>{{ page.paper_title }}</strong></h3>
                 <p></p>
                 <div class="smallhead">{{ page.author_list }}</div>
                 <div class="bigspacer"></div>
-                <p></p>
                 <div class="smallhead">
                     {{ page.journal }}
                     ({{ page.year }})
@@ -33,10 +33,16 @@ layout: "wrapper"
             <div class="smallhead">
                 DOI
             </div>
-            <div class="pad-left note">
-                <div class="smallspacer"></div>
-                <i class="fa fa-external-link fa-fw"></i>
-                <a class="off" href="{{ page.doi }}">{{ page.doi }}</a>
+            <div class="pad-left note" style="display: flex; align-items: center;">
+                <p></p>
+                <a href="https://doi.org/{{ page.doi }}">
+                    <img
+                      src="{{ site.baseurl }}/assets/images/icons/external.svg"
+                      alt="External website logo"
+                      style="width: 16px; height: 16px; margin-right: 5px;"
+                    />
+                </a>
+                <a class="off" href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>
             </div>
             <div class="bigspacer"></div>
 

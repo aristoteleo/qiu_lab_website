@@ -4,7 +4,7 @@ title: selected work
 paper_title: Single-cell mRNA quantification and differential analysis with Census
 author_list: José L McFaline-Figueroa, Andrew J Hill, Xiaojie Qiu, Dana Jackson, Jay Shendure, Cole Trapnell+.
 journal: Nature Genetics
-doi:
+doi: 10.1038/nmeth.4150
 year: 2017
 image_url: /assets/images/papers/mcfaline_emt_natgen.png
 paper_alt: mcfaline_emt_natgen Paper Image

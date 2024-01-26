@@ -6,7 +6,7 @@ author_list: Anika Gupta*, Jorge D Martin-Rufino*, Thouis R Jones, Vidya Subrama
     Alex Bloemendal, Chen Weng, Sheng-Yong Niu, Kyung Hoi Min, Arnav Mehta, Kaite Zhang, Layla Siraj, Aziz Al'Khafaji, 
     Vijay G Sankaran, Soumya Raychaudhuri, Brian Cleary, Sharon Grossman, Eric S Lander+.
 journal: PNAS
-doi:
+doi: 10.1073/pnas.2207392119
 year: 2022
 image_url: /assets/images/papers/anika_pnas.png
 paper_alt: anika_pnas Paper Image

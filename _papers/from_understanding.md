@@ -4,7 +4,7 @@ title: previous involved work
 paper_title: From understanding the development landscape of the canonical fate-switch pair to constructing a dynamic landscape for two-step neural differentiation
 author_list: Xiaojie Qiu*, Shanshan Ding*, Tieliu Shi+.
 journal: PLOS one
-doi:
+doi: 10.1371/journal.pone.0049271
 year: 2012
 image_url: /assets/images/papers/qiu_plos_one_2012.png
 paper_alt: qiu_plos_one_2012 Paper Image

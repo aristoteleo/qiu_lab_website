@@ -11,7 +11,7 @@ author_list: Ao Chen*, Sha Liao*, Mengnan Cheng*, Kailong Ma*, Liang Wu*, Yiwei 
     Shiping Liu, Ying Gu, Ming Ni, Wenwei Zhang, Feng Mu, Ye Yin, Huanming Yang, Michael Lisby, Richard J Cornall, 
     Jan Mulder, Mathias Uhlén, Miguel A Esteban+, Yuxiang Li+, Longqi Liu+, Xun Xu+, Jian Wang+.
 journal: Cell
-doi:
+doi: 10.1016/j.cell.2022.04.003
 year: 2022
 image_url: /assets/images/papers/stereo_seq.jpeg
 image_alt: Stereo-seq Paper Image

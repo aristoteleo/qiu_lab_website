@@ -7,7 +7,7 @@ author_list: Xiaojie Qiu*+, Yan Zhang*, Jorge D Martin-Rufino, Chen Weng, Shayan
     Ruoshi Yuan, Song Xu, Yian Ma, Joseph M Replogle, Eric S Lander, Spyros Darmanis, Ivet Bahar, 
     Vijay G Sankaran, Jianhua Xing+, Jonathan S Weissman+.
 journal: Cell
-doi:
+doi: 10.1016/j.cell.2021.12.045
 year: 2022
 image_url: /assets/images/papers/dynamo.png
 paper_alt: Dynamo Paper Image

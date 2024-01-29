@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 10
-title: Yifan Lu
+title: Meet the People
 name: "Yifan Lu"
 position: "Visiting PhD Student"
 current: true

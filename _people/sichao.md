@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 11
-title: Sichao Yu
+title: Meet the People
 name: "Sichao Yu"
 position: "Remote Software Engineer"
 current: true

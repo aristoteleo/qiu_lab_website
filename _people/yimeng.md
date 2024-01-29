@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 8
-title: Yimeng Qiao
+title: Meet the People
 name: "Yimeng Qiao"
 position: "Remote Post-Master Assistant"
 current: true

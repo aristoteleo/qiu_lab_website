@@ -1,6 +1,7 @@
 ---
 layout: paper
-title: selected work
+title: "Read our work"
+type: selected work
 paper_title: Mapping transcriptomic vector fields of single cells
 author_list: Xiaojie Qiu*+, Yan Zhang*, Jorge D Martin-Rufino, Chen Weng, Shayan Hosseinzadeh, Dian Yang, 
     Angela N Pogson, Marco Y Hein, Kyung Hoi Joseph Min, Li Wang, Emanuelle I Grody, Matthew J Shurtleff, 
@@ -9,6 +10,7 @@ author_list: Xiaojie Qiu*+, Yan Zhang*, Jorge D Martin-Rufino, Chen Weng, Shayan
 journal: Cell
 doi: 10.1016/j.cell.2021.12.045
 year: 2022
+pdf_url: /assets/PDFs/qiu_dynamo.pdf
 image_url: /assets/images/papers/dynamo.png
 paper_alt: Dynamo Paper Image
 rank: 1

@@ -1,6 +1,7 @@
 ---
 layout: paper
-title: selected work
+title: "Read our work"
+type: selected work
 paper_title: Spatiotemporally resolved transcriptomics reveals the subcellular RNA kinetic landscape
 author_list: Jingyi Ren*, Haowen Zhou*, Hu Zeng*, Connie Kangni Wang, Jiahao Huang, Xiaojie Qiu, Xin Sui, Qiang Li, 
     Xunwei Wu, Zuwan Lin, Jennifer A Lo, Kamal Maher, Yichun He, Xin Tang, Judson Lam, Hongyu Chen, Brian Li, 
@@ -8,6 +9,7 @@ author_list: Jingyi Ren*, Haowen Zhou*, Hu Zeng*, Connie Kangni Wang, Jiahao Hua
 journal: Nature Methods
 doi: 10.1038/s41592-023-01829-8
 year: 2023
+pdf_url: /assets/PDFs/jingyi_tempomap.pdf
 image_url: /assets/images/papers/jingyi_tempomap.png
 paper_alt: jingyi_tempomap Paper Image
 rank: 10

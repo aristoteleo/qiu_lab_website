@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 1
-title: Xiaojie Qiu
+title: Meet the People
 name: "Xiaojie Qiu"
 position: "Principal Investigator"
 current: true
@@ -9,7 +9,7 @@ headshot: "xiaojie.jpg"
 google_scholar: "https://scholar.google.com/citations?user=XlMd8TAAAAAJ&hl=en"
 website: ""
 GitHub: "https://github.com/Xiaojieqiu"
-cv_url: "pdfs/team/xiaojie-cv.pdf"
+cv_url: "assets/PDFs/xiaojie-cv.pdf"
 email: "xiaojie@stanford.edu"
 bio: "I’m an Assistant Professor at the Department of Genetics, the BASE program, and the Department of Computer Science at Stanford. 
     I worked with Dr. Cole Trapnell at the University of Washington during my PhD to develop Monocle 2 and 3 for pseudotemporal trajectory analysis of scRNA-seq data. 
@@ -31,7 +31,7 @@ bio: "I’m an Assistant Professor at the Department of Genetics, the BASE progr
 <ul>
     {% assign sorted_array = site.papers | sort: "rank" %}
     {% for paper in sorted_array %}
-        {% if paper.title == "selected work" %}
+        {% if paper.type == "selected work" %}
             <li><a href="{{ paper.url }}">{{ paper.paper_title }}</a></li>
         {% endif %}
     {% endfor %}

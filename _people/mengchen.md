@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 6
-title: Mengchen Wang
+title: Meet the People
 name: "Mengchen Wang"
 position: "Visiting Undergraduate"
 current: true

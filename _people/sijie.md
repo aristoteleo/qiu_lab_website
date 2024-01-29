@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 13
-title: Sijie Chen
+title: Meet the People
 name: "Sijie Chen"
 position: "Post-doc"
 current: true

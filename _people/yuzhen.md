@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 5
-title: Yuzhen Mao
+title: Meet the People
 name: "Yuzhen Mao"
 position: "Visiting Master Student"
 current: true

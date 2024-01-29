@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 14
-title: Samuel King
+title: Meet the People
 name: "Samuel King"
 position: "Rotation student"
 current: true

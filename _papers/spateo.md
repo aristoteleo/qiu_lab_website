@@ -1,6 +1,7 @@
 ---
 layout: paper
-title: preprints
+title: "Read our work"
+type: preprints
 paper_title: "Spateo: multidimensional spatiotemporal modeling of single-cell spatial transcriptomics"
 author_list: Xiaojie Qiu*+, Daniel Y Zhu*, Jiajun Yao*, Zehua Jing*, Lulu Zuo*, Mingyue Wang, Kyung Hoi Joseph Min, 
     Hailin Pan, Shuai Wang, Sha Liao, Yiwei Lai, Shijie Hao, Yuancheng Ryan Lu, Matthew Hill, Jorge D Martin-Rufino, 
@@ -11,6 +12,7 @@ author_list: Xiaojie Qiu*+, Daniel Y Zhu*, Jiajun Yao*, Zehua Jing*, Lulu Zuo*, 
 journal: Biorxiv
 doi: 10.1101/2022.12.07.519417
 year: 2023
+pdf_url: /assets/PDFs/qiu_spateo_2023.pdf
 image_url: /assets/images/papers/spateo.png
 paper_alt: Spateo Paper Image
 rank: 2

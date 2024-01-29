@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 9
-title: QiaoLin Lu
+title: Meet the People
 name: "Qiaolin Lu"
 position: "Remote Computational Assistant"
 current: true

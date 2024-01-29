@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 2
-title: Oriane Rubio
+title: Meet the People
 name: "Oriane Rubio"
 position: "Research Project Manager"
 current: true

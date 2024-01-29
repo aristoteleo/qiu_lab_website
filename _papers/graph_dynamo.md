@@ -1,11 +1,13 @@
 ---
 layout: paper
-title: preprints
+title: "Read our work"
+type: preprints
 paper_title: "Graph-Dynamo: Learning stochastic cellular state transition dynamics from single cell data"
 author_list: Yan Zhang*, Xiaojie Qiu*, Jonathan S Weissman, Ivet Bahar, Jianhua Xing+.
 journal: bioRxiv
 doi: 10.1101/2023.09.24.559170
 year: 2023
+pdf_url: /assets/PDFs/graph_dynamo.pdf
 image_url: /assets/images/papers/graph_dynamo.png
 paper_alt: graph_dynamo Paper Image
 rank: 3

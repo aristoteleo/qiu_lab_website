@@ -1,7 +1,7 @@
 ---
 layout: people
 order: 12
-title: Cinlong Huang
+title: Meet the People
 name: "Cinlong Huang"
 position: "Research Assistant"
 current: true

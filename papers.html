@@ -30,6 +30,9 @@ title: "Read our work"
                             <div class="smallhead mb-1">
                                 <strong><a href="{{ paper.url }}" class="off">{{ paper.paper_title }}</a></strong>
                             </div>
+                            {% if paper.paper_subtitle %}
+                                <div class="smallhead mb-1" style="text-align: right; margin-right: 60px;">{{ paper.paper_subtitle }}</div>
+                            {% endif %}
                             <p class="note" style="text-align: justify;"> {{ paper.author_list }} {{ paper.year }}</p>
                             <p class="note"><i>{{ paper.journal }}</i></p>
                             {% if paper.rank == 1 %}
@@ -79,6 +82,9 @@ title: "Read our work"
                             <div class="smallhead mb-1">
                                 <strong><a href="{{ paper.url }}" class="off">{{ paper.paper_title }}</a></strong>
                             </div>
+                            {% if paper.paper_subtitle %}
+                                <div class="smallhead mb-1" style="text-align: right; margin-right: 60px;">{{ paper.paper_subtitle }}</div>
+                            {% endif %}
                             <p class="note" style="text-align: justify;"> {{ paper.author_list }} {{ paper.year }}</p>
                             <p class="note"><i>{{ paper.journal }}</i></p>
                         </div>
@@ -115,6 +121,9 @@ title: "Read our work"
                             <div class="smallhead mb-1">
                                 <strong><a href="{{ paper.url }}" class="off">{{ paper.paper_title }}</a></strong>
                             </div>
+                            {% if paper.paper_subtitle %}
+                                <div class="smallhead mb-1" style="text-align: right; margin-right: 60px;">{{ paper.paper_subtitle }}</div>
+                            {% endif %}
                             <p class="note" style="text-align: justify;"> {{ paper.author_list }} {{ paper.year }}</p>
                             <p class="note"><i>{{ paper.journal }}</i></p>
                         </div>

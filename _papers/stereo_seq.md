@@ -2,7 +2,8 @@
 layout: paper
 title: "Read our work"
 type: selected work
-paper_title: Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays published in Cell and selected as cover story
+paper_title: Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays
+paper_subtitle: -published in Cell and selected as cover story
 author_list: Ao Chen*, Sha Liao*, Mengnan Cheng*, Kailong Ma*, Liang Wu*, Yiwei Lai*, Xiaojie Qiu*, Jin Yang, 
     Jiangshan Xu, Shijie Hao, Xin Wang, Huifang Lu, Xi Chen, Xing Liu, Xin Huang, Zhao Li, Yan Hong, Yujia Jiang, 
     Jian Peng, Shuai Liu, Mengzhe Shen, Chuanyu Liu, Quanshui Li, Yue Yuan, Xiaoyu Wei, Huiwen Zheng, Weimin Feng, 

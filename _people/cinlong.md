@@ -6,5 +6,5 @@ name: "Cinlong Huang"
 position: "Research Assistant"
 current: true
 headshot: "placeholder-headshot.png"
-website: ""
+twitter: ""
 ---

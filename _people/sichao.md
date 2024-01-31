@@ -7,4 +7,5 @@ position: "Remote Software Engineer"
 current: true
 headshot: "sichao.jpg"
 website: ""
+twitter: ""
 ---

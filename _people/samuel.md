@@ -11,4 +11,5 @@ bio: "I’m a Bioengineering Ph.D. student rotating in the Qiu lab. My interests
     synthetic biology, machine learning, and omics approaches. I earned my B.Sc. Hon. in Biology at the University of British Columbia, where I performed research primarily in 
     the Yachie lab creating technologies to study mammalian morphogenesis and viral evolution. When I’m not in the lab, I greatly enjoy spending time exploring my surroundings, 
     riding my motorcycle, and working on graphic design projects."
+twitter: ""
 ---

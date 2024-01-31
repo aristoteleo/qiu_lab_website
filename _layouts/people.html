@@ -9,9 +9,9 @@ layout: "wrapper"
                 <div class="media">
                     <img class="pull-left pad-right media-object" width="160" src="{{ site.baseurl }}/assets/images/headshots/{% if page.headshot %}{{ page.headshot }}{% else %}placeholder-headshot.png{% endif %}">
                     <div class="media-body">
-                        <div class="bigtitle media-heading">
+                        <h2>
                             {{ page.name }}
-                        </div>
+                        </h2>
                         <p>
                             <div class="smallhead">
                                 {{ page.position }}
@@ -32,17 +32,6 @@ layout: "wrapper"
                     <div class="smallspacer"></div>
                     <i class="far fa-file"></i>
                     <a class="off" href="{{ site.baseurl }}/{{ page.cv_url }}">cv.pdf</a>
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
-                {% if page.twitter %}
-                <div class="smallhead">
-                    Twitter
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="fab fa-twitter"></i>
-                    <a class="off" href={{ page.twitter }}>{{ page.name }}</a>
                 </div>
                 <div class="bigspacer"></div>
                 {% endif %}
@@ -68,6 +57,17 @@ layout: "wrapper"
                 </div>
                 <div class="bigspacer"></div>
                 {% endif %}
+                {% if page.twitter %}
+                <div class="smallhead">
+                    Twitter
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fab fa-twitter"></i>
+                    <a class="off" href={{ page.twitter }}>{{ page.name }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
                 {% if page.email %}
                 <div class="smallhead">
                     Email
@@ -79,20 +79,9 @@ layout: "wrapper"
                 </div>
                 <div class="bigspacer"></div>
                 {% endif %}
-                {% if page.website %}
-                <div class="smallhead">
-                    Personal Website
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="fa fa-globe fa-fw"></i>
-                    <a class="off" href="{{ page.website }}">{{ page.name }}</a>
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
             </div>
             <div class="col-lg-8">
-                <div class="head">Bio</div>
+                <h3>Bio</h3>
                 <div class="justified-paragraph">
                   {{ page.bio }}
                 </div>

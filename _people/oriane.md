@@ -6,5 +6,5 @@ name: "Oriane Rubio"
 position: "Research Project Manager"
 current: true
 headshot: "oriane.jpeg"
-website: ""
+twitter: ""
 ---

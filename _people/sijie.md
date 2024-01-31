@@ -12,4 +12,5 @@ bio: "I'm an incoming postdoctoral researcher at the Qiu lab in Stanford. I rece
     state transitions and exploring how cells give rise to tissues. In particular, I am interested in developing analysis methods for spatiotemporal cell dynamics and building 
     self-organizing models that perceive internal molecular signals and external interactions, with applications in <i>in-silico</> modeling for mimicking and perturbing organogenesis. 
     Outside the lab, I enjoy cooking and aquascaping."
+twitter: ""
 ---

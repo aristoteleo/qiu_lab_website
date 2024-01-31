@@ -6,5 +6,5 @@ name: "Hadley Bickford"
 position: "Administrative Associate"
 current: true
 headshot: "hadley.png"
-website: ""
+twitter: ""
 ---

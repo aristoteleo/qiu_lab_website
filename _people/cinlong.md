@@ -5,6 +5,6 @@ title: Meet the People
 name: "Cinlong Huang"
 position: "Research Assistant"
 current: true
-headshot: "placeholder-headshot.png"
+headshot: "cinlong.jpeg"
 twitter: ""
 ---

@@ -15,13 +15,14 @@ title: "Meet the People"
         <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
         <!-- Checks if the person has a linked headshot picture, uses a generic default if not. -->
         <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
-        {% for person in site.data.people %} {% if person.current == true %}
+        {% assign sorted_array = site.people | sort: "order" %}
+        {% for person in sorted_array %} {% if person.current == true %}
         <div
           class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
         >
           <div class="row">
             <img
-              src="assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
+              src="{{ site.baseurl }}/assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
               alt="{{ person.name }}"
               class="img-fluid headshot"
             />
@@ -35,18 +36,17 @@ title: "Meet the People"
               {% if person.linkedin %}
               <a href="{{ person.linkedin }}" class="linkedin-icon">
                 <img
-                  src="assets/images/icons/linkedin.svg"
+                  src="{{ site.baseurl }}/assets/images/icons/linkedin.svg"
                   alt="LinkedIn logo"
                 />
               </a>
-              {% endif %} {% if person.website %}
-              <a href="{{ person.website }}" class="external-site-icon">
+              {% endif %}
+              <a href="{{ person.url }}" class="external-site-icon">
                 <img
-                  src="assets/images/icons/external.svg"
+                  src="{{ site.baseurl }}/assets/images/icons/external.svg"
                   alt="External website logo"
                 />
               </a>
-              {% endif %}
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ title: "Meet the People"
     <div class="container d-flex align-items-center flex-column mb-2">
       <h1>Lab Alumni</h1>
       <div class="container d-flex flex-column align-items-center">
-        {% for person in site.data.people %} {% if person.current == false %}
+        {% for person in site.people %} {% if person.current == false %}
         <h2>{{ person.name }}</h2>
         {% endif %} {% endfor %}
       </div>

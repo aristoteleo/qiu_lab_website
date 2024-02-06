@@ -1,0 +1,68 @@
+---
+layout: "wrapper"
+---
+
+<div class="bigspacer"></div>
+
+<div class="row">
+    <div class="col-lg-8 paperbox offset-lg-2 paperbox">
+        <div class="media d-flex">
+
+            <img class="pad-right media-object" src="{{ page.image_url }}" style="max-width: 160px; max-height: 200px;">
+
+            <div class="media-body">
+                <h3>{{ page.paper_title }}</h3>
+                {% if page.paper_subtitle %}
+                <div class="smallhead" style="text-align: right; margin-right: 60px;">{{ page.paper_subtitle }}</div>
+                {% endif %}
+                <p></p>
+                <div class="smallsubhead">{{ page.author_list }}</div>
+                <div class="bigspacer"></div>
+                <div class="smallsubhead">
+                    {{ page.journal }}
+                    ({{ page.year }})
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+    <div class="col-lg-2 offset-lg-2">
+        <div class="bigspacer"></div>
+        <div class="glyphbox note">
+            <div class="bigspacer"></div>
+            <div class="smallhead">
+                PDF
+            </div>
+            <div class="pad-left note">
+                <i class="far fa-file"></i>
+                <a class="off" href="{{ site.baseurl }}{{ page.pdf_url }}">
+                    {{ page.pdf_url | split: '/' | last | split: '.' | first }}.pdf
+                </a>
+            </div>
+
+            <div class="bigspacer"></div>
+            <div class="smallhead">
+                DOI
+            </div>
+            <div class="pad-left note" style="display: flex; align-items: center;">
+                <p></p>
+                <i class="fas fa-link"></i>
+                <a class="off" href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>
+            </div>
+            <div class="bigspacer"></div>
+
+            </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="post">
+            <h3 id="abstract">Abstract</h3>
+        </div>
+        <div class="justified-paragraph">
+            {{ content }}
+        </div>
+    </div>
+</div>

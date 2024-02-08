@@ -23,6 +23,12 @@
   headshot: "hadley.png"
   website: ""
 
+- name: "Eric Water"
+  position: "Lab Manager"
+  current: true
+  headshot: "eric.jpeg"
+  website: ""
+
 - name: "Michelle Ameri"
   position: "Operations Manager"
   current: true

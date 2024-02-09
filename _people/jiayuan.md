@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 7
+order: 8
 title: Meet the People
 name: "Jiayuan Ding"
 position: "Visiting PhD Student"

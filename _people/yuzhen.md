@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 5
+order: 6
 title: Meet the People
 name: "Yuzhen Mao"
 position: "Visiting Master Student"

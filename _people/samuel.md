@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 14
+order: 15
 title: Meet the People
 name: "Samuel King"
 position: "Rotation student"

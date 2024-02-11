@@ -7,7 +7,7 @@ author_list: Jigang Wang, Xiaojie Qiu*, Yuhua Li, Youping Deng, Tieliu Shi+.
 journal: BMC Systems Biology
 doi: 10.1186/1752-0509-5-S3-S8
 year: 2011
-pdf_url: assets/PDFs/jigang_BCM_systems_biology_2011.pdf
+pdf_url: /assets/PDFs/jigang_BCM_systems_biology_2011.pdf
 image_url: /assets/images/papers/jigang_BCM_systems_biology_2011.png
 paper_alt: Stereo-seq Paper Image
 rank: 9

@@ -20,19 +20,11 @@ twitter: ""
 ---
 
 <div class="bigspacer"></div>
-<h3>Research</h3>
-<div class="post">
-    <p>Dr. Xiaojie Qiu is currently an assistant professor at the Department of Genetics, the BASE program, and the Department of Computer Science at Stanford. Xiaojie’s Ph.D. work at University of Washington with Dr. Cole Trapnell made critical contributions to the field of single-cell genomics, exemplified by the development of Monocle ⅔ (monocle 2 & monocle 3) for pseudotemporal trajectory analysis of scRNA-seq data. In his post-doc at Whitehead Institute and MIT with Dr. Jonathan Weissman, Xiaojie developed Dynamo (aristoteleo/dynamo-release) to reconstruct RNA velocity vector field and make reprogramming and in silico perturbation predictions with metabolic labeling enabled single-cell RNA-seq. Recently he also leaded the development of a powerful toolkit, Spateo (aristoteleo/spateo-release), for advanced multi-dimensional spatiotemporal modeling of high definition spatial transcriptomics. </p>
-    <p>The Qiu lab at Stanford started on Dec. 16, 2023. Xiaojie will continue leveraging his unique background in single-cell genomics, mathematical modeling, and machine learning to lead a research team that bridges the gap between the “big data” from single-cell and spatial genomics and quantitative/predictive modeling in order to address fundamental questions in mammalian cell fate transitions, especially those of heart evolution, development and disease. His research has been supported by the National Human Genome Research Institute, Chan Zuckerberg Institute, Impetus longevity grant, Arc institute and others.</p>
-</div>
-<div class="bigspacer"></div>
 <h3>Papers</h3>
 <div class="spacer"></div>
 <ul>
     {% assign sorted_array = site.papers | sort: "rank" %}
     {% for paper in sorted_array %}
-        {% if paper.type == "selected work" %}
-            <li><a href="{{ paper.url }}">{{ paper.paper_title }}</a></li>
-        {% endif %}
+        <li><a href="{{ paper.url }}">{{ paper.paper_title }}</a></li>
     {% endfor %}
 </ul>

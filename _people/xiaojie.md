@@ -16,7 +16,7 @@ bio: "I’m an Assistant Professor at the Department of Genetics, the BASE progr
     to reconstruct RNA velocity vector field and make reprogramming and in silico perturbation predictions with metabolic labeling enabled single-cell RNA-seq. I recently also
     lead the development of <a href='https://github.com/aristoteleo/spateo-release'>Spateo</a>, for advanced spatiotemporal modeling of single cells. My lab is currently focused 
     mostly on predictive modeling of single cells through a uniuqe synthesis of genomics and machine learning. Outside the lab, I like going to the gym, run and read all kinds of books."
-twitter: ""
+twitter: "https://twitter.com/Xiaojie_Qiu"
 ---
 
 <div class="bigspacer"></div>

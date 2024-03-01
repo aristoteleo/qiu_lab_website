@@ -8,7 +8,7 @@ current: true
 headshot: "xiaojie.jpg"
 google_scholar: "https://scholar.google.com/citations?user=XlMd8TAAAAAJ&hl=en"
 GitHub: "https://github.com/Xiaojieqiu"
-cv_url: "assets/PDFs/xiaojie-cv.pdf"
+cv_url: "assets/PDFs/Qiu_cv_latest.pdf"
 email: "xiaojie@stanford.edu"
 bio: "I’m an Assistant Professor at the Department of Genetics, the BASE program, and the Department of Computer Science at Stanford. 
     I worked with Dr. Cole Trapnell at the University of Washington during my PhD to develop Monocle 2 and 3 for pseudotemporal trajectory analysis of scRNA-seq data. 

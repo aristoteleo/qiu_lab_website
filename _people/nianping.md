@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 18
+order: 14
 title: Meet the People
 name: "Nianping Liu"
 position: "Incoming Postdoc"

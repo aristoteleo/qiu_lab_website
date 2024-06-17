@@ -1,10 +1,10 @@
 ---
 layout: people
-order: 15
+order: 2
 title: Meet the People
 name: "Samuel King"
 position: "Rotation student"
-current: true
+current: false
 headshot: "samuel.jpg"
 google_scholar: "https://scholar.google.com/citations?user=QHe2kFMAAAAJ&hl=en"
 bio: "I’m a Bioengineering Ph.D. student rotating in the Qiu lab. My interests are in deciphering the genetic and protein language rules of developmental programs using 

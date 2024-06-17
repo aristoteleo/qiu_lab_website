@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 16
+order: 13
 title: Meet the People
 name: "Stephen Zhang"
 position: "Visiting PhD Student"

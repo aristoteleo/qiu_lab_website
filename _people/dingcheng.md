@@ -3,7 +3,7 @@ layout: people
 order: 16
 title: Meet the People
 name: "Dingcheng Yi"
-position: "Visting PhD Student"
+position: "Visting Undergraduate Student"
 current: true
 headshot: "dingcheng.jpg"
 website: "https://wenzhuotang.github.io/"

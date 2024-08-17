@@ -3,7 +3,7 @@ layout: people
 order: 14
 title: Meet the People
 name: "Nianping Liu"
-position: "Incoming Postdoc"
+position: "Postdoc"
 current: true
 headshot: "nianping.png"
 google_scholar: "https://scholar.google.com/citations?user=8mNxQswAAAAJ"

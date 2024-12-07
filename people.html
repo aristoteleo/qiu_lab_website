@@ -63,6 +63,7 @@ title: "Meet the People"
       <div class="container d-flex flex-column align-items-center">
         {% for person in site.people %} {% if person.current == false %}
         <h2>{{ person.name }}</h2>
+            <span class="lab-position"> {{ person.position }}</span>
         {% endif %} {% endfor %}
       </div>
     </div>

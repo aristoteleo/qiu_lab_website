@@ -8,7 +8,7 @@ journal: Cell
 doi: https://doi.org/10.1016/j.cell.2024.10.011
 year: 2024
 pdf_url: /assets/PDFs/Spateo.pdf
-image_url: /assets/images/papers/spateo.png
+image_url: /assets/images/papers/Spateo.png
 paper_alt: Spateo Paper Image
 rank: 0
 ---

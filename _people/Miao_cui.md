@@ -6,7 +6,7 @@ name: "Miao Cui"
 position: "Staff scientist"
 current: True
 google_scholar: "https://scholar.google.com/citations?hl=en&user=_ItDjB0AAAAJ"
-Twitter: "https://x.com/miao_cui0330"
+twitter: "https://x.com/miao_cui0330"
 headshot: "miao_cui.jpg"
 bio: "I am a research scientist in Dr. Xiaojie Qiu's lab, specializing in developing 
 novel methodologies for spatial and single-cell multi-omics and applying 

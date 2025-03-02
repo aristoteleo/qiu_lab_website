@@ -35,7 +35,7 @@ title: "Read our work"
                             {% endif %}
                             <p class="note" style="text-align: justify;"> {{ paper.author_list }} {{ paper.year }}</p>
                             <p class="note"><i>{{ paper.journal }}</i></p>
-                            {% if paper.rank == 1 %}
+                            {% if paper.rank == 0 %}
                                 <p class="note"><sup>*</sup>Equal Contribution, <sup>+</sup>Corresponding Author</p>
                             {% endif %}
                         </div>

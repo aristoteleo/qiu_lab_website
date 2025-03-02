@@ -3,6 +3,7 @@ layout: paper
 title: "Read our work"
 type: selected work
 paper_title: "Spatiotemporal modeling of molecular holograms"
+paper_subtitle: -published in Cell and also highlighted in [*Nature*](https://www.nature.com/articles/d41586-024-03615-8) or [*Nature Methods*](https://www.nature.com/articles/s41592-024-02587-x.pdf)
 author_list: Xiaojie Qiu*+, Daniel Y Zhu*, Yifan Lu*, Jiajun Yao*, Zehua Jing*, Kyung Hoi Min*, Mengnan Cheng*, Hailin Pan, Lulu Zuo, Samuel King, Qi Fang, Huiwen Zheng, Mingyue Wang, Shuai Wang, Qingquan Zhang, Sichao Yu, Sha Liao, Chao Liu, Xinchao Wu, Yiwei Lai, Shijie Hao, Zhewei Zhang, Liang Wu, Yong Zhang, Mei Li, Zhencheng Tu, Jinpei Lin, Zhuoxuan Yang, Yuxiang Li, Ying Gu, David Ellison, Yuancheng Ryan Lu, Qinan Hu, Yuhui Hu, Ao Chen, Longqi Liu, Jonathan S Weissman, Jiayi Ma+, Xun Xu+, Shiping Liu+, Yinqi Bai+
 journal: Cell
 doi: https://doi.org/10.1016/j.cell.2024.10.011

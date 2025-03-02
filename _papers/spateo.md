@@ -6,7 +6,7 @@ paper_title: "Spatiotemporal modeling of molecular holograms"
 paper_subtitle: -published in Cell and also highlighted in Nature and Nature Methods
 author_list: Xiaojie Qiu*+, Daniel Y Zhu*, Yifan Lu*, Jiajun Yao*, Zehua Jing*, Kyung Hoi Min*, Mengnan Cheng*, Hailin Pan, Lulu Zuo, Samuel King, Qi Fang, Huiwen Zheng, Mingyue Wang, Shuai Wang, Qingquan Zhang, Sichao Yu, Sha Liao, Chao Liu, Xinchao Wu, Yiwei Lai, Shijie Hao, Zhewei Zhang, Liang Wu, Yong Zhang, Mei Li, Zhencheng Tu, Jinpei Lin, Zhuoxuan Yang, Yuxiang Li, Ying Gu, David Ellison, Yuancheng Ryan Lu, Qinan Hu, Yuhui Hu, Ao Chen, Longqi Liu, Jonathan S Weissman, Jiayi Ma+, Xun Xu+, Shiping Liu+, Yinqi Bai+
 journal: Cell
-doi: https://doi.org/10.1016/j.cell.2024.10.011
+doi: doi.org/10.1016/j.cell.2024.10.011
 year: 2024
 pdf_url: /assets/PDFs/Spateo.pdf
 image_url: /assets/images/papers/Spateo_2024_cell.png

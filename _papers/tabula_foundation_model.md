@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Read our work"
-type: previous involved work
+type: preprints
 paper_title: Toward a privacy-preserving predictive foundation model of single-cell transcriptomics with federated learning and tabular modeling
 author_list: Jiayuan Ding, Jianhui Lin, Shiyu Jiang, Yixin Wang, Ziyang Miao, Zhaoyu Fang, Jiliang Tang+, Min Li+, Xiaojie Qiu+.
 journal: Biorxiv

@@ -1,8 +1,8 @@
 ---
 layout: people
-order: 12
+order: 6
 title: Meet the People
-name: "Sijie Chen"
+name: "Sijie Chen, PhD"
 position: "Post-doc"
 current: true
 headshot: "sijie.png"

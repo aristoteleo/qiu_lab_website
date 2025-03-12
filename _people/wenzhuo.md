@@ -1,9 +1,9 @@
 ---
 layout: people
-order: 15
+order: 16
 title: Meet the People
 name: "Wenzhuo Tang"
-position: "Visting PhD Student"
+position: "Visting Researcher"
 current: true
 headshot: "wenzhuo.jpeg"
 website: "https://wenzhuotang.github.io/"

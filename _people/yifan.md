@@ -1,9 +1,9 @@
 ---
 layout: people
-order: 10
+order: 15
 title: Meet the People
 name: "Yifan Lu"
-position: "Visiting PhD Student"
+position: "Visiting Researcher"
 current: true
 headshot: "yifan.jpeg"
 bio: "I am currently an incoming visiting Ph.D. student at Wuhan University, specializing in Information and Communication Engineering under the guidance of Prof. Jiayi Ma. My earlier research 

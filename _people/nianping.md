@@ -1,8 +1,8 @@
 ---
 layout: people
-order: 14
+order: 7
 title: Meet the People
-name: "Nianping Liu"
+name: "Nianping Liu, PhD"
 position: "Postdoc"
 current: true
 headshot: "nianping.png"

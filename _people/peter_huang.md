@@ -1,9 +1,9 @@
 ---
 layout: people
-order: 17
+order: 12
 title: Meet the People
 name: "Peter Huang"
-position: "Rotation Student"
+position: "Rotation Student (CS)"
 current: true
 headshot: "peter.png"
 Hompepage: "https://peterpaohuang.github.io/"

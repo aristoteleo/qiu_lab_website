@@ -1,9 +1,9 @@
 ---
 layout: people
-order: 18
+order: 13
 title: Meet the People
 name: "Yuexuan Yang"
-position: "Rotation Student"
+position: "Rotation Student (BioE)"
 current: true
 headshot: "yuexuan.jpeg"
 google_scholar: "https://scholar.google.com/citations?user=SqQuRlMAAAAJ&hl=zh-CN"

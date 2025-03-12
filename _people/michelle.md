@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 5
+order: 4
 title: Meet the People
 name: "Michelle Ameri"
 position: "Operations Manager"

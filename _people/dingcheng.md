@@ -4,7 +4,7 @@ order: 16
 title: Meet the People
 name: "Dingcheng Yi"
 position: "Visting Undergraduate Student"
-current: true
+current: false
 headshot: "dingcheng.jpg"
 website: "https://wenzhuotang.github.io/"
 google_scholar: "https://scholar.google.com/citations?user=8db4bFgAAAAJ&hl=en&authuser=1"

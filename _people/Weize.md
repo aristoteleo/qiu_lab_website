@@ -1,8 +1,8 @@
 ---
 layout: people
-order: 18
+order: 8
 title: Meet the People
-name: "Weize Xu"
+name: "Weize Xu, PhD"
 position: "Post-doc"
 current: true
 headshot: "weize_xu.jpg"

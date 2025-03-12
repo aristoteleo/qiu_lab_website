@@ -2,7 +2,7 @@
 layout: people
 order: 1
 title: Meet the People
-name: "Xiaojie Qiu"
+name: "Xiaojie Qiu, PhD"
 position: "Principal Investigator"
 current: true
 headshot: "xiaojie.jpg"

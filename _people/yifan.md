@@ -12,3 +12,15 @@ bio: "I am currently an incoming visiting Ph.D. student at Wuhan University, spe
     and exploring new places through travel."
 twitter: ""
 ---
+
+<div class="bigspacer"></div>
+<h3>Papers</h3>
+<div class="spacer"></div>
+<ul>
+    {% assign sorted_array = site.papers | sort: "rank" %}
+    {% for paper in sorted_array %}
+        {% if paper.author_list contains "Yifan Lu" %}
+            <li><a href="{{ paper.url }}">{{ paper.paper_title }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>

@@ -1,9 +1,9 @@
 ---
 layout: people
-order: 8
+order: 17
 title: Meet the People
 name: "Jiayuan Ding"
-position: "Visiting PhD Student"
+position: "Visiting Researcher"
 current: true
 headshot: "jiayuan.png"
 google_scholar: "https://scholar.google.com/citations?user=7lwkXGEAAAAJ&hl=en"

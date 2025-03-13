@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 13
+order: 12
 title: Meet the People
 name: "Yuexuan Yang"
 position: "Rotation Student (BioE)"

@@ -2,7 +2,7 @@
 layout: people
 order: 13
 title: Meet the People
-name: "Annabelle Shiling"
+name: "Annabelle Shilling"
 position: "Stanford undergrad (BioE and Materials Science)"
 current: true
 headshot: "annabelle.JPG"

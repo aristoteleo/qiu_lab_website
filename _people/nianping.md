@@ -3,7 +3,7 @@ layout: people
 order: 7
 title: Meet the People
 name: "Nianping Liu, PhD"
-position: "Postdoc"
+position: "Post-doc"
 current: true
 headshot: "nianping.png"
 google_scholar: "https://scholar.google.com/citations?user=8mNxQswAAAAJ"

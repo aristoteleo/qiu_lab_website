@@ -12,15 +12,3 @@ website: "https://sites.google.com/view/naoki-konno/"
 bio: "Hi, I'm an incoming postdoc at Dr. Xiaojie Qiu's lab at Stanford. I aim to decipher evolutionary patterns and rules in developmental processes of multicellular organisms by leveraging single-cell and spatial omics technologies. I received my PhD from the University of Tokyo, where I studied predictability in microbial genome evolution using phylogenetics, machine learning, and wet-lab approaches. In my free time, I enjoy walking outdoors and observing birds and other wildlife in their natural habitats."
 twitter: "https://x.com/utnk1"
 ---
-
-<div class="bigspacer"></div>
-<h3>Papers</h3>
-<div class="spacer"></div>
-<ul>
-    {% assign sorted_array = site.papers | sort: "rank" %}
-    {% for paper in sorted_array %}
-        {% if paper.author_list contains "Naoki Konno" %}
-            <li><a href="{{ paper.url }}">{{ paper.paper_title }}</a></li>
-        {% endif %}
-    {% endfor %}
-</ul>

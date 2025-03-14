@@ -3,7 +3,7 @@ layout: people
 order: 9
 title: Meet the People
 name: "Naoki Konno"
-position: "Post-doc, PhD"
+position: "Incoming Post-doc, PhD"
 current: true
 headshot: "naoki.JPG"
 google_scholar: "https://scholar.google.co.jp/citations?user=TY6BaUEAAAAJ&hl=en"

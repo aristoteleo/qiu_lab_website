@@ -46,6 +46,17 @@ layout: "wrapper"
                 </div>
                 <div class="bigspacer"></div>
                 {% endif %}
+                {% if page.website %}
+                <div class="smallhead">
+                    Website
+                </div>
+                <div class="pad-left note">
+                    <div class="smallspacer"></div>
+                    <i class="fas fa-globe"></i>
+                    <a class="off" href="{{ page.website }}">{{ page.name }}</a>
+                </div>
+                <div class="bigspacer"></div>
+                {% endif %}
                 {% if page.google_scholar %}
                 <div class="smallhead">
                     Google Scholar

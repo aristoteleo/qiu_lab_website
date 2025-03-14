@@ -14,17 +14,6 @@ twitter: "https://x.com/utnk1"
 ---
 
 <div class="bigspacer"></div>
-{% if page.website != "" %}
-<div class="row">
-    <div class="col-md-3">
-        <h3>Website</h3>
-    </div>
-    <div class="col-md-9">
-        <p><a href="{{ page.website }}">{{ page.website }}</a></p>
-    </div>
-</div>
-<div class="bigspacer"></div>
-{% endif %}
 <h3>Papers</h3>
 <div class="spacer"></div>
 <ul>

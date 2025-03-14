@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 15
+order: 16
 title: Meet the People
 name: "Yifan Lu"
 position: "Visiting Researcher"

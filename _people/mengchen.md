@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 10
+order: 11
 title: Meet the People
 name: "Mengchen Wang"
 position: "Incoming PhD Student (CS)"

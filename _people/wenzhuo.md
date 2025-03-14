@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 16
+order: 17
 title: Meet the People
 name: "Wenzhuo Tang"
 position: "Visting Researcher"

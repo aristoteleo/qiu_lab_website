@@ -1,6 +1,6 @@
 ---
 layout: people
-order: 18
+order: 20
 title: Meet the People
 name: "Jiayuan Ding"
 position: "Visiting Researcher"

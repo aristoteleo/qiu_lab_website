@@ -1,0 +1,62 @@
+- name: "Xiaojie Qiu, PhD"
+  order: 1
+- name: "Oriane Rubio, PhD"
+  order: 2
+- name: "Nicole Navarro, PhD"
+  order: 3
+- name: "Hadley Bickford"
+  order: 4
+- name: "Michelle Ameri"
+  order: 5
+- name: "Miao Cui, PhD"
+  order: 6
+- name: "Sijie Chen, PhD"
+  order: 7
+- name: "Nianping Liu, PhD"
+  order: 8
+- name: "Weize Xu, PhD"
+  order: 9
+- name: "Naoki Konno"
+  order: 10
+- name: "Peter Huang"
+  order: 11
+# - name: "Christopher Zou"
+#   order: 12
+# - name: "Alex John Belov"
+#   order: 13
+- name: "Mengchen Wang"
+  order: 12
+- name: "Annabelle Shilling"
+  order: 13
+- name: "Cinlong Huang"
+  order: 14
+- name: "Yifan Lu"
+  order: 15
+- name: "Wenzhuo Tang"
+  order: 16
+- name: "Zehua Zeng"
+  order: 17
+- name: "Jiayuan Ding"
+  order: 18
+- name: "Lei Li"
+  order: 19
+
+
+- name: "Valentina Giunchiglia"
+  order: 20
+- name: "Yuzhen Mao"
+  order: 21
+- name: "Yuexuan Yang"
+  order: 22
+- name: "Dingcheng Yi"
+  order: 23
+- name: "Eric Waters"
+  order: 24
+- name: "Samuel King"
+  order: 25
+- name: "Sichao Yu"
+  order: 26
+- name: "Stephen Zhang"
+  order: 27
+- name: "Yimeng Qiao"
+  order: 28

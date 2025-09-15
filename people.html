@@ -15,9 +15,8 @@ title: "Meet the People"
         <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
         <!-- Checks if the person has a linked headshot picture, uses a generic default if not. -->
         <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
-        {% assign sorted_people = site.people %}
         {% for order_item in site.data.people_order %}
-          {% for person in sorted_people %}
+          {% for person in site.people %}
             {% if person.name == order_item.name and person.current == true %}
         <div
           class="polaroid d-flex flex-column align-items-center justify-content-center shadow"

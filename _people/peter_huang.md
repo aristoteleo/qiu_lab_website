@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 12
 title: Meet the People
 name: "Peter Huang"
 position: "Rotation Student (CS)"

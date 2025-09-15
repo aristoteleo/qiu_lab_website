@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 20
 title: Meet the People
 name: "Zehua Zeng"
 position: "Visiting Researcher"

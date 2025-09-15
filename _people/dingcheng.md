@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 16
 title: Meet the People
 name: "Dingcheng Yi"
 position: "Visting Undergraduate Student"

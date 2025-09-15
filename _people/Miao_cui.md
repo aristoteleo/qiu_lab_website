@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 5
 title: Meet the People
 name: "Miao Cui, PhD"
 position: "Staff scientist"

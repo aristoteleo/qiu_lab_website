@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 15
 title: Meet the People
 name: "Cinlong Huang"
 position: "Research Assistant"

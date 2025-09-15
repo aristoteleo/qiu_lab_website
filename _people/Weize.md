@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 8
 title: Meet the People
 name: "Weize Xu, PhD"
 position: "Post-doc"

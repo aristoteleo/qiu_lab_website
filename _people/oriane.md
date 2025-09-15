@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 2
 title: Meet the People
 name: "Oriane Rubio, PhD"
 position: "Research Project Manager"

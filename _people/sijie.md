@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 6
 title: Meet the People
 name: "Sijie Chen, PhD"
 position: "Post-doc"

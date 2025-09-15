@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 4
 title: Meet the People
 name: "Eric Waters"
 position: "Lab manager"

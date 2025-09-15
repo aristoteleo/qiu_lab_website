@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 7
 title: Meet the People
 name: "Nianping Liu, PhD"
 position: "Post-doc"

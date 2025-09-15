@@ -1,6 +1,5 @@
 ---
 layout: people
-order: 22
 title: Meet the People
 name: "Lei Li"
 position: "Remote Scientist"

@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Peter Huang"
-position: "PhD Student (CS)"
+position: "PhD Student (Computer Science)"
 current: true
 headshot: "peter.png"
 Hompepage: "https://peterpaohuang.github.io/"

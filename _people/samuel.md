@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Samuel King"
-position: "Rotation student"
+position: "BioE (Brian Hie lab)"
 current: false
 headshot: "samuel.jpg"
 google_scholar: "https://scholar.google.com/citations?user=QHe2kFMAAAAJ&hl=en"

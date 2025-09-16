@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Yuexuan Yang"
-position: "Rotation Student (BioE)"
+position: "BioE (Stanley Qiu lab))"
 current: false
 headshot: "yuexuan.jpeg"
 google_scholar: "https://scholar.google.com/citations?user=SqQuRlMAAAAJ&hl=zh-CN"

@@ -8,47 +8,53 @@ title: "Meet the People"
   <section class="current-members py-4">
     <div class="container d-flex align-items-center flex-column">
       <h1>Current Members</h1>
-      <div
-        class="other-members d-flex justify-content-center flex-wrap mt-5 mb-3"
-      >
-        <!-- Liquid 'for' loop iterating thru the 'people' data file and creating a similar layout for each person marked as a current member. -->
-        <!-- Similar layout as before, but the data is dynamically inserted using Liquid tags. -->
-        <!-- Checks if the person has a linked headshot picture, uses a generic default if not. -->
-        <!-- Also checks if the person has a LinkedIn profile or personal website, and includes the icons if they do. -->
+      <div class="current-members-grid d-flex justify-content-center flex-wrap mt-4 mb-3">
         {% for order_item in site.data.people_order %}
           {% for person in site.people %}
             {% if person.name == order_item.name and person.current == true %}
-        <div
-          class="polaroid d-flex flex-column align-items-center justify-content-center shadow"
-        >
-          <div class="row">
+        <div class="current-member-card d-flex flex-column align-items-center justify-content-center shadow">
+          <div class="current-member-avatar">
             <img
               src="{{ site.baseurl }}/assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
               alt="{{ person.name }}"
-              class="img-fluid headshot"
+              class="img-fluid current-member-headshot"
             />
           </div>
-          <div class="row">
-            <div class="col-8 polaroid-text">
-              <h2>{{ person.name }}</h2>
-              <span class="lab-position"> {{ person.position }}</span>
-            </div>
-            <div class="col-4 polaroid-icons d-flex justify-content-end">
+          <div class="current-member-info">
+            <h3 class="current-member-name">{{ person.name }}</h3>
+            <span class="current-member-position">{{ person.position }}</span>
+            {% if person.linkedin or person.google_scholar or person.GitHub or person.website or person.twitter %}
+            <div class="current-member-links">
               {% if person.linkedin %}
-              <a href="{{ person.linkedin }}" class="linkedin-icon">
-                <img
-                  src="{{ site.baseurl }}/assets/images/icons/linkedin.svg"
-                  alt="LinkedIn logo"
-                />
+              <a href="{{ person.linkedin }}" class="current-member-link" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
               </a>
               {% endif %}
-              <a href="{{ person.url }}" class="external-site-icon">
-                <img
-                  src="{{ site.baseurl }}/assets/images/icons/external.svg"
-                  alt="External website logo"
-                />
+              {% if person.google_scholar %}
+              <a href="{{ person.google_scholar }}" class="current-member-link" title="Google Scholar">
+                <i class="fa fa-book"></i>
+              </a>
+              {% endif %}
+              {% if person.GitHub %}
+              <a href="{{ person.GitHub }}" class="current-member-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              {% endif %}
+              {% if person.website %}
+              <a href="{{ person.website }}" class="current-member-link" title="Website">
+                <i class="fas fa-globe"></i>
+              </a>
+              {% endif %}
+              {% if person.twitter %}
+              <a href="{{ person.twitter }}" class="current-member-link" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              {% endif %}
+              <a href="{{ person.url }}" class="current-member-link" title="Profile">
+                <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
+            {% endif %}
           </div>
         </div>
             {% endif %}

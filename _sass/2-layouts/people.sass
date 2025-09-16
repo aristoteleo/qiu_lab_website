@@ -11,39 +11,77 @@
       background-color: $white
 
   .current-members
+    .current-members-grid
+      gap: 1.5rem
+      max-width: 900px
 
-    .polaroid
+    .current-member-card
       background: $white
-      padding: 1rem
-      width: 300px
-      min-width: 300px
-      max-width: 300px
+      padding: 1.5rem
+      border-radius: 12px
+      width: 280px
+      min-height: 320px
+      transition: transform 0.3s ease, box-shadow 0.3s ease
+      border: 1px solid #e9ecef
 
-      .row
-        width: 100%
-        padding: 0
+      &:hover
+        transform: translateY(-5px)
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15)
 
-        .headshot
-          max-width: 350px
-          padding: 0 0 1rem 0
-          width: 100%
-          height: 200px
-          object-fit: cover
+    .current-member-avatar
+      margin-bottom: 1rem
 
-        .polaroid-text
-          padding-left: 0
-          h2
-            font-size: 1rem
-            color: $brown
-            margin-bottom: 0
-        .polaroid-icons
-          padding-right: 0
-          a img
-            height: 24px
-          .external-site-icon
-            margin-left: 0.75em
-    .other-members .polaroid
-      margin: 0.5rem
+    .current-member-headshot
+      width: 120px
+      height: 120px
+      border-radius: 50%
+      object-fit: cover
+      border: 3px solid #f8f9fa
+
+    .current-member-info
+      text-align: center
+      flex-grow: 1
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+    .current-member-name
+      font-size: 1.1rem
+      color: $brown
+      margin-bottom: 0.5rem
+      font-weight: 600
+
+    .current-member-position
+      font-size: 0.9rem
+      color: #6c757d
+      margin-bottom: 1rem
+      font-style: italic
+
+    .current-member-links
+      display: flex
+      justify-content: center
+      gap: 0.75rem
+      margin-top: auto
+
+    .current-member-link
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      width: 32px
+      height: 32px
+      border-radius: 50%
+      background-color: #f8f9fa
+      color: #6c757d
+      text-decoration: none
+      transition: all 0.3s ease
+
+      &:hover
+        background-color: $red
+        color: $white
+        transform: scale(1.1)
+
+      i
+        font-size: 0.9rem
 
   .alumni
     .alumni-grid

@@ -16,7 +16,7 @@
   order: 8
 - name: "Weize Xu, PhD"
   order: 9
-- name: "Naoki Konno"
+- name: "Naoki Konno, PhD"
   order: 10
 - name: "Peter Huang"
   order: 11
@@ -44,19 +44,23 @@
 
 - name: "Valentina Giunchiglia"
   order: 20
-- name: "Yuzhen Mao"
+- name: "Chen Li"
   order: 21
-- name: "Yuexuan Yang"
+- name: "Qiangwei Peng"
   order: 22
-- name: "Dingcheng Yi"
+- name: "Yuzhen Mao"
   order: 23
-- name: "Eric Waters"
+- name: "Yuexuan Yang"
   order: 24
-- name: "Samuel King"
+- name: "Dingcheng Yi"
   order: 25
-- name: "Sichao Yu"
+- name: "Eric Waters"
   order: 26
-- name: "Stephen Zhang"
+- name: "Samuel King"
   order: 27
-- name: "Yimeng Qiao"
+- name: "Sichao Yu"
   order: 28
+- name: "Stephen Zhang"
+  order: 29
+- name: "Yimeng Qiao"
+  order: 30

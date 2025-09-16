@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Samuel King"
-position: "BioE (Brian Hie lab)"
+position: "BioE (rotation)"
 current: false
 headshot: "samuel.jpg"
 google_scholar: "https://scholar.google.com/citations?user=QHe2kFMAAAAJ&hl=en"
@@ -11,4 +11,7 @@ bio: "I’m a Bioengineering Ph.D. student rotating in the Qiu lab. My interests
     the Yachie lab creating technologies to study mammalian morphogenesis and viral evolution. When I’m not in the lab, I greatly enjoy spending time exploring my surroundings, 
     riding my motorcycle, and working on graphic design projects."
 twitter: ""
+projects: 3D spatial transcriptomics modeling
+papers: Spateo (published in Cell)
+current_role: PhD at Brian Hie lab
 ---

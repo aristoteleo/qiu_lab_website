@@ -11,38 +11,62 @@
       background-color: $white
 
   .current-members
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)
+    border-radius: 20px
+    margin: 2rem 0
+    padding: 2rem 0
+
     .current-members-grid
-      gap: 1.5rem
-      max-width: 900px
+      gap: 2rem
+      max-width: 1000px
       display: flex
       flex-wrap: wrap
       justify-content: center
 
     .current-member-card
       background: $white
-      padding: 1.5rem
-      border-radius: 12px
-      width: 280px
-      min-height: 320px
-      max-width: 280px
-      flex: 0 0 280px
-      transition: transform 0.3s ease, box-shadow 0.3s ease
-      border: 1px solid #e9ecef
-      margin: 0.75rem
+      padding: 2rem
+      border-radius: 16px
+      width: 320px
+      min-height: 380px
+      max-width: 320px
+      flex: 0 0 320px
+      transition: all 0.4s ease
+      border: 2px solid $red
+      margin: 1rem
+      position: relative
+      overflow: hidden
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        height: 4px
+        background: linear-gradient(90deg, $red 0%, #ff6b6b 50%, $red 100%)
 
       &:hover
-        transform: translateY(-5px)
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15)
+        transform: translateY(-8px) scale(1.02)
+        box-shadow: 0 15px 35px rgba(172, 62, 59, 0.2)
+        border-color: #ff6b6b
 
     .current-member-avatar
-      margin-bottom: 1rem
+      margin-bottom: 1.5rem
+      position: relative
 
     .current-member-headshot
-      width: 120px
-      height: 120px
+      width: 140px
+      height: 140px
       border-radius: 50%
       object-fit: cover
-      border: 3px solid #f8f9fa
+      border: 4px solid $red
+      box-shadow: 0 8px 20px rgba(172, 62, 59, 0.3)
+      transition: all 0.3s ease
+
+      &:hover
+        border-color: #ff6b6b
+        box-shadow: 0 12px 25px rgba(172, 62, 59, 0.4)
 
     .current-member-info
       text-align: center
@@ -52,112 +76,167 @@
       justify-content: center
 
     .current-member-name
-      font-size: 1.1rem
+      font-size: 1.3rem
       color: $brown
       margin-bottom: 0.5rem
-      font-weight: 600
+      font-weight: 700
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
 
     .current-member-position
-      font-size: 0.9rem
-      color: #6c757d
-      margin-bottom: 1rem
+      font-size: 1rem
+      color: $red
+      margin-bottom: 1.5rem
       font-style: italic
+      font-weight: 500
 
     .current-member-links
       display: flex
       justify-content: center
-      gap: 0.75rem
+      gap: 1rem
       margin-top: auto
 
     .current-member-link
       display: inline-flex
       align-items: center
       justify-content: center
-      width: 32px
-      height: 32px
+      width: 36px
+      height: 36px
       border-radius: 50%
-      background-color: #f8f9fa
-      color: #6c757d
+      background: linear-gradient(135deg, $red 0%, #ff6b6b 100%)
+      color: $white
       text-decoration: none
       transition: all 0.3s ease
+      box-shadow: 0 4px 12px rgba(172, 62, 59, 0.3)
 
       &:hover
-        background-color: $red
-        color: $white
-        transform: scale(1.1)
+        background: linear-gradient(135deg, #ff6b6b 0%, $red 100%)
+        transform: scale(1.15) translateY(-2px)
+        box-shadow: 0 6px 16px rgba(172, 62, 59, 0.4)
 
       i
-        font-size: 0.9rem
+        font-size: 1rem
 
   .alumni
+    background: #f8f9fa
+    border-radius: 15px
+    margin: 1rem 0
+    padding: 1.5rem 0
+    opacity: 0.9
+
     .alumni-grid
-      gap: 1.5rem
+      gap: 1rem
       max-width: 1200px
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
 
     .alumni-card
       background: $white
-      padding: 1.5rem
-      border-radius: 12px
+      padding: 1.25rem
+      border-radius: 8px
       width: 280px
-      min-height: 320px
-      transition: transform 0.3s ease, box-shadow 0.3s ease
+      min-height: 400px
+      max-width: 280px
+      flex: 0 0 280px
+      transition: all 0.3s ease
       border: 1px solid #e9ecef
+      margin: 0.5rem
+      opacity: 0.85
 
       &:hover
-        transform: translateY(-5px)
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15)
+        transform: translateY(-3px)
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1)
+        opacity: 1
+
+    .alumni-header
+      display: flex
+      align-items: center
+      margin-bottom: 1rem
+      gap: 0.75rem
 
     .alumni-avatar
-      margin-bottom: 1rem
+      flex-shrink: 0
 
     .alumni-headshot
-      width: 120px
-      height: 120px
+      width: 80px
+      height: 80px
       border-radius: 50%
       object-fit: cover
-      border: 3px solid #f8f9fa
+      border: 2px solid #e9ecef
+      opacity: 0.9
 
-    .alumni-info
-      text-align: center
+    .alumni-basic-info
       flex-grow: 1
-      display: flex
-      flex-direction: column
-      justify-content: center
+      min-width: 0
 
     .alumni-name
-      font-size: 1.1rem
-      color: $brown
-      margin-bottom: 0.5rem
-      font-weight: 600
-
-    .alumni-position
-      font-size: 0.9rem
+      font-size: 1rem
       color: #6c757d
-      margin-bottom: 1rem
+      margin-bottom: 0.25rem
+      font-weight: 500
+      line-height: 1.2
+
+    .alumni-previous-role
+      font-size: 0.8rem
+      color: #9ca3af
       font-style: italic
+      line-height: 1.2
+
+    .alumni-details
+      flex-grow: 1
+      margin-bottom: 1rem
+
+    .alumni-detail-item
+      margin-bottom: 0.75rem
+
+      &:last-child
+        margin-bottom: 0
+
+    .alumni-detail-label
+      display: flex
+      align-items: center
+      gap: 0.5rem
+      font-size: 0.75rem
+      font-weight: 600
+      color: #6b7280
+      margin-bottom: 0.25rem
+      text-transform: uppercase
+      letter-spacing: 0.5px
+
+      i
+        font-size: 0.7rem
+        color: #9ca3af
+
+    .alumni-detail-content
+      font-size: 0.8rem
+      color: #4b5563
+      line-height: 1.4
+      margin-left: 1.25rem
 
     .alumni-links
       display: flex
       justify-content: center
-      gap: 0.75rem
+      gap: 0.5rem
       margin-top: auto
+      padding-top: 0.75rem
+      border-top: 1px solid #f3f4f6
 
     .alumni-link
       display: inline-flex
       align-items: center
       justify-content: center
-      width: 32px
-      height: 32px
+      width: 28px
+      height: 28px
       border-radius: 50%
-      background-color: #f8f9fa
-      color: #6c757d
+      background-color: #f3f4f6
+      color: #9ca3af
       text-decoration: none
       transition: all 0.3s ease
 
       &:hover
-        background-color: $red
-        color: $white
-        transform: scale(1.1)
+        background-color: #e5e7eb
+        color: #6b7280
+        transform: scale(1.05)
 
       i
-        font-size: 0.9rem
+        font-size: 0.8rem

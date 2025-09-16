@@ -20,10 +20,10 @@
   order: 10
 - name: "Peter Huang"
   order: 11
-# - name: "Christopher Zou"
-#   order: 12
-# - name: "Alex John Belov"
-#   order: 13
+- name: "Christopher Zou"
+  order: 12
+- name: "Alex John Belov"
+  order: 13
 - name: "Mengchen Wang"
   order: 12
 - name: "Annabelle Shilling"

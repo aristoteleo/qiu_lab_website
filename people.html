@@ -73,77 +73,42 @@ title: "Meet the People"
         {% for order_item in site.data.people_order %}
           {% for person in site.people %}
             {% if person.name == order_item.name and person.current == false %}
-        <div class="alumni-card d-flex flex-column shadow">
-          <div class="alumni-header">
-            <div class="alumni-avatar">
-              <img
-                src="{{ site.baseurl }}/assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
-                alt="{{ person.name }}"
-                class="img-fluid alumni-headshot"
-              />
-            </div>
-            <div class="alumni-basic-info">
-              <h3 class="alumni-name">{{ person.name }}</h3>
-              <span class="alumni-previous-role">{{ person.position }}</span>
-            </div>
+        <div class="alumni-card d-flex flex-column align-items-center justify-content-center shadow">
+          <div class="alumni-avatar">
+            <img
+              src="{{ site.baseurl }}/assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
+              alt="{{ person.name }}"
+              class="img-fluid alumni-headshot"
+            />
           </div>
-          
-          <div class="alumni-details">
-            {% if person.projects %}
-            <div class="alumni-detail-item">
-              <div class="alumni-detail-label">
-                <i class="fas fa-flask"></i>
-                Projects
-              </div>
-              <div class="alumni-detail-content">{{ person.projects }}</div>
-            </div>
-            {% endif %}
-            
-            {% if person.papers %}
-            <div class="alumni-detail-item">
-              <div class="alumni-detail-label">
-                <i class="fas fa-file-alt"></i>
-                Key Papers
-              </div>
-              <div class="alumni-detail-content">{{ person.papers }}</div>
-            </div>
-            {% endif %}
-            
-            {% if person.current_role %}
-            <div class="alumni-detail-item">
-              <div class="alumni-detail-label">
-                <i class="fas fa-briefcase"></i>
-                Current Role
-              </div>
-              <div class="alumni-detail-content">{{ person.current_role }}</div>
+          <div class="alumni-info">
+            <h3 class="alumni-name">{{ person.name }}</h3>
+            <span class="alumni-position">{{ person.position }}</span>
+            {% if person.google_scholar or person.GitHub or person.website or person.twitter %}
+            <div class="alumni-links">
+              {% if person.google_scholar %}
+              <a href="{{ person.google_scholar }}" class="alumni-link" title="Google Scholar">
+                <i class="fa fa-book"></i>
+              </a>
+              {% endif %}
+              {% if person.GitHub %}
+              <a href="{{ person.GitHub }}" class="alumni-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              {% endif %}
+              {% if person.website %}
+              <a href="{{ person.website }}" class="alumni-link" title="Website">
+                <i class="fas fa-globe"></i>
+              </a>
+              {% endif %}
+              {% if person.twitter %}
+              <a href="{{ person.twitter }}" class="alumni-link" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              {% endif %}
             </div>
             {% endif %}
           </div>
-          
-          {% if person.google_scholar or person.GitHub or person.website or person.twitter %}
-          <div class="alumni-links">
-            {% if person.google_scholar %}
-            <a href="{{ person.google_scholar }}" class="alumni-link" title="Google Scholar">
-              <i class="fa fa-book"></i>
-            </a>
-            {% endif %}
-            {% if person.GitHub %}
-            <a href="{{ person.GitHub }}" class="alumni-link" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            {% endif %}
-            {% if person.website %}
-            <a href="{{ person.website }}" class="alumni-link" title="Website">
-              <i class="fas fa-globe"></i>
-            </a>
-            {% endif %}
-            {% if person.twitter %}
-            <a href="{{ person.twitter }}" class="alumni-link" title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            {% endif %}
-          </div>
-          {% endif %}
         </div>
             {% endif %}
           {% endfor %}

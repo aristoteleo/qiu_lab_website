@@ -14,5 +14,5 @@ bio: "I am a remote software engineer at Qiu Lab. My current project is mainly o
     enjoy reading, sports, cooking and travelling."
 projects: maintaining and developing Dynamo
 papers: Dynamo protocol paper (under review)
-current_role: Scientific Computation Research Center
+current_role: Software engineer at Scientific Computation Research Center
 ---

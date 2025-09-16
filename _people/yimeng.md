@@ -10,6 +10,6 @@ bio: "I got my master's degree and bachelor's degree from Fudan University and S
     handicrafts. I am interested in learning some new and different things."
 twitter: ""
 projects: Pillar foundation model
-papers: in Preparation
-current_role: The Chinese University of Hong Kong
+papers: Pillar (co-author, in preparation)
+current_role: PhD at The Chinese University of Hong Kong
 ---

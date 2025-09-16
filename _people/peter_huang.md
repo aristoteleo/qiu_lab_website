@@ -1,7 +1,7 @@
 ---
 layout: people
 title: Meet the People
-name: "Peter Huang"
+name: "Peter Pao-Huang"
 position: "PhD Student (Computer Science)"
 current: true
 headshot: "peter.png"

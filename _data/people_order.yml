@@ -38,8 +38,8 @@
   order: 17
 - name: "Jiayuan Ding"
   order: 18
-- name: "Lei Li"
-  order: 19
+  - name: "Lei Li"
+    order: 19
 
 
 - name: "Valentina Giunchiglia"

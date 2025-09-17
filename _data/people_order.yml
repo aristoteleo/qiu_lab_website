@@ -25,42 +25,42 @@
 - name: "Alex John Belov"
   order: 13
 - name: "Mengchen Wang"
-  order: 12
-- name: "Annabelle Shilling"
-  order: 13
-- name: "Cinlong Huang"
   order: 14
-- name: "Yifan Lu"
+- name: "Annabelle Shilling"
   order: 15
-- name: "Wenzhuo Tang"
+- name: "Cinlong Huang"
   order: 16
-- name: "Zehua Zeng"
+- name: "Yifan Lu"
   order: 17
-- name: "Jiayuan Ding"
+- name: "Wenzhuo Tang"
   order: 18
-  - name: "Lei Li"
-    order: 19
+- name: "Zehua Zeng"
+  order: 19
+- name: "Jiayuan Ding"
+  order: 20
+- name: "Lei Li"
+  order: 21
 
 
 - name: "Valentina Giunchiglia"
-  order: 20
-- name: "Chen Li"
-  order: 21
-- name: "Qiangwei Peng"
   order: 22
-- name: "Yuzhen Mao"
+- name: "Chen Li"
   order: 23
-- name: "Yuexuan Yang"
+- name: "Qiangwei Peng"
   order: 24
-- name: "Dingcheng Yi"
+- name: "Yuzhen Mao"
   order: 25
-- name: "Eric Waters"
+- name: "Yuexuan Yang"
   order: 26
-- name: "Samuel King"
+- name: "Dingcheng Yi"
   order: 27
-- name: "Sichao Yu"
+- name: "Eric Waters"
   order: 28
-- name: "Stephen Zhang"
+- name: "Samuel King"
   order: 29
-- name: "Yimeng Qiao"
+- name: "Sichao Yu"
   order: 30
+- name: "Stephen Zhang"
+  order: 31
+- name: "Yimeng Qiao"
+  order: 32

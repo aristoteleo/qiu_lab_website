@@ -235,7 +235,12 @@ title: "Come to work with us!"
       Curated: set `featured_placement: <n>` in _people/*.md to show someone
       here, where n also orders the list.
     {% endcomment %}
-    {% assign former = site.people | where_exp: "p", "p.current == false and p.featured_placement" | sort: "featured_placement" %}
+    {% comment %}
+      Two separate where_exp filters on purpose: GitHub Pages builds with
+      Jekyll 3.10, whose where_exp cannot parse a compound "a and b" condition.
+    {% endcomment %}
+    {% assign former = site.people | where_exp: "p", "p.current == false" %}
+    {% assign former = former | where_exp: "p", "p.featured_placement" | sort: "featured_placement" %}
     {% for p in former %}
       {% assign role = p.current_role | default: "" %}
       {% if role != "" %}

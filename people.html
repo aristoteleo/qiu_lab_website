@@ -23,30 +23,39 @@ title: "Meet the People"
           <div class="current-member-info">
             <h3 class="current-member-name">{{ person.name }}</h3>
             <span class="current-member-position">{{ person.position }}</span>
-            {% if person.linkedin or person.google_scholar or person.GitHub or person.website or person.twitter %}
+            {% comment %}
+              An empty string is truthy in Liquid, so these link fields must be
+              compared against "" -- testing person.twitter directly renders a
+              dead anchor for the many entries that carry twitter: "".
+            {% endcomment %}
+            {% assign li = person.linkedin | default: "" %}
+            {% assign gs = person.google_scholar | default: "" %}
+            {% assign gh = person.GitHub | default: "" %}
+            {% assign web = person.website | default: "" %}
+            {% assign tw = person.twitter | default: "" %}
             <div class="current-member-links">
-              {% if person.linkedin %}
-              <a href="{{ person.linkedin }}" class="current-member-link" title="LinkedIn">
+              {% if li != "" %}
+              <a href="{{ li }}" class="current-member-link" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
               </a>
               {% endif %}
-              {% if person.google_scholar %}
-              <a href="{{ person.google_scholar }}" class="current-member-link" title="Google Scholar">
+              {% if gs != "" %}
+              <a href="{{ gs }}" class="current-member-link" title="Google Scholar">
                 <i class="fa fa-book"></i>
               </a>
               {% endif %}
-              {% if person.GitHub %}
-              <a href="{{ person.GitHub }}" class="current-member-link" title="GitHub">
+              {% if gh != "" %}
+              <a href="{{ gh }}" class="current-member-link" title="GitHub">
                 <i class="fab fa-github"></i>
               </a>
               {% endif %}
-              {% if person.website %}
-              <a href="{{ person.website }}" class="current-member-link" title="Website">
+              {% if web != "" %}
+              <a href="{{ web }}" class="current-member-link" title="Website">
                 <i class="fas fa-globe"></i>
               </a>
               {% endif %}
-              {% if person.twitter %}
-              <a href="{{ person.twitter }}" class="current-member-link" title="Twitter">
+              {% if tw != "" %}
+              <a href="{{ tw }}" class="current-member-link" title="Twitter">
                 <i class="fab fa-twitter"></i>
               </a>
               {% endif %}
@@ -54,7 +63,6 @@ title: "Meet the People"
                 <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
-            {% endif %}
           </div>
         </div>
             {% endif %}
@@ -64,90 +72,69 @@ title: "Meet the People"
     </div>
   </section>
 
-  <!-- 'section' for the team alumni. -->
-  <!-- Enhanced alumni section with card-based layout -->
+  <!-- 'section' for the team alumni. Collapsed by default; grouped by role. -->
   <section class="alumni py-4">
     <div class="container d-flex align-items-center flex-column">
       <h1>Lab Alumni</h1>
-      <div class="alumni-grid d-flex justify-content-center flex-wrap mt-4 mb-3">
-        {% for order_item in site.data.people_order %}
-          {% for person in site.people %}
-            {% if person.name == order_item.name and person.current == false %}
-        <div class="alumni-card d-flex flex-column shadow">
-          <div class="alumni-header">
-            <div class="alumni-avatar">
-              <img
-                src="{{ site.baseurl }}/assets/images/headshots/{% if person.headshot %}{{ person.headshot }}{% else %}placeholder-headshot.png{% endif %}"
-                alt="{{ person.name }}"
-                class="img-fluid alumni-headshot"
-              />
-            </div>
-            <div class="alumni-basic-info">
-              <h3 class="alumni-name">{{ person.name }}</h3>
-              <span class="alumni-previous-role">{{ person.position }}</span>
-            </div>
-          </div>
-          
-          <div class="alumni-details">
-            {% if person.projects %}
-            <div class="alumni-detail-item">
-              <div class="alumni-detail-label">
-                <i class="fas fa-flask"></i>
-                Projects
-              </div>
-              <div class="alumni-detail-content">{{ person.projects }}</div>
-            </div>
-            {% endif %}
-            
-            {% if person.papers %}
-            <div class="alumni-detail-item">
-              <div class="alumni-detail-label">
-                <i class="fas fa-file-alt"></i>
-                Key Papers
-              </div>
-              <div class="alumni-detail-content">{{ person.papers }}</div>
-            </div>
-            {% endif %}
-            
-            {% if person.current_role %}
-            <div class="alumni-detail-item">
-              <div class="alumni-detail-label">
-                <i class="fas fa-briefcase"></i>
-                Current Role
-              </div>
-              <div class="alumni-detail-content">{{ person.current_role }}</div>
-            </div>
-            {% endif %}
-          </div>
-          
-          {% if person.google_scholar or person.GitHub or person.website or person.twitter %}
-          <div class="alumni-links">
-            {% if person.google_scholar %}
-            <a href="{{ person.google_scholar }}" class="alumni-link" title="Google Scholar">
-              <i class="fa fa-book"></i>
-            </a>
-            {% endif %}
-            {% if person.GitHub %}
-            <a href="{{ person.GitHub }}" class="alumni-link" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            {% endif %}
-            {% if person.website %}
-            <a href="{{ person.website }}" class="alumni-link" title="Website">
-              <i class="fas fa-globe"></i>
-            </a>
-            {% endif %}
-            {% if person.twitter %}
-            <a href="{{ person.twitter }}" class="alumni-link" title="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            {% endif %}
-          </div>
-          {% endif %}
+
+      <button
+        class="alumni-toggle collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#alumni-list"
+        aria-expanded="false"
+        aria-controls="alumni-list"
+      >
+        <span class="alumni-toggle-show">Show Lab Alumni</span>
+        <span class="alumni-toggle-hide">Hide Lab Alumni</span>
+        <i class="fas fa-chevron-down alumni-toggle-icon"></i>
+      </button>
+
+      <div class="collapse w-100" id="alumni-list">
+        {% comment %}
+          Alumni are ordered by when they left (most recent first), not by
+          _data/people_order.yml -- that list exists to order the Current
+          Members grid and carries no meaning here. Fill in start:/end: in
+          _people/*.md to drive this ordering. An explicit `order:` on a
+          person pins them to the front of their group, ahead of the sort.
+        {% endcomment %}
+        {% assign alumni = site.people | where_exp: "p", "p.current == false" | sort: "end" | reverse %}
+        {% assign cat_names = site.data.alumni_categories | map: "name" | join: "||" %}
+
+        {% for cat in site.data.alumni_categories %}
+          {% assign in_cat = alumni | where: "category", cat.name %}
+          {% assign pinned = in_cat | where_exp: "p", "p.order" | sort: "order" %}
+          {% assign unpinned = in_cat | where_exp: "p", "p.order == nil" %}
+          {% capture group %}
+            {% for person in pinned %}
+              {% include alumni-card.html person=person %}
+            {% endfor %}
+            {% for person in unpinned %}
+              {% include alumni-card.html person=person %}
+            {% endfor %}
+          {% endcapture %}
+          {% if group contains "alumni-card" %}
+        <div class="alumni-group">
+          <h2 class="alumni-group-title">{{ cat.name }}</h2>
+          <div class="alumni-grid d-flex justify-content-center flex-wrap">{{ group }}</div>
         </div>
-            {% endif %}
-          {% endfor %}
+          {% endif %}
         {% endfor %}
+
+        {% capture other %}
+          {% for person in alumni %}
+            {% assign pcat = person.category | default: "__uncategorized__" %}
+            {% unless cat_names contains pcat %}
+              {% include alumni-card.html person=person %}
+            {% endunless %}
+          {% endfor %}
+        {% endcapture %}
+        {% if other contains "alumni-card" %}
+        <div class="alumni-group">
+          <h2 class="alumni-group-title">Other</h2>
+          <div class="alumni-grid d-flex justify-content-center flex-wrap">{{ other }}</div>
+        </div>
+        {% endif %}
       </div>
     </div>
   </section>

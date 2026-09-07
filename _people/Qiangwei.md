@@ -4,10 +4,14 @@ title: Meet the People
 name: "Qiangwei Peng"
 position: "Visiting Researcher from PKU"
 current: false
+category: "Visiting Researchers"
+start: ""
+end: ""
 headshot: "qiangwei.jpg"
 bio: "I am currently a visiting student researcher at the Dr. Xiaojie Qiu's laboratory at Stanford University, while also pursuing my Ph.D. in Computational Mathematics at Peking University. My research focuses on developing mathematical and biophysical models for complex biological systems, particularly by integrating cutting-edge deep learning algorithms with single-cell and spatial transcriptome data. Outside of the lab, I enjoy photography and swimming."
 twitter: ""
-projects: optics-free spatial transcriptomics
-papers: optics-free spatial transcriptomics (co-author, in preparation)
-current_role: Finishing up PhD at PKU
+projects: "optics-free spatial transcriptomics"
+papers: "match-seq (in preparation)"
+current_role: "Finishing up PhD at PKU"
+contact_email: "qiangwei_peng@stu.pku.edu.cn"
 ---

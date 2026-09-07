@@ -12,12 +12,16 @@
   order: 6
 - name: "Sijie Chen, PhD"
   order: 7
+- name: "Yash Rana"
+  order: 7.5
 - name: "Nianping Liu, PhD"
   order: 8
 - name: "Weize Xu, PhD"
   order: 9
 - name: "Naoki Konno, PhD"
   order: 10
+- name: "Xun Shan"
+  order: 10.5
 - name: "Peter Pao-Huang"
   order: 11
 - name: "Christopher Zou"
@@ -26,8 +30,12 @@
   order: 13
 - name: "Mengchen Wang"
   order: 14
-- name: "Annabelle Shilling"
-  order: 15
+- name: "Xiaoying Liao"
+  order: 14.1
+- name: "Xiaoke Song"
+  order: 14.2
+- name: "Yue Wu"
+  order: 14.3
 - name: "Cinlong Huang"
   order: 16
 - name: "Yifan Lu"
@@ -38,6 +46,12 @@
   order: 19
 - name: "Jiayuan Ding"
   order: 20
+- name: "Jiaming Huang"
+  order: 20.1
+- name: "Zhaokang Liang"
+  order: 20.2
+- name: "Mingze Sun"
+  order: 20.3
 - name: "Lei Li"
   order: 21
 

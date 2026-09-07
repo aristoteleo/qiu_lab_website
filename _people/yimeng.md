@@ -4,12 +4,16 @@ title: Meet the People
 name: "Yimeng Qiao"
 position: "Remote Post-Master Assistant from Fudan"
 current: false
+category: "Research Staff"
+start: ""
+end: ""
 headshot: "yimeng.jpg"
 bio: "I got my master's degree and bachelor's degree from Fudan University and Shandong University in 2023 and 2020, respectively. Both of them were awarded in Software 
     Engineering. My future research interest is the application of deep learning in life science, especially in cancer genomics. Outside the lab, I enjoy reading and making 
     handicrafts. I am interested in learning some new and different things."
 twitter: ""
-projects: Pillar foundation model
-papers: Pillar (co-author, in preparation)
-current_role: PhD at The Chinese University of Hong Kong
+projects: "Pillar foundation model"
+papers: "Pillar (co-author, in preparation)"
+current_role: "Finishing up PhD at CUHK"
+contact_email: "yimon.qiao@gmail.com"
 ---

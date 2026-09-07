@@ -1,0 +1,10 @@
+# Order in which alumni groups appear on the People page.
+# The `name` must match the `category:` field in the _people/*.md front matter.
+# Anyone whose category is missing or unrecognized falls into "Other" at the end.
+# Ordered by academic seniority; empty groups render nothing.
+- name: "Post-docs"
+- name: "Graduate Students"
+- name: "Visiting Researchers"
+- name: "Rotation Students"
+- name: "Research Staff"
+- name: "Lab Administration"

@@ -4,10 +4,14 @@ title: Meet the People
 name: "Valentina Giunchiglia"
 position: "Visiting Researcher from Imperial College London and Harvard"
 current: false
+category: "Visiting Researchers"
+start: ""
+end: ""
 headshot: "valentina.jpeg"
 bio: "I am a visiting student researcher at the Qiu lab in Stanford. I'm an AI for health PhD student jointly affiliated with Imperial College and Harvard University, under the supervision of Prof. Marinka Zitnik and Prof. Adam Hampshire. I am interested in a holistic study of diseases across multiple levels — from cellular to clinical phenotypes — to drive advancements in precision medicine. To achieve this, I develop multimodal foundation models. Outside of research, I enjoy bouldering, playing tennis and hiking."
 twitter: ""
-projects: multi-modal agent system of congenital heart disease
-papers: multi-modal agent system (in Preparation)
-current_role: Finish up PhD at Imperial College London
+projects: "multi-modal agent system of congenital heart disease"
+papers: "multi-modal agent system (in Preparation)"
+current_role: "Finish up PhD at Imperial College London"
+contact_email: "v.giunchiglia20@imperial.ac.uk"
 ---

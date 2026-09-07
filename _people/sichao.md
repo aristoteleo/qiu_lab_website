@@ -4,6 +4,9 @@ title: Meet the People
 name: "Sichao Yu"
 position: "Remote Software Engineer"
 current: false
+category: "Research Staff"
+start: ""
+end: ""
 headshot: "sichao.jpg"
 website: ""
 twitter: ""
@@ -12,7 +15,8 @@ bio: "I am a remote software engineer at Qiu Lab. My current project is mainly o
     with an M.S. in Artificial Intelligence. I am interested in applying computation skills and machine learning 
     techniques to tackle a wide array of biological challenges and create meaningful applications. In my free time, I 
     enjoy reading, sports, cooking and travelling."
-projects: maintaining and developing Dynamo
-papers: Dynamo protocol paper (under review)
-current_role: Software engineer at Scientific Computation Research Center
+projects: "maintaining and developing Dynamo"
+papers: "Dynamo protocol paper (co-first, accepted by Nature Protocol)"
+current_role: "Software engineer at Scientific Computation Research Center"
+contact_email: "sichaoy@bu.edu"
 ---

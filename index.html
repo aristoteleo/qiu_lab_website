@@ -77,8 +77,25 @@ layout: "wrapper"
       <!-- Similar 'include' tag for the body text in the 'About' section. -->
       {% include text-content/about-body.md %}
     </div>
-    <!-- This include is for a button. The 'alt' and 'classes' parameters are passed to the included HTML. -->
-    {% include button.html alt=false classes="about-button mb-3"%}
+    <!-- Three pillars, mirroring the strategy laid out on the Research page. -->
+    <div class="focus-areas">
+      <a class="focus-card" href="/research#our_strategy">
+        <img src="{{ site.baseurl }}/assets/images/icons/keyboard.svg" alt="" class="focus-card-icon" height="44" />
+        <h3>Computation</h3>
+        <p>Transformers, neural ODEs and diffusion models, paired with interpretable systems-biology methods.</p>
+      </a>
+      <a class="focus-card" href="/research#our_strategy">
+        <img src="{{ site.baseurl }}/assets/images/icons/controller.svg" alt="" class="focus-card-icon" height="44" />
+        <h3>Experimentation</h3>
+        <p>Metabolic-labeling scRNA-seq, ultra-high-resolution spatial transcriptomics, Perturb-seq and lineage tracing.</p>
+      </a>
+      <a class="focus-card" href="/research#our_strategy">
+        <img src="{{ site.baseurl }}/assets/images/icons/fist.svg" alt="" class="focus-card-icon" height="44" />
+        <h3>Prediction</h3>
+        <p>Differentiable models that forecast cell states and fate trajectories under genetic and environmental perturbation.</p>
+      </a>
+    </div>
+
   <div class="text-center about-body mt-1 mb-2">
       {% include text-content/software-text.md %}
   </div>

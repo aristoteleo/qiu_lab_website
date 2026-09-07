@@ -333,3 +333,77 @@ section.challenge-banner
     font-size: 0.85rem
     line-height: 1.5
     color: #868e96
+
+// Homepage hero copy: one headline plus a supporting line, rather than
+// four stacked all-caps <h1>s.
+.about
+  .about-heading
+    // flex children with align-items: center size to their content, so without
+    // these they overflow the viewport on narrow screens
+    width: 100%
+
+    h1
+      max-width: 100%
+
+    .about-subheading
+      width: 100%
+      max-width: 46rem
+      margin: 0.75rem auto 0
+      text-align: center
+      font-size: 1.05rem
+      line-height: 1.6
+      color: $brown
+      text-transform: none
+
+  .about-body
+    h2
+      margin-top: 2.25rem
+      margin-bottom: 1rem
+
+  // Three pillars, mirroring the Research page's strategy section
+  .focus-areas
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 1.25rem
+    width: 100%
+    max-width: 60rem
+    margin: 2.5rem auto 0.5rem
+
+  .focus-card
+    flex: 1 1 15rem
+    max-width: 19rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    padding: 1.75rem 1.25rem
+    border-radius: 12px
+    background-color: $white
+    border: 1px solid rgba(142, 123, 107, 0.25)
+    text-decoration: none
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-6px)
+      border-color: $red
+      box-shadow: 0 14px 30px rgba(172, 62, 59, 0.15)
+
+    .focus-card-icon
+      height: 44px
+      width: auto
+      margin-bottom: 0.9rem
+      opacity: 0.85
+
+    h3
+      font-size: 1rem
+      letter-spacing: 0.06em
+      color: $red
+      margin-bottom: 0.5rem
+
+    p
+      margin: 0
+      font-size: 0.88rem
+      line-height: 1.5
+      color: $black
+      opacity: 0.8

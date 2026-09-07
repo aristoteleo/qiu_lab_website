@@ -1,0 +1,253 @@
+.opening
+  .opening-lede
+    font-size: 1.15rem
+    line-height: 1.6
+    color: $black
+
+  .opening-photo
+    border-radius: 10px
+
+  .opening-section-title
+    margin-top: 3rem
+    margin-bottom: 1.25rem
+    font-size: 1.5rem
+    padding-bottom: 0.5rem
+    border-bottom: 2px solid rgba(142, 123, 107, 0.35)
+
+  // Roles sit in a responsive grid so the page uses its full width instead of
+  // running down one narrow column beside an empty gutter.
+  .opening-roles
+    display: grid
+    grid-template-columns: 1fr
+    align-items: start
+    gap: 1.25rem
+
+    @media screen and (min-width: 768px)
+      grid-template-columns: 1fr 1fr
+
+  .opening-role
+    padding: 1.5rem
+    border-radius: 10px
+    background-color: $white
+    border: 1px solid rgba(142, 123, 107, 0.25)
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      border-color: $red
+      box-shadow: 0 10px 24px rgba(172, 62, 59, 0.12)
+
+    h3
+      font-size: 1.05rem
+      margin-bottom: 0.75rem
+      color: $red
+
+    p
+      font-size: 0.92rem
+      line-height: 1.6
+      margin-bottom: 0.75rem
+
+      &:last-child
+        margin-bottom: 0
+
+  .opening-facts
+    list-style: none
+    margin: 0 0 0.75rem
+    padding: 0
+
+    li
+      position: relative
+      padding-left: 1rem
+      margin-bottom: 0.35rem
+      font-size: 0.88rem
+      line-height: 1.5
+
+      &::before
+        content: '\25B8'
+        position: absolute
+        left: 0
+        color: $brown
+        opacity: 0.7
+
+  .opening-note
+    font-size: 0.85rem
+    color: $brown
+
+  // The single action this page exists to prompt
+  .opening-apply
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    gap: 1.5rem
+    margin-top: 3rem
+    padding: 2rem
+    border-radius: 12px
+    background-color: $off-white
+    border-left: 5px solid $red
+
+    .opening-apply-main
+      flex: 1 1 24rem
+
+    h2
+      margin-top: 0
+      margin-bottom: 0.75rem
+      font-size: 1.4rem
+
+  .opening-checklist
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      position: relative
+      padding-left: 1.5rem
+      margin-bottom: 0.4rem
+      font-size: 0.92rem
+      line-height: 1.5
+
+      &::before
+        content: '\2713'
+        position: absolute
+        left: 0
+        color: $red
+        font-weight: bold
+
+  .opening-apply-button
+    flex: 0 0 auto
+    display: inline-block
+    padding: 0.85rem 2rem
+    border-radius: 4px
+    background-color: $red
+    color: $off-white
+    font-family: 'Josefin Sans', sans-serif
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+    letter-spacing: 0.04em
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-4px)
+      background-color: $brown
+
+  // Two columns so the list does not run down half an empty page
+  .opening-expect
+    list-style: none
+    margin: 0
+    padding: 0
+    columns: 2
+    column-gap: 2.5rem
+
+    @media screen and (max-width: 768px)
+      columns: 1
+
+    li
+      position: relative
+      padding-left: 1.4rem
+      margin-bottom: 0.6rem
+      font-size: 0.95rem
+      line-height: 1.55
+      break-inside: avoid
+
+      &::before
+        content: '\2192'
+        position: absolute
+        left: 0
+        color: $red
+
+  .opening-followup
+    margin-top: 3rem
+    padding-top: 1.5rem
+    border-top: 1px solid rgba(142, 123, 107, 0.3)
+
+    h3
+      font-size: 1.1rem
+      margin-bottom: 0.75rem
+
+    p
+      font-size: 0.92rem
+      line-height: 1.6
+      max-width: 52rem
+
+  // Expectations for visiting students: set apart from the role cards so
+  // applicants read it before emailing.
+  .opening-expectations
+    margin-top: 2.5rem
+    padding: 1.75rem 2rem
+    border-radius: 10px
+    background-color: rgba(142, 123, 107, 0.08)
+    border-left: 5px solid $brown
+
+    h2
+      margin-top: 0
+      margin-bottom: 0.75rem
+      font-size: 1.3rem
+
+    > p
+      font-size: 0.95rem
+      line-height: 1.6
+
+    ul
+      list-style: none
+      margin: 1rem 0 0
+      padding: 0
+
+      li
+        position: relative
+        padding-left: 1.4rem
+        margin-bottom: 0.7rem
+        font-size: 0.92rem
+        line-height: 1.6
+
+        &::before
+          content: '\25B8'
+          position: absolute
+          left: 0
+          color: $brown
+
+        strong
+          color: $red
+
+    .opening-expectations-close
+      margin-top: 1.25rem
+      margin-bottom: 0
+      font-size: 0.9rem
+      line-height: 1.6
+      color: $black
+      opacity: 0.85
+
+  // Mutual expectations, side by side: what the lab offers and what it asks for
+  .opening-mutual
+    display: grid
+    grid-template-columns: 1fr
+    align-items: start
+    gap: 2rem
+
+    @media screen and (min-width: 768px)
+      grid-template-columns: 1fr 1fr
+      gap: 2.5rem
+
+    .opening-mutual-col
+      h3
+        font-size: 1.05rem
+        color: $red
+        margin-bottom: 0.9rem
+        padding-bottom: 0.4rem
+        border-bottom: 1px solid rgba(142, 123, 107, 0.3)
+
+    .opening-mutual-lede
+      font-size: 0.9rem
+      line-height: 1.6
+      color: $brown
+      margin-bottom: 0.9rem
+
+    .opening-expect
+      columns: 1
+
+    .opening-expect--we
+      li
+        &::before
+          content: '\25B8'
+
+        strong
+          color: $red

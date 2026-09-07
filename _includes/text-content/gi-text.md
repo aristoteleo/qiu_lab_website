@@ -2,7 +2,7 @@
 <!-- Do not remove any tags, just edit the text in between -->
 
 <p>
-  The Qiu Lab builds open-source software for single-cell and spatial genomics &mdash;
+  The Qiu Lab builds open-source software for single-cell and spatial genomics,
   from the analysis packages that helped establish the field's methods to a new
   generation of AI-native platforms.
 </p>
@@ -15,7 +15,7 @@
     <ul class="software-sublist">
       <li>An evolvable, privacy-preserving multi-agent framework for automatic genomics discovery.</li>
       <li>LLM-powered agents collaborate on specialized scientific tasks, reconciling general-purpose reasoning with deep domain specificity.</li>
-      <li>A four-layer architecture &mdash; application, interface, agent, LLM.</li>
+      <li>A four-layer architecture: application, interface, agent, LLM.</li>
       <li>The Pantheon Store offers 2,000+ curated biomedical agents, teams and skills.</li>
     </ul>
   </li>

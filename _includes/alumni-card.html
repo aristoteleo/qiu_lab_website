@@ -1,7 +1,7 @@
 {% assign person = include.person %}
 {% assign p_start = person.start | default: "" %}
 {% assign p_end = person.end | default: "" %}
-{% capture years %}{% if p_start != "" and p_end != "" %}{{ p_start }}&ndash;{{ p_end }}{% elsif p_end != "" %}until {{ p_end }}{% elsif p_start != "" %}{{ p_start }}&ndash;{% endif %}{% endcapture %}
+{% capture years %}{% if p_start != "" and p_end != "" %}{{ p_start }}-{{ p_end }}{% elsif p_end != "" %}until {{ p_end }}{% elsif p_start != "" %}{{ p_start }}-{% endif %}{% endcapture %}
 {% if person.projects or person.papers %}{% assign has_details = true %}{% else %}{% assign has_details = false %}{% endif %}
 <div class="alumni-card d-flex flex-column shadow{% unless has_details %} alumni-card-compact{% endunless %}">
   <div class="alumni-header">

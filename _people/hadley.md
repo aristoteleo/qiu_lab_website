@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Hadley Bickford"
-position: "Administrative Associate"
+position: "Operations Manager"
 current: true
 headshot: "hadley.png"
 twitter: ""

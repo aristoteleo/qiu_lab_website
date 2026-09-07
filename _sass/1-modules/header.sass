@@ -30,8 +30,12 @@
     border-color: $off-white
 
   .collapse .nav-link
-    margin-left: 2em
-    margin-right: 2em
+    margin-left: 1.35em
+    margin-right: 1.35em
+
+  // keep the CTA on one line; it sits outside the collapsed nav
+  .btn-cta-alt a
+    white-space: nowrap
 
   .collapse.show .nav-link
     margin: 0 0
@@ -61,3 +65,50 @@
 
       a
         color: $off-white
+
+  // "Research" submenu: hover-revealed on desktop, listed inline once the
+  // navbar collapses (there is no JS toggle, so it must not depend on one).
+  .nav-dropdown-hover
+    position: relative
+
+    .nav-submenu
+      list-style: none
+      margin: 0
+      padding: 0
+
+    .nav-submenu-link
+      display: block
+      color: $off-white
+      text-decoration: none
+      font-size: 0.85rem
+      text-transform: none
+      white-space: nowrap
+      padding: 0.5rem 1.25rem
+      transition: all 0.2s ease-in-out
+
+      &:hover
+        color: $brown
+        background-color: rgba(0, 0, 0, 0.12)
+
+    @media (min-width: 992px)
+      .nav-submenu
+        display: none
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 20
+        min-width: 15rem
+        padding: 0.4rem 0
+        background-color: $red
+        border-radius: 0 0 6px 6px
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+
+      // keep the pointer inside the element while travelling from link to menu
+      &:hover .nav-submenu,
+      &:focus-within .nav-submenu
+        display: block
+
+    @media (max-width: 991.98px)
+      .nav-submenu
+        padding-left: 1rem

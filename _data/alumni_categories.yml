@@ -4,7 +4,7 @@
 # Ordered by academic seniority; empty groups render nothing.
 - name: "Post-docs"
 - name: "Graduate Students"
+- name: "Research Staff"
 - name: "Visiting Researchers"
 - name: "Rotation Students"
-- name: "Research Staff"
 - name: "Lab Administration"

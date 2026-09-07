@@ -120,3 +120,216 @@ section
 
 .pull-left
   float: left
+
+// Software section: conventional analysis packages vs AI-native platforms
+.software-groups
+  .software-group-title
+    margin-top: 1.75rem
+    font-size: 0.8rem
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 0.12em
+    color: #868e96
+    margin-bottom: 0.75rem
+    padding-bottom: 0.4rem
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+
+    &:first-child
+      margin-top: 0
+
+  .software-group-title--ai
+    color: $ai-purple
+    border-bottom-color: rgba(93, 79, 168, 0.25)
+
+  .software-group-tag
+    display: inline-block
+    margin-left: 0.5rem
+    padding: 0.1rem 0.45rem
+    border-radius: 999px
+    background: rgba(93, 79, 168, 0.12)
+    color: $ai-purple
+    font-size: 0.6rem
+    letter-spacing: 0.08em
+    vertical-align: middle
+
+  .btn-cta-ai
+    background-color: $ai-purple
+
+    &:hover
+      background-color: #473b85
+
+// Adding the challenge banner shifts every later section's nth-child index,
+// which would swap the alternating page backgrounds. Pin them explicitly.
+section.about
+  background-color: $off-white
+
+section.get-involved
+  background-color: $white
+
+// Virtual Embryo Challenge announcement (time-boxed -- see index.html)
+section.challenge-banner
+  background: linear-gradient(120deg, $red 0%, #7d4470 55%, $ai-purple 100%)
+  color: $off-white
+
+  .challenge-banner-inner
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    gap: 2rem
+
+  .challenge-banner-text
+    flex: 1 1 26rem
+
+  .challenge-banner-eyebrow
+    display: inline-block
+    padding: 0.2rem 0.7rem
+    margin-bottom: 0.85rem
+    border: 1px solid rgba(251, 247, 240, 0.45)
+    border-radius: 999px
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 0.7rem
+    letter-spacing: 0.14em
+    text-transform: uppercase
+
+  .challenge-banner-title
+    color: $off-white
+    font-size: 2rem
+    margin-bottom: 0.5rem
+    @media screen and (max-width: 768px)
+      font-size: 1.6rem
+
+  .challenge-banner-tagline
+    font-size: 1.05rem
+    line-height: 1.5
+    max-width: 34rem
+    margin-bottom: 1rem
+    opacity: 0.95
+
+  .challenge-banner-facts
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem 1.5rem
+    font-size: 0.9rem
+
+    li
+      position: relative
+      padding-left: 0.9rem
+      opacity: 0.9
+
+      &::before
+        content: '\25CF'
+        position: absolute
+        left: 0
+        font-size: 0.5rem
+        top: 0.45rem
+        opacity: 0.7
+
+  .challenge-banner-cta
+    flex: 0 0 auto
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 0.75rem
+
+  .challenge-banner-button
+    display: inline-block
+    padding: 0.8rem 1.9rem
+    border-radius: 4px
+    background-color: $off-white
+    color: $red
+    font-family: 'Josefin Sans', sans-serif
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+    letter-spacing: 0.04em
+    transition: all 0.3s ease-in-out
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18)
+
+    &:hover
+      transform: translateY(-4px)
+      background-color: $white
+      color: $ai-purple
+
+  .challenge-banner-link
+    color: $off-white
+    font-size: 0.85rem
+    text-decoration: none
+    opacity: 0.85
+    transition: all 0.2s ease-in-out
+
+    &:hover
+      opacity: 1
+      text-decoration: underline
+
+  @media screen and (max-width: 768px)
+    .challenge-banner-cta
+      width: 100%
+
+// "Tools & Platforms" left column: itemized so it tracks the tile grid's height
+.gi-text
+  .software-list-label
+    margin-top: 1.5rem
+    margin-bottom: 0.4rem
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 0.78rem
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 0.12em
+    color: #868e96
+
+  .software-list
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      position: relative
+      padding-left: 1rem
+      margin-bottom: 0.55rem
+      line-height: 1.5
+
+      &::before
+        content: '\25B8'
+        position: absolute
+        left: 0
+        color: $brown
+        opacity: 0.7
+
+      a
+        font-weight: 600
+
+      > a
+        font-weight: 600
+
+  .software-item-tagline
+    color: #868e96
+    font-style: italic
+
+  .software-sublist
+    list-style: none
+    margin: 0.25rem 0 0
+    padding: 0
+
+    li
+      position: relative
+      padding-left: 0.9rem
+      margin-bottom: 0.25rem
+      font-size: 0.88rem
+      line-height: 1.45
+      color: #4b5563
+
+      &::before
+        content: '\2013'
+        position: absolute
+        left: 0
+        color: #adb5bd
+
+  .software-provenance
+    margin-top: 1.5rem
+    font-size: 0.85rem
+    line-height: 1.5
+    color: #868e96

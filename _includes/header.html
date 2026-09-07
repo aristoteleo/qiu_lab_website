@@ -42,8 +42,25 @@
           <li class="nav-item">
             <a class="nav-link" href="/people">People</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/research">Research</a>
+          <li class="nav-item nav-dropdown-hover">
+            <!-- Parent still navigates to /research; the submenu opens on hover
+                 (desktop) and is listed inline inside the collapsed navbar. -->
+            <a class="nav-link" href="/research" aria-haspopup="true">Research</a>
+            <ul class="nav-submenu">
+              <li>
+                <a class="nav-submenu-link" href="/research">Research overview</a>
+              </li>
+              <li>
+                <a class="nav-submenu-link" href="https://virtualembryo.ai/" target="_blank" rel="noopener">
+                  Virtual Embryo Platform
+                </a>
+              </li>
+              <li>
+                <a class="nav-submenu-link" href="https://virtualembryo.ai/challenge" target="_blank" rel="noopener">
+                  Virtual Embryo Challenge
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/papers">Papers</a>

@@ -5,6 +5,7 @@ name: "Cinlong Huang"
 position: "Research Assistant"
 current: false
 category: "Research Staff"
+order: 1
 start: ""
 end: ""
 headshot: "cinlong.jpeg"

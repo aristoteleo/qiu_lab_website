@@ -24,6 +24,46 @@ layout: "wrapper"
   />
 </section>
 
+<!-- Time-boxed announcement for the Virtual Embryo Challenge.
+     Final submissions close Dec 2, 2026 -- remove this whole section after
+     that date (the challenge stays reachable from the Research nav menu). -->
+<section class="challenge-banner">
+  <div class="container">
+    <div class="challenge-banner-inner">
+      <div class="challenge-banner-text">
+        <span class="challenge-banner-eyebrow">NeurIPS 2026 Competition</span>
+        <h2 class="challenge-banner-title">Virtual Embryo Challenge</h2>
+        <p class="challenge-banner-tagline">
+          Compete to predict how life takes shape across space, scale, time and perturbation.
+        </p>
+        <ul class="challenge-banner-facts">
+          <li><strong>$104K</strong> in prizes and awards</li>
+          <li>Test phase opens <strong>Oct 20, 2026</strong></li>
+          <li>Final submissions <strong>Dec 2, 2026</strong></li>
+        </ul>
+      </div>
+      <div class="challenge-banner-cta">
+        <a
+          class="challenge-banner-button"
+          href="https://virtualembryo.ai/challenge"
+          target="_blank"
+          rel="noopener"
+        >
+          Join the challenge
+        </a>
+        <a
+          class="challenge-banner-link"
+          href="https://virtualembryo.ai/"
+          target="_blank"
+          rel="noopener"
+        >
+          About the platform &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- This section is for the 'About' part of the site. -->
 <section class="about" id="about">
   <div
@@ -50,7 +90,7 @@ layout: "wrapper"
   <div class="container py-5">
     <div class="row">
       <div class="col-sm-12 col-md-7 mb-sm-4">
-        <h2>Software</h2>
+        <h2>Tools &amp; Platforms</h2>
         <!-- This 'include' tag inserts the text content for this section. -->
         <div class="gi-text mt-2 mb-4">
           {% include text-content/gi-text.md %}
@@ -58,37 +98,58 @@ layout: "wrapper"
 
       </div>
       <!-- This div is for three software's logos on the right side of the 'software' section. each row has two logos and the buttom go with the third image and is on the right side -->
-      <div class="col-sm-12 col-md-5" align-items-center>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-
-        <div class="container">
+      <div class="col-sm-12 col-md-5">
+        <div class="software-groups">
+          <!-- AI-native platforms: agent-first, not conventional analysis libraries -->
+          <h3 class="software-group-title software-group-title--ai">
+            AI-native platforms
+            <span class="software-group-tag">new</span>
+          </h3>
           <div class="row">
-            <!-- First Row of Images -->
+            <div class="col-6">
+              <button class="btn btn-cta btn-cta-ai" type="button" style="width: 100%;">
+                <a href="https://pantheonos.stanford.edu/">
+                  <img src="/assets/images/software/pantheonos.svg" alt="PantheonOS logo" style="width: 100%; height: auto;" />
+                  PantheonOS
+                </a>
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-cta btn-cta-ai" type="button" style="width: 100%;">
+                <a href="https://biobabel.stanford.edu/">
+                  <img src="/assets/images/software/biobabel.svg" alt="Bio-Babel logo" style="width: 100%; height: auto;" />
+                  Bio-Babel
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Established analysis packages -->
+          <h3 class="software-group-title">Analysis packages</h3>
+          <div class="row">
             <div class="col-6">
               <button class="btn btn-cta" type="button" style="width: 100%;">
                 <a href="https://github.com/aristoteleo/dynamo-release">
-                  <img src="/assets/images/software/dynamo.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  <img src="/assets/images/software/dynamo.png" alt="Dynamo logo" style="width: 100%; height: auto;" />
                   Dynamo
                 </a>
               </button>
             </div>
-            <!-- Second Row of Images -->
             <div class="col-6">
               <button class="btn btn-cta" type="button" style="width: 100%;">
                 <a href="https://github.com/aristoteleo/spateo-release">
-                  <img src="/assets/images/software/spateo_processed.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  <img src="/assets/images/software/spateo_processed.png" alt="Spateo logo" style="width: 100%; height: auto;" />
                   Spateo
                 </a>
               </button>
             </div>
-    
+
             <p>&nbsp;</p>
-    
+
             <div class="col-6">
               <button class="btn btn-cta" type="button" style="width: 100%;">
                 <a href="https://github.com/aristoteleo/dynast-release">
-                  <img src="/assets/images/software/dynast_final_edit2.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  <img src="/assets/images/software/dynast_final_edit2.png" alt="Dynast logo" style="width: 100%; height: auto;" />
                   Dynast
                 </a>
               </button>
@@ -96,7 +157,7 @@ layout: "wrapper"
             <div class="col-6">
               <button class="btn btn-cta" type="button" style="width: 100%;">
                 <a href="https://github.com/aristoteleo">
-                  <img src="/assets/images/software/Aristotle.png" alt="Mail icon" style="width: 100%; height: auto;" />
+                  <img src="/assets/images/software/Aristotle.png" alt="Aristotle ecosystem logo" style="width: 100%; height: auto;" />
                   Aristotle ecosystem
                 </a>
               </button>

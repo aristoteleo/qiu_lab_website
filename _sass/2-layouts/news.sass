@@ -1,0 +1,49 @@
+
+.news
+  // index.sass stripes bare <section> elements light/dark for the homepage;
+  // the year blocks here should not inherit that.
+  .news-year
+    background-color: transparent
+    margin-bottom: 2.5rem
+
+  .news-year-title
+    font-size: 1.6rem
+    margin-bottom: 1.25rem
+    padding-bottom: 0.5rem
+    border-bottom: 2px solid rgba(142, 123, 107, 0.35)
+
+  .news-list
+    list-style: none
+    margin: 0
+    padding: 0
+
+  // Date on the left, entry on the right; stacks on narrow screens.
+  .news-item
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem 1.5rem
+    padding: 1.25rem 0
+    border-bottom: 1px solid rgba(142, 123, 107, 0.18)
+
+    &:last-child
+      border-bottom: none
+
+  .news-date
+    flex: 0 0 8.5rem
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 0.85rem
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    color: $red
+    padding-top: 0.15rem
+
+  .news-body
+    flex: 1 1 22rem
+
+    p
+      font-size: 1rem
+      line-height: 1.65
+      margin-bottom: 0.75rem
+
+      &:last-child
+        margin-bottom: 0

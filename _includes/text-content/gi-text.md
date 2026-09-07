@@ -16,7 +16,7 @@
       <li>An evolvable, privacy-preserving multi-agent framework for automatic genomics discovery.</li>
       <li>LLM-powered agents collaborate on specialized scientific tasks, reconciling general-purpose reasoning with deep domain specificity.</li>
       <li>A four-layer architecture &mdash; application, interface, agent, LLM.</li>
-      <li>The Pantheon Store offers 1,000+ curated biomedical agents, teams and skills.</li>
+      <li>The Pantheon Store offers 2,000+ curated biomedical agents, teams and skills.</li>
     </ul>
   </li>
   <li>

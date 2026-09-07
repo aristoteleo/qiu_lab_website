@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Samuel King"
-position: "BioE (rotation)"
+position: "Rotation Student (BioE)"
 current: false
 category: "Rotation Students"
 start: ""

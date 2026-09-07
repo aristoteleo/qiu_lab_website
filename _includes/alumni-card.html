@@ -58,7 +58,8 @@
   {% if person.current_role %}
   <div class="alumni-destination">
     <span class="alumni-destination-arrow">&rarr;</span>
-    <span class="alumni-destination-text">{{ person.current_role }}</span>
+    {% assign role_url = person.current_role_url | default: "" %}
+    <span class="alumni-destination-text">{% if role_url != "" %}<a href="{{ role_url }}">{{ person.current_role }}</a>{% else %}{{ person.current_role }}{% endif %}</span>
   </div>
   {% endif %}
 

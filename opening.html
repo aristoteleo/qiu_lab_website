@@ -31,6 +31,100 @@ title: "Come to work with us!"
     </div>
   </div>
 
+  <!-- At-a-glance status per position, before the per-role detail below. -->
+  <button
+    class="opening-section-title opening-toggle collapsed"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#open-positions"
+    aria-expanded="false"
+    aria-controls="open-positions"
+  >
+    Open positions
+    <i class="fas fa-chevron-down opening-toggle-icon"></i>
+  </button>
+  <div class="collapse" id="open-positions">
+  <div class="opening-table-wrap">
+    <table class="opening-table">
+      <thead>
+        <tr><th>Position</th><th>Status</th><th>Background we look for</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Postdoctoral Fellow</td>
+          <td><span class="opening-status opening-status--open">Actively recruiting</span></td>
+          <td>AI/ML, computational biology, genomics</td>
+        </tr>
+        <tr>
+          <td>Research Assistant</td>
+          <td><span class="opening-status opening-status--open">Actively recruiting</span></td>
+          <td>Computational or experimental</td>
+        </tr>
+        <tr>
+          <td>Staff Scientist</td>
+          <td><span class="opening-status opening-status--open">Actively recruiting</span></td>
+          <td>AI, genomics, developmental biology</td>
+        </tr>
+        <tr>
+          <td>Graduate Student</td>
+          <td><span class="opening-status">Open to Stanford students</span></td>
+          <td>Genetics, CS, Bioengineering, BMDS, Biophysics and others</td>
+        </tr>
+        <tr>
+          <td>Visiting Researcher</td>
+          <td><span class="opening-status opening-status--limited">Limited availability</span></td>
+          <td>Subject to Stanford policy and a one-year minimum</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <!-- What applicants would actually work on. -->
+  <button
+    class="opening-section-title opening-toggle collapsed"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#work-on"
+    aria-expanded="false"
+    aria-controls="work-on"
+  >
+    What you might work on
+    <i class="fas fa-chevron-down opening-toggle-icon"></i>
+  </button>
+  <div class="collapse" id="work-on">
+  <div class="opening-directions">
+    <div class="opening-direction">
+      <h3>Virtual embryos</h3>
+      <p>Predictive, whole-embryo models of mammalian development and congenital disease.</p>
+    </div>
+    <div class="opening-direction">
+      <h3>Foundation models</h3>
+      <p>Single-cell and spatial foundation models, from tabular pretraining to federated learning.</p>
+    </div>
+    <div class="opening-direction">
+      <h3>Perturbation modeling</h3>
+      <p>Predicting how cells respond to genetic and environmental perturbation, and why.</p>
+    </div>
+    <div class="opening-direction">
+      <h3>Generative AI for genomics</h3>
+      <p>Flow and diffusion models, neural ODEs and multimodal generative methods.</p>
+    </div>
+    <div class="opening-direction">
+      <h3>AI-native platforms</h3>
+      <p>Agentic systems for biology, such as PantheonOS and Bio-Babel.</p>
+    </div>
+    <div class="opening-direction">
+      <h3>Spatial genomics</h3>
+      <p>Metabolic-labeling scRNA-seq, ultra-high-resolution spatial transcriptomics and lineage tracing.</p>
+    </div>
+  </div>
+  <p class="opening-directions-note">
+    See the <a href="{{ site.baseurl }}/research">research</a> page for how these fit together,
+    and <a href="{{ site.baseurl }}/papers">papers</a> for recent work.
+  </p>
+  </div>
+
   <!-- Roles, as cards so the page uses its full width. -->
   <h2 class="opening-section-title">Who we're looking for</h2>
   <div class="opening-roles">
@@ -65,9 +159,56 @@ title: "Come to work with us!"
       <ul class="opening-facts">
         <li>Undergraduate and Master's visitors: Stanford policy permits short stays only, such as a summer visit. This is a university restriction, not a lab preference.</li>
         <li>Visiting PhD students: at least one year, and preferably longer. J-1 policy allows stays of up to 2 years.</li>
-        <li>Please read our expectations for visiting students below before writing.</li>
         <li>Long-term visiting students receive full salary support.</li>
       </ul>
+
+      <button
+        class="opening-role-subhead opening-role-toggle collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#visiting-expectations"
+        aria-expanded="false"
+        aria-controls="visiting-expectations"
+      >
+        What we expect
+        <i class="fas fa-chevron-down opening-toggle-icon"></i>
+      </button>
+      <div class="collapse" id="visiting-expectations">
+      <p>
+        We invest substantially in every visiting student, with full salary support and
+        close mentorship, and we set a correspondingly high bar in return.
+      </p>
+      <ul class="opening-expectations-list">
+        <li>
+          <strong>Commit to at least one year, and preferably longer.</strong>
+          Our most successful visiting students have stayed two years or more.
+        </li>
+        <li>
+          <strong>Expect to do real science.</strong>
+          Two visiting students currently in the lab have each published or submitted
+          multiple papers, to journals including <i>Cell</i>, <i>Nature Protocols</i> and
+          <i>Nature Methods</i>.
+        </li>
+        <li>
+          <strong>Short visits rarely work.</strong>
+          Most projects simply do not have enough time to develop into scientifically
+          meaningful outcomes in a few months. We have made one exception, for a student
+          who arrived with a project already underway and worked with exceptional
+          independence.
+        </li>
+        <li>
+          <strong>A Stanford line on a CV is not a reason to apply.</strong>
+          Given the time and resources we commit to each visitor, we cannot accommodate
+          short-term visits intended mainly to add a Stanford visiting experience.
+        </li>
+      </ul>
+      <p>
+        We say this not because publications are what matter, but because they reflect the
+        commitment a scientifically meaningful visit requires. If you are weighing what
+        arrangement might work, write to Dr. Qiu and we can discuss it.
+      </p>
+      </div>
+
       <p class="opening-note">
         Our alumni have gone on to Stanford, Yale, Columbia and USC. See the alumni
         from the <a href="{{ site.baseurl }}/people">people</a> page.
@@ -84,43 +225,34 @@ title: "Come to work with us!"
 
   </div>
 
-  <!-- Expectations for visiting students, so applicants can self-select before writing. -->
-  <div class="opening-expectations">
-    <h2>What we expect from visiting students</h2>
-    <p>
-      We invest substantially in every visiting student, with full salary support and close
-      mentorship, and we set a correspondingly high bar in return.
-    </p>
-    <ul>
-      <li>
-        <strong>Commit to at least one year, and preferably longer.</strong>
-        Our most successful visiting students have stayed two years or more.
-      </li>
-      <li>
-        <strong>Expect to do real science.</strong>
-        Two visiting students currently in the lab have each published or submitted
-        multiple papers, to journals including <i>Cell</i>, <i>Nature Protocols</i> and
-        <i>Nature Methods</i>.
-      </li>
-      <li>
-        <strong>Short visits rarely work.</strong>
-        In our experience most projects, if not all, simply do not have enough time to
-        develop into scientifically meaningful outcomes in a few months. We have made one
-        exception, for a student who arrived with a project already underway and who worked
-        with exceptional independence.
-      </li>
-      <li>
-        <strong>A Stanford line on a CV is not a reason to apply.</strong>
-        Given the time and resources we commit to each visitor, we cannot accommodate
-        short-term visits intended mainly to add a Stanford visiting experience.
-      </li>
-    </ul>
-    <p class="opening-expectations-close">
-      We say this not because publications are what matter, but because they reflect the
-      level of commitment and involvement a scientifically meaningful visit requires. If
-      you are weighing what arrangement might work, write to Dr. Qiu and we can discuss it.
-    </p>
+  <!-- Placements, read straight from _people/*.md so this cannot go stale. -->
+  <h2 class="opening-section-title">Where our lab members have gone</h2>
+  <p class="opening-alumni-lede">
+    A few of our former students, visiting researchers and staff, and where they went next.
+  </p>
+  <div class="opening-alumni">
+    {% comment %}
+      Curated: set `featured_placement: <n>` in _people/*.md to show someone
+      here, where n also orders the list.
+    {% endcomment %}
+    {% assign former = site.people | where_exp: "p", "p.current == false and p.featured_placement" | sort: "featured_placement" %}
+    {% for p in former %}
+      {% assign role = p.current_role | default: "" %}
+      {% if role != "" %}
+    <div class="opening-alumni-item">
+      <span class="opening-alumni-name">{{ p.name }}</span>
+      <span class="opening-alumni-was">{{ p.position }}</span>
+      {% assign role_url = p.current_role_url | default: "" %}
+      <span class="opening-alumni-now">
+        {% if role_url != "" %}<a href="{{ role_url }}">{{ role }}</a>{% else %}{{ role }}{% endif %}
+      </span>
+    </div>
+      {% endif %}
+    {% endfor %}
   </div>
+  <p class="opening-directions-note">
+    See the full list on the <a href="{{ site.baseurl }}/people">people</a> page.
+  </p>
 
   <!-- How to apply: the one action this page exists to prompt. -->
   <div class="opening-apply">
@@ -140,19 +272,31 @@ title: "Come to work with us!"
     <a class="opening-apply-button" href="mailto:xiaojie@stanford.edu">Email Dr. Qiu</a>
   </div>
 
-  <h2 class="opening-section-title">What we expect of each other</h2>
+  <button
+    class="opening-section-title opening-toggle collapsed"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#expect-each-other"
+    aria-expanded="false"
+    aria-controls="expect-each-other"
+  >
+    What we expect of each other
+    <i class="fas fa-chevron-down opening-toggle-icon"></i>
+  </button>
+  <div class="collapse" id="expect-each-other">
   <div class="opening-mutual">
 
     <div class="opening-mutual-col">
       <h3>What you can expect from us</h3>
       <ul class="opening-expect">
-        <li>Join a mission-driven team committed to re-imagining what's possible in science</li>
-        <li>Dive into uncharted territory at the boundaries of genomics, AI and developmental biology</li>
-        <li>Drive bold, high-impact projects with the potential to transform medicine and human health</li>
-        <li>Receive personalized mentorship designed to accelerate your growth and ignite your creativity</li>
-        <li>Thrive in a dynamic, diverse and collaborative culture that celebrates curiosity and big ideas</li>
-        <li>Sharpen your scientific storytelling, from visionary writing to captivating presentations</li>
-        <li>Get tailored guidance toward your next step, in academia, biotech or entrepreneurship</li>
+        <li>Interdisciplinary training across AI, single-cell genomics, spatial genomics and developmental biology</li>
+        <li>Collaborations across Stanford Genetics, Computer Science, Bioengineering and other departments</li>
+        <li>A role in the Virtual Embryo Platform and international challenges, including the
+          <a href="https://virtualembryo.ai/challenge">NeurIPS 2026 Virtual Embryo Challenge</a></li>
+        <li>Strong placement outcomes for students and visiting researchers, as shown below</li>
+        <li>High-impact publications and widely used open-source tools such as Dynamo, Spateo, Tabula, PantheonOS and Bio-Babel</li>
+        <li>Personalized mentorship, and coaching in scientific storytelling from writing to presentation</li>
+        <li>Tailored career support for academia, biotechnology and entrepreneurship</li>
       </ul>
     </div>
 
@@ -193,16 +337,7 @@ title: "Come to work with us!"
     </div>
 
   </div>
-
-  <div class="opening-followup">
-    <h3>I contacted you and didn't hear back</h3>
-    <p>
-      It is possible the email was missed. Please send a reminder if you haven't
-      heard back after two weeks. If you still don't hear back, it is likely the email was
-      read but could not be answered, given the volume of inquiries. If the matter is
-      urgent, please copy Dr. Qiu's administrator,
-      <a href="mailto:hadleyb@stanford.edu">hadleyb@stanford.edu</a>.
-    </p>
   </div>
+
 
 </div>

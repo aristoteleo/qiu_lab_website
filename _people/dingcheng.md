@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Dingcheng Yi"
-position: "Visting Undergraduate Student from PKU"
+position: "Visiting Undergraduate Student from PKU"
 current: false
 category: "Visiting Researchers"
 order: 1
@@ -17,5 +17,6 @@ bio: "I am visiting the Qiu lab at Stanford as an Undergraduate Visiting Researc
 projects: "cell-cell communication of 3D spatial transcriptomics"
 papers: "4D mouse heart (under revision in Cell)"
 current_role: "Columbia PhD"
+featured_placement: 2
 contact_email: "y2527@cumc.columbia.edu"
 ---

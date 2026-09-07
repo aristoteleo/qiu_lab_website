@@ -14,5 +14,7 @@ twitter: "https://twitter.com/syzmath"
 projects: "score-based model of time-resolved Perturb-seq"
 papers: "Inferring stochastic dynamics with growth from cross-sectional data (NeurIPS: https://arxiv.org/abs/2505.13197)"
 current_role: "Incoming CDS Faculty Fellow at NYU"
+current_role_url: "https://cds.nyu.edu/faculty-fellows/"
+featured_placement: 4
 contact_email: "syz@syz.id.au"
 ---

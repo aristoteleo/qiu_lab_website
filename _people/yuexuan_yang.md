@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Yuexuan Yang"
-position: "BioE (rotation))"
+position: "Rotation Student (BioE)"
 current: false
 category: "Rotation Students"
 start: ""

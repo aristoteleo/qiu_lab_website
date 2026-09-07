@@ -251,3 +251,221 @@
 
         strong
           color: $red
+
+  // Open positions, at a glance
+  .opening-table-wrap
+    overflow-x: auto
+
+  .opening-table
+    width: 100%
+    border-collapse: collapse
+    font-size: 0.92rem
+
+    th
+      text-align: left
+      font-family: 'Josefin Sans', sans-serif
+      font-size: 0.78rem
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      color: $brown
+      padding: 0 0.75rem 0.6rem
+      border-bottom: 2px solid rgba(142, 123, 107, 0.3)
+
+    td
+      padding: 0.85rem 0.75rem
+      border-bottom: 1px solid rgba(142, 123, 107, 0.16)
+      vertical-align: middle
+
+    tbody tr:hover td
+      background-color: rgba(172, 62, 59, 0.04)
+
+    td:first-child
+      font-weight: 600
+      white-space: nowrap
+
+  .opening-status
+    display: inline-block
+    padding: 0.15rem 0.65rem
+    border-radius: 999px
+    font-size: 0.78rem
+    letter-spacing: 0.04em
+    background-color: rgba(142, 123, 107, 0.15)
+    color: $brown
+    white-space: nowrap
+
+  .opening-status--open
+    background-color: rgba(172, 62, 59, 0.12)
+    color: $red
+
+  .opening-status--limited
+    background-color: rgba(93, 79, 168, 0.12)
+    color: $ai-purple
+
+  // Research directions
+  .opening-directions
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1rem
+
+    @media screen and (min-width: 576px)
+      grid-template-columns: 1fr 1fr
+
+    @media screen and (min-width: 992px)
+      grid-template-columns: repeat(3, 1fr)
+
+  .opening-direction
+    padding: 1.1rem 1.25rem
+    border-radius: 10px
+    background-color: $white
+    border: 1px solid rgba(142, 123, 107, 0.22)
+    border-top: 3px solid $red
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-4px)
+      box-shadow: 0 10px 22px rgba(172, 62, 59, 0.12)
+
+    h3
+      font-size: 0.95rem
+      color: $red
+      margin-bottom: 0.45rem
+
+    p
+      margin: 0
+      font-size: 0.87rem
+      line-height: 1.55
+
+  .opening-directions-note
+    margin-top: 1rem
+    font-size: 0.88rem
+    color: $brown
+
+  // Placements
+  .opening-alumni-lede
+    font-size: 0.95rem
+    color: $brown
+    margin-bottom: 1.25rem
+
+  .opening-alumni
+    display: grid
+    grid-template-columns: 1fr
+    gap: 0.85rem
+
+    @media screen and (min-width: 576px)
+      grid-template-columns: 1fr 1fr
+
+    @media screen and (min-width: 992px)
+      grid-template-columns: repeat(3, 1fr)
+
+  .opening-alumni-item
+    display: flex
+    flex-direction: column
+    gap: 0.15rem
+    padding: 0.9rem 1.1rem
+    border-radius: 8px
+    background-color: $white
+    border: 1px solid rgba(142, 123, 107, 0.2)
+    border-left: 3px solid $brown
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      border-left-color: $red
+      box-shadow: 0 8px 18px rgba(43, 43, 43, 0.07)
+
+  .opening-alumni-name
+    font-weight: 600
+    font-size: 0.95rem
+
+  .opening-alumni-was
+    font-size: 0.78rem
+    color: $brown
+    font-style: italic
+
+  .opening-alumni-now
+    margin-top: 0.3rem
+    font-size: 0.87rem
+    color: $red
+
+  // Collapsible section headings (Bootstrap collapse, no extra JS)
+  .opening-toggle
+    // a <button> does not inherit the global heading rules, so restate them
+    font-family: 'Josefin Sans', sans-serif
+    font-weight: bold
+    text-transform: uppercase
+    color: $red
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 1rem
+    width: 100%
+    text-align: left
+    background: none
+    border: none
+    border-bottom: 2px solid rgba(142, 123, 107, 0.35)
+    cursor: pointer
+    transition: color 0.25s ease
+
+    &:hover
+      color: $brown
+
+    .opening-toggle-icon
+      font-size: 0.7rem
+      color: $brown
+      transition: transform 0.25s ease
+
+    &:not(.collapsed) .opening-toggle-icon
+      transform: rotate(180deg)
+
+  // Expectations folded into the Visiting Students card
+  .opening-role-subhead
+    margin-top: 1.1rem
+    margin-bottom: 0.5rem
+    font-size: 0.8rem
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    color: $brown
+
+  .opening-expectations-list
+    list-style: none
+    margin: 0 0 0.75rem
+    padding: 0
+
+    li
+      position: relative
+      padding-left: 1.1rem
+      margin-bottom: 0.55rem
+      font-size: 0.88rem
+      line-height: 1.55
+
+      &::before
+        content: '\25B8'
+        position: absolute
+        left: 0
+        color: $brown
+
+      strong
+        color: $red
+
+  // "What we expect" inside the Visiting Students card, collapsed by default
+  .opening-role-toggle
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 0.75rem
+    width: 100%
+    text-align: left
+    background: none
+    border: none
+    padding: 0
+    cursor: pointer
+    transition: color 0.25s ease
+
+    &:hover
+      color: $red
+
+    .opening-toggle-icon
+      font-size: 0.65rem
+      transition: transform 0.25s ease
+
+    &:not(.collapsed) .opening-toggle-icon
+      transform: rotate(180deg)

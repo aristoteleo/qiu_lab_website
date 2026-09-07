@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Wenzhuo Tang"
-position: "Visting Researcher"
+position: "Visiting Researcher"
 current: false
 category: "Visiting Researchers"
 start: ""

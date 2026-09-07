@@ -11,4 +11,5 @@ bio: "I am a research assistant in the Qiu Lab, where I am helping complete an o
 projects: "Aristo for cell fate controlling"
 papers: "Aristo (in preparation)"
 current_role: "PhD at CSHL"
+featured_placement: 3
 ---

@@ -1,16 +1,51 @@
+// Full-width wash behind the news timeline
+.news-page
+  background: linear-gradient(180deg, $off-white 0%, #ffffff 40%, $off-white 100%)
+  position: relative
+  overflow: hidden
+
+  // soft accent glows, kept faint so text stays legible
+  &::before
+    content: ''
+    position: absolute
+    top: -12rem
+    right: -10rem
+    width: 34rem
+    height: 34rem
+    border-radius: 50%
+    background: radial-gradient(circle, rgba(172, 62, 59, 0.10) 0%, rgba(172, 62, 59, 0) 70%)
+    pointer-events: none
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: -14rem
+    left: -12rem
+    width: 38rem
+    height: 38rem
+    border-radius: 50%
+    background: radial-gradient(circle, rgba(93, 79, 168, 0.10) 0%, rgba(93, 79, 168, 0) 70%)
+    pointer-events: none
 
 .news
+  position: relative
+  z-index: 1
+
   // index.sass stripes bare <section> elements light/dark for the homepage;
   // the year blocks here should not inherit that.
   .news-year
     background-color: transparent
-    margin-bottom: 2.5rem
+    margin-bottom: 3rem
 
   .news-year-title
-    font-size: 1.6rem
+    display: inline-block
+    font-size: 1.5rem
     margin-bottom: 1.25rem
-    padding-bottom: 0.5rem
-    border-bottom: 2px solid rgba(142, 123, 107, 0.35)
+    padding: 0.25rem 1.1rem
+    border-radius: 999px
+    color: $off-white
+    background-color: $red
+    letter-spacing: 0.08em
 
   .news-list
     list-style: none
@@ -22,11 +57,22 @@
     display: flex
     flex-wrap: wrap
     gap: 0.5rem 1.5rem
-    padding: 1.25rem 0
-    border-bottom: 1px solid rgba(142, 123, 107, 0.18)
+    margin-bottom: 1rem
+    padding: 1.35rem 1.5rem
+    border-radius: 12px
+    background-color: rgba(255, 255, 255, 0.75)
+    border: 1px solid rgba(142, 123, 107, 0.18)
+    backdrop-filter: blur(4px)
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-3px)
+      background-color: #ffffff
+      border-color: rgba(172, 62, 59, 0.35)
+      box-shadow: 0 10px 24px rgba(43, 43, 43, 0.08)
 
     &:last-child
-      border-bottom: none
+      margin-bottom: 0
 
   .news-date
     flex: 0 0 8.5rem
@@ -39,6 +85,14 @@
 
   .news-body
     flex: 1 1 22rem
+
+    // highlighted lab members should read at a glance, not just as bold text
+    b
+      color: $red
+      font-weight: 700
+      background-color: rgba(172, 62, 59, 0.09)
+      padding: 0.05em 0.3em
+      border-radius: 3px
 
     p
       font-size: 1rem

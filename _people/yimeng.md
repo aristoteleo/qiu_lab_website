@@ -15,5 +15,6 @@ twitter: ""
 projects: "Pillar foundation model"
 papers: "Pillar (co-author, in preparation)"
 current_role: "Finishing up PhD at CUHK"
+featured_placement: 6
 contact_email: "yimon.qiao@gmail.com"
 ---

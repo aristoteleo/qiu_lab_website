@@ -15,5 +15,6 @@ twitter: ""
 projects: "Pillar foundation model"
 papers: "Pillar (co-author, in preparation)"
 current_role: "PhD in Computer Science at Stanford"
+featured_placement: 5
 contact_email: "yuzhenm@stanford.edu"
 ---

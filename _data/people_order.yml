@@ -34,9 +34,9 @@
   order: 14
 - name: "Erwin Poussi"
   order: 14.05
-- name: "Xiaoying Liao"
-  order: 14.1
 - name: "Xiaoke Song"
+  order: 14.1
+- name: "Xiaoying Liao"
   order: 14.2
 - name: "Yue Wu"
   order: 14.3

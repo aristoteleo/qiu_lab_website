@@ -1,57 +1,136 @@
+// Rebuilt: the old footer shipped its own <html>/<head>/<body>, a duplicate
+// Font Awesome stylesheet and an inline <style> block. Styles live here now.
 .footer
-  background-color: $brown
-
-  .footer-neu-logo
-    height: 5rem
-    transition: all 0.3s ease-in-out
-
-    &:hover
-      transform: translateY(-4px)
-
-  .nav-container
-    text-decoration: none
-    text-transform: uppercase
-    font-weight: bold
-    font-family: 'Josefin Sans', sans-serif
-    flex-direction: row-reverse
-
-    ul
-      list-style-type: none
-      margin-bottom: 0
-
-      li a
-        text-align: end
-        color: $off-white
-        transition: all 0.3s ease-in-out
-
-        &:hover
-          transform: translateY(-4px)
-          color: $red
-
-  @media screen and (max-width: 768px)
-    .nav-container ul
-      padding: 0
-      margin-bottom: 1rem
-      li a
-        text-align: center
-
-    .col-sm-12
-      justify-content: center
-
-      .footer-neu-logo
-        margin-bottom: 1rem
+  background-color: $red
+  color: $off-white
+  margin-top: 0
 
   a
     text-decoration: none
 
-  .footer-title
-    color: $off-white
-    font-size: 1rem
-    font-weight: normal
-    transition: all 0.3s ease-in-out
+  .footer-container
+    display: grid
+    grid-template-columns: 1fr
+    gap: 2rem
+    padding-top: 3rem
+    padding-bottom: 2.5rem
 
-    span
-      color: $red
+    @media screen and (min-width: 576px)
+      grid-template-columns: 1fr 1fr
+
+    @media screen and (min-width: 992px)
+      grid-template-columns: 1.4fr 1fr 1fr 1.3fr
+
+  .footer-logo
+    width: 3rem
+    height: auto
+    margin-bottom: 0.75rem
+    opacity: 0.95
+
+  .footer-title
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 1.05rem
+    color: $off-white
+    text-transform: uppercase
+    letter-spacing: 0.06em
+    margin-bottom: 0.5rem
+
+  .footer-tagline
+    font-size: 0.85rem
+    line-height: 1.6
+    opacity: 0.85
+    max-width: 20rem
+    margin-bottom: 1rem
+
+  .footer-heading
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 0.78rem
+    text-transform: uppercase
+    letter-spacing: 0.12em
+    color: $off-white
+    opacity: 0.75
+    margin-bottom: 0.9rem
+    padding-bottom: 0.45rem
+    border-bottom: 1px solid rgba(251, 247, 240, 0.25)
+
+  .footer-links
+    list-style: none
+    margin: 0
+    padding: 0
+
+    li
+      margin-bottom: 0.45rem
+
+    a
+      color: $off-white
+      font-size: 0.88rem
+      opacity: 0.9
+      transition: all 0.25s ease-in-out
+
+      &:hover
+        opacity: 1
+        padding-left: 0.25rem
+
+  .footer-social
+    display: flex
+    gap: 0.6rem
+    list-style: none
+    margin: 0
+    padding: 0
+
+    a
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      width: 34px
+      height: 34px
+      border-radius: 50%
+      border: 1px solid rgba(251, 247, 240, 0.35)
+      color: $off-white
+      font-size: 0.95rem
+      transition: all 0.25s ease-in-out
+
+      &:hover
+        background-color: $off-white
+        color: $red
+        transform: translateY(-3px)
+
+  .footer-contact
+    address
+      font-style: normal
+      font-size: 0.88rem
+      line-height: 1.7
+      opacity: 0.9
+      margin-bottom: 0.85rem
+
+  .footer-contact-link
+    display: flex
+    align-items: center
+    gap: 0.5rem
+    margin-bottom: 0.45rem
+    color: $off-white
+    font-size: 0.88rem
+    opacity: 0.9
+    transition: all 0.25s ease-in-out
+
+    i
+      font-size: 0.8rem
+      width: 1rem
 
     &:hover
-      transform: translateY(-4px)
+      opacity: 1
+      padding-left: 0.25rem
+
+  .footer-bottom
+    border-top: 1px solid rgba(251, 247, 240, 0.22)
+
+    .container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      gap: 0.5rem
+      padding-top: 1rem
+      padding-bottom: 1rem
+      font-size: 0.78rem
+      letter-spacing: 0.04em
+      opacity: 0.75

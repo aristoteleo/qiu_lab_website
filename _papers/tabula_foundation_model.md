@@ -7,7 +7,7 @@ author_list: Jiayuan Ding, Jianhui Lin, Shiyu Jiang, Yixin Wang, Ziyang Miao, Zh
 journal: Biorxiv
 doi: 10.1101/2025.01.06.631427
 year: 2025
-pdf_url: /assets/PDFs/tabula_biorxiv.pdf
+pdf_url: /assets/PDFs/tabula.pdf
 image_url: /assets/images/papers/tabula_biorxiv.png
 paper_alt: tabula_biorxiv Paper Image
 rank: 8

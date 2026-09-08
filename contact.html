@@ -2,102 +2,32 @@
 layout: "wrapper"
 title: "welcome to discuss our research!"
 ---
-
-<head>
-  <style>
-    .container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; /* Ensure it wraps on smaller screens */
-      margin: 0 auto;
-    }
-    .contact-section, .image-section, .address-section {
-      flex: 1; /* Each section will take equal width */
-      margin: 10px; /* Add some space around the sections */
-    }
-    .contact-section {
-      order: 1; /* Positioning order for flex items */
-    }
-    .image-section {
-      order: 2;
-    }
-    .address-section {
-      order: 3;
-    }
-    .faq-section {
-      order: 4; /* Position FAQ section last */
-      flex-basis: 100%; /* Make it take full width */
-    }
-    h1 {
-      text-transform: uppercase;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block; /* Ensure the image is block-level */
-      margin-bottom: 10px; /* Add some space below the image */
-    }
-    .get-directions {
-      background: #fff;
-      padding: 10px;
-      border-radius: 4px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      margin-top: 10px; /* Space it from the contact info */
-    }
-    .displayAddress {
-      margin-bottom: 10px;
-    }
-    .directions-link {
-      display: inline-block;
-      text-decoration: none;
-      color: #000;
-      background: #eee;
-      padding: 5px 10px;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
-    .directions-link:hover {
-      background: #ddd;
-    }
-    .fa-directions {
-      margin-right: 5px;
-    }
-    strong {
-      font-weight: bold;
-      color: #AC3E3B;
-      background-color: rgba(172, 62, 59, 0.1);
-      padding: 2px 4px;
-      border-radius: 3px;
-    }
-    .faq-section {
-      margin-top: 20px;
-    }
-    .faq-item {
-      margin-bottom: 20px;
-      padding: 15px;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      border-left: 4px solid #AC3E3B;
-    }
-    .faq-content {
-      margin-top: 10px;
-    }
-    .faq-content p {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-
-
-<div class="container">
+<div class="contact-page">
   <div class="contact-section">
     <h1>Contact</h1>
-    <p>
-      PI (Xiaojie Qiu): <a href="mailto:xiaojie@stanford.edu">xiaojie@stanford.edu</a><br>
-      Admin. Contact (Hailey Emery): <a href="mailto:hbemery@stanford.edu">hbemery@stanford.edu</a><br>
-      Operations Manager (Hadley Bickford): <a href="mailto:hadleyb@stanford.edu">hadleyb@stanford.edu</a><br>
-    </p>
+    <ul class="contact-people">
+      <li>
+        <span class="contact-role">Principal Investigator</span>
+        <span class="contact-name">Xiaojie Qiu</span>
+        <a class="contact-email" href="mailto:xiaojie@stanford.edu">
+          <i class="fas fa-envelope"></i> xiaojie@stanford.edu
+        </a>
+      </li>
+      <li>
+        <span class="contact-role">Administrative Contact</span>
+        <span class="contact-name">Hailey Emery</span>
+        <a class="contact-email" href="mailto:hbemery@stanford.edu">
+          <i class="fas fa-envelope"></i> hbemery@stanford.edu
+        </a>
+      </li>
+      <li>
+        <span class="contact-role">Operations Manager</span>
+        <span class="contact-name">Hadley Bickford</span>
+        <a class="contact-email" href="mailto:hadleyb@stanford.edu">
+          <i class="fas fa-envelope"></i> hadleyb@stanford.edu
+        </a>
+      </li>
+    </ul>
 
     <div class="get-directions">
       <div class="displayAddress">
@@ -117,7 +47,7 @@ title: "welcome to discuss our research!"
 
   <div class="image-section">
     <a href="https://med.stanford.edu/base.html?tab=proxy">
-      <img src="assets/images/bmi-exterior.jpg" alt="Stanford BMI Image">
+      <img src="{{ site.baseurl }}/assets/images/bmi-exterior.jpg" alt="Exterior of the Biomedical Innovation Building at Stanford">
     </a>
     <p>
       <strong>Stanford BMI exterior</strong><br>
@@ -132,7 +62,7 @@ title: "welcome to discuss our research!"
 
   <div class="address-section">
     <a href="https://campus-map.stanford.edu/?id=07-600&lat=37.432896&lng=-122.177414&zoom=17&srch=biome">
-      <img src="assets/images/BMI_campus_map.png" alt="Stanford BMI Image">
+      <img src="{{ site.baseurl }}/assets/images/BMI_campus_map.png" alt="Stanford campus map showing the Biomedical Innovation Building">
     </a>
     <p>
       <strong>Stanford interactive campus map</strong><br>

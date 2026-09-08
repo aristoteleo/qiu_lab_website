@@ -1,0 +1,138 @@
+// Moved out of an inline <style> that lived in a stray <head> inside the body,
+// and page-scoped: the old rules redefined the global .container as flex, which
+// leaked into the site header and footer on this page.
+.contact-page
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  gap: 1.5rem
+  max-width: 1200px
+  margin: 0 auto
+  padding: 2rem 25px 3rem
+
+  h1
+    text-transform: uppercase
+
+  img
+    max-width: 100%
+    height: auto
+    display: block
+    margin-bottom: 0.6rem
+    border-radius: 8px
+
+  .contact-section
+    order: 1
+    flex: 1 1 18rem
+
+  .image-section
+    order: 2
+    flex: 1 1 18rem
+
+  .address-section
+    order: 3
+    flex: 1 1 18rem
+
+  // one block per person, so a long role never wraps away from its address
+  .contact-people
+    list-style: none
+    margin: 0 0 1.25rem
+    padding: 0
+
+    li
+      padding: 0.85rem 1rem
+      margin-bottom: 0.6rem
+      border-radius: 8px
+      background-color: $white
+      border: 1px solid rgba(142, 123, 107, 0.22)
+      border-left: 3px solid $red
+
+  .contact-role
+    display: block
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 0.7rem
+    text-transform: uppercase
+    letter-spacing: 0.12em
+    color: $brown
+
+  .contact-name
+    display: block
+    font-size: 0.98rem
+    font-weight: 600
+    margin: 0.15rem 0 0.3rem
+
+  .contact-email
+    display: inline-flex
+    align-items: center
+    gap: 0.4rem
+    font-size: 0.86rem
+    color: $red
+    text-decoration: none
+    word-break: break-word
+
+    i
+      font-size: 0.75rem
+      opacity: 0.8
+
+    &:hover
+      text-decoration: underline
+
+  .get-directions
+    background: $white
+    padding: 1rem
+    border-radius: 8px
+    border: 1px solid rgba(142, 123, 107, 0.22)
+    margin-top: 0.5rem
+
+  .displayAddress
+    margin-bottom: 0.6rem
+    font-size: 0.9rem
+    line-height: 1.6
+
+  .directions-link
+    display: inline-flex
+    align-items: center
+    gap: 0.4rem
+    text-decoration: none
+    color: $black
+    background: rgba(142, 123, 107, 0.12)
+    padding: 0.4rem 0.8rem
+    border-radius: 5px
+    font-size: 0.85rem
+    transition: all 0.25s ease-in-out
+
+    &:hover
+      background: rgba(172, 62, 59, 0.12)
+      color: $red
+
+  strong
+    font-weight: bold
+    color: $red
+    background-color: rgba(172, 62, 59, 0.1)
+    padding: 2px 4px
+    border-radius: 3px
+
+  .faq-section
+    order: 4
+    flex-basis: 100%
+    margin-top: 1.5rem
+
+  .faq-item
+    margin-bottom: 1.25rem
+    padding: 1.25rem 1.5rem
+    background-color: $white
+    border-radius: 8px
+    border: 1px solid rgba(142, 123, 107, 0.2)
+    border-left: 4px solid $red
+
+    h3
+      font-size: 1rem
+      text-transform: none
+      margin-bottom: 0.5rem
+
+  .faq-content
+    margin-top: 0.5rem
+
+    p
+      margin-bottom: 0.6rem
+      line-height: 1.65
+      font-size: 0.93rem

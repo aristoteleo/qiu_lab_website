@@ -2,10 +2,10 @@
 layout: people
 title: Meet the People
 name: "Natalie Cao"
-position: "Remote Visiting Master's Student"
+position: "Remote Post-Master Assistant from Stanford"
 current: false
 category: "Visiting Researchers"
-order: 5
+order: 6
 start: ""
 end: ""
 headshot: "natalie.jpeg"

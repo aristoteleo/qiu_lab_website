@@ -4,7 +4,8 @@ title: Meet the People
 name: "Yimeng Qiao"
 position: "Remote Post-Master Assistant from Fudan"
 current: false
-category: "Research Staff"
+category: "Visiting Researchers"
+order: 5
 start: ""
 end: ""
 headshot: "yimeng.jpg"

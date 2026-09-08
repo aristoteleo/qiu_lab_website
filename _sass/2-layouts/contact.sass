@@ -1,5 +1,6 @@
 // Page-scoped: the old rules lived in a stray <head><style> inside the body and
 // redefined the global .container as flex, leaking into the header and footer.
+$contact-figure-h: 220px
 .contact-page
   background: linear-gradient(180deg, $off-white 0%, #ffffff 45%, $off-white 100%)
 
@@ -77,12 +78,13 @@
       text-decoration: underline
 
   // address beside the two photos, so nothing leaves a tall empty column
-  // no align-items: start -- grid items stretch, so the address card matches
-  // the height of the two figure columns beside it
+  // align to the top and give the address card the figure's height, so it
+  // matches the images themselves rather than the images plus their captions
   .contact-visit
     display: grid
     grid-template-columns: 1fr
     gap: 1.25rem
+    align-items: start
 
     @media screen and (min-width: 768px)
       grid-template-columns: 1fr 1fr
@@ -95,6 +97,7 @@
     flex-direction: column
     justify-content: space-between
     align-items: flex-start
+    min-height: $contact-figure-h
     padding: 1.4rem 1.5rem
     border-radius: 10px
     background-color: rgba(255, 255, 255, 0.85)
@@ -136,7 +139,7 @@
     img
       display: block
       width: 100%
-      height: 220px
+      height: $contact-figure-h
       object-fit: cover
       border-radius: 10px
       border: 1px solid rgba(142, 123, 107, 0.25)

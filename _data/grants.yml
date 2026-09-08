@@ -1,0 +1,38 @@
+# Funding shown on the Support page. `logo` is optional -- entries without one
+# render as a text card. Newest first.
+- name: "Big Ideas in Neuroscience"
+  funder: "Wu Tsai Neurosciences Institute"
+  title: "In Vivo Functional Genomics and Foundational Virtual Models of Brain Homeostasis and Resilience"
+  note: "With Thomas Clandinin and Will Allen. Co-sponsored by the Knight Initiative for Brain Resilience."
+  year: "2026"
+  url: "https://neuroscience.stanford.edu/news/big-ideas-neuroscience-tackle-brain-science-everyday-life-and-more"
+
+- name: "New Innovator Award (DP2)"
+  funder: "NIH Common Fund"
+  title: "Predictive models of the virtual heart and whole embryo"
+  year: "2024"
+  logo: "DP2_grant.jpg"
+  url: "https://reporter.nih.gov/project-details/10910636"
+
+- name: "Investigator Award"
+  funder: "Arc Institute"
+  year: "2023"
+  logo: "arc.png"
+  url: "https://arcinstitute.org/news/news/investigator-announcement-2023"
+
+- name: "Discovery Research"
+  funder: "California Institute for Regenerative Medicine"
+  title: "Single-cell foundation models of endothelial cell fate in pulmonary arterial hypertension"
+  logo: "CIRM_grant.png"
+  url: "https://www.cirm.ca.gov/our-progress/people/xiaojie-qiu/"
+
+- name: "MorPhiC Consortium"
+  funder: "National Human Genome Research Institute"
+  title: "Molecular Phenotypes of Null Alleles in Cells"
+  logo: "morphic.png"
+  url: "https://www.genome.gov/research-funding/Funded-Programs-Projects/Molecular-Phenotypes-of-Null-Alleles-in-Cells"
+
+- name: "Research Award"
+  funder: "National Human Genome Research Institute"
+  logo: "NHGRI.jpeg"
+  url: "https://reporter.nih.gov/search/1Pk45X-5FkWm3cxrwW5JZg/project-details/10572855"

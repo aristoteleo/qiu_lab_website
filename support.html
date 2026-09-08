@@ -3,68 +3,36 @@ layout: "wrapper"
 title: "We appreciate these supports"
 ---
 
-<div class="supports">
-</div>
+<div class="support-page">
+  <div class="container py-5">
 
-<head>
-    <style>
-        .image-row {
-            display: flex;
-            justify-content: center; /* Center align the images horizontally */
-            align-items: center; /* Center align the images vertically */
-        }
+    <p class="support-lede">
+      Our work is made possible by the agencies, institutes and foundations below.
+      We are grateful for their support of the lab's research and of the people who
+      carry it out.
+    </p>
 
-        .column {
-            margin: 0 10px; /* Add some spacing between the images */
-        }
-    </style>
-</head>
-<body>
-    <div class="image-row">
-        <div class="column">
-            <a href="https://reporter.nih.gov/project-details/10910636">
-                <img src="assets/images/grants/DP2_grant.jpg" alt="" height="300">
-            </a>
+    <div class="support-grid">
+      {% for g in site.data.grants %}
+      <a class="support-card" href="{{ g.url }}" target="_blank" rel="noopener">
+        <div class="support-card-logo">
+          {% if g.logo %}
+          <img src="{{ site.baseurl }}/assets/images/grants/{{ g.logo }}" alt="{{ g.funder }}" loading="lazy" />
+          {% else %}
+          <span class="support-card-mark">{{ g.funder | slice: 0, 1 }}</span>
+          {% endif %}
         </div>
-
-        <div class="column">
-            <a href="https://www.cirm.ca.gov/our-progress/people/xiaojie-qiu/">
-                <img src="assets/images/grants/CIRM_grant.png" alt="" height="75">
-            </a>
+        <div class="support-card-body">
+          <h3 class="support-card-name">{{ g.name }}</h3>
+          <p class="support-card-funder">
+            {{ g.funder }}{% if g.year %} &middot; {{ g.year }}{% endif %}
+          </p>
+          {% if g.title %}<p class="support-card-title">{{ g.title }}</p>{% endif %}
+          {% if g.note %}<p class="support-card-note">{{ g.note }}</p>{% endif %}
         </div>
-
-        <div class="column">
-            <a href="https://www.genome.gov/research-funding/Funded-Programs-Projects/Molecular-Phenotypes-of-Null-Alleles-in-Cells">
-                <img src="assets/images/grants/morphic.png" alt="" height="75">
-            </a>
-        </div>
-
-        <div class="column">
-            <a href="https://reporter.nih.gov/search/1Pk45X-5FkWm3cxrwW5JZg/project-details/10572855">
-                <img src="assets/images/grants/NHGRI.jpeg" alt="" height="115">
-            </a>
-        </div>
-
-<!--         <div class="column">
-            <a href="https://chanzuckerberg.com/eoss/proposals/predictive-modeling-of-single-cell-multiomics-over-time-and-space/">
-                <img src="assets/images/grants/czi_logo.webp" alt="" height="140">
-            </a>
-        </div>
-
-        <div class="column">
-            <a href="https://impetusgrants.org/news-and-updates/round-1">
-                <img src="assets/images/grants/impetus.png" alt="" height="140">
-            </a>
-        </div> -->
-
-        <div class="column">
-            <a href="https://arcinstitute.org/news/news/investigator-announcement-2023">
-                <img src="assets/images/grants/arc.png" alt="" height="140">
-            </a>
-        </div>
+      </a>
+      {% endfor %}
     </div>
-</body>
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
+  </div>
+</div>

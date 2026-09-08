@@ -1,0 +1,93 @@
+.support-page
+  background: linear-gradient(180deg, $off-white 0%, #ffffff 50%, $off-white 100%)
+
+  .support-lede
+    max-width: 46rem
+    margin: 0 auto 2.5rem
+    text-align: center
+    font-size: 1.05rem
+    line-height: 1.7
+    color: $black
+
+  .support-grid
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1.25rem
+
+    @media screen and (min-width: 768px)
+      grid-template-columns: 1fr 1fr
+
+  .support-card
+    display: flex
+    align-items: center
+    gap: 1.5rem
+    padding: 1.5rem
+    border-radius: 12px
+    background-color: rgba(255, 255, 255, 0.85)
+    border: 1px solid rgba(142, 123, 107, 0.22)
+    text-decoration: none
+    color: inherit
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: translateY(-4px)
+      border-color: rgba(172, 62, 59, 0.35)
+      box-shadow: 0 12px 28px rgba(43, 43, 43, 0.09)
+      background-color: #ffffff
+
+  // fixed box so logos of wildly different aspect ratios still line up
+  .support-card-logo
+    flex: 0 0 auto
+    width: 120px
+    height: 90px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    img
+      max-width: 100%
+      max-height: 100%
+      width: auto
+      height: auto
+
+  .support-card-mark
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 64px
+    height: 64px
+    border-radius: 50%
+    background-color: rgba(172, 62, 59, 0.1)
+    color: $red
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 1.6rem
+    font-weight: bold
+
+  .support-card-body
+    flex: 1 1 auto
+    min-width: 0
+
+  .support-card-name
+    font-size: 1rem
+    text-transform: none
+    color: $red
+    margin-bottom: 0.2rem
+
+  .support-card-funder
+    font-size: 0.8rem
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: $brown
+    margin-bottom: 0.5rem
+
+  .support-card-title
+    font-size: 0.88rem
+    line-height: 1.5
+    color: #4b5563
+    margin-bottom: 0.35rem
+
+  .support-card-note
+    font-size: 0.8rem
+    line-height: 1.5
+    color: $brown
+    margin-bottom: 0

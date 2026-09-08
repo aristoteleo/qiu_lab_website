@@ -77,11 +77,12 @@
       text-decoration: underline
 
   // address beside the two photos, so nothing leaves a tall empty column
+  // no align-items: start -- grid items stretch, so the address card matches
+  // the height of the two figure columns beside it
   .contact-visit
     display: grid
     grid-template-columns: 1fr
     gap: 1.25rem
-    align-items: start
 
     @media screen and (min-width: 768px)
       grid-template-columns: 1fr 1fr
@@ -90,6 +91,10 @@
       grid-template-columns: 1fr 1.15fr 1.15fr
 
   .contact-address
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
     padding: 1.4rem 1.5rem
     border-radius: 10px
     background-color: rgba(255, 255, 255, 0.85)

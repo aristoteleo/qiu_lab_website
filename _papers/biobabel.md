@@ -11,4 +11,5 @@ year: 2026
 rank: 1
 image_url: /assets/images/papers/biobabel.png
 paper_alt: Bio-Babel Paper Image
+pdf_url: /assets/PDFs/biobabel.pdf
 ---

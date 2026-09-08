@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Read our work"
-type: previous involved work
+type: selected work
 paper_title: "Storm: Incorporating transient stochastic dynamics to infer the RNA velocity with metabolic labeling information"
 author_list: Qiangwei Peng, Xiaojie Qiu+, Tiejun Li+
 journal: PLOS computational biology

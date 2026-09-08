@@ -10,7 +10,7 @@ year: 2023
 pdf_url: /assets/PDFs/graph_dynamo.pdf
 image_url: /assets/images/papers/graph_dynamo.png
 paper_alt: graph_dynamo Paper Image
-rank: 3
+rank: 9
 ---
 
 Modeling cellular processes in the framework of dynamical systems theories is a focused area in systems and mathematical 

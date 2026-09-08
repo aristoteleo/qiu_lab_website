@@ -2,7 +2,7 @@
 layout: people
 title: Meet the People
 name: "Yuzhen Mao"
-position: "PhD Student (CS)"
+position: "Visiting Master's Student"
 current: false
 category: "Visiting Researchers"
 order: 2

@@ -55,8 +55,8 @@ title: "Meet the People"
               </a>
               {% endif %}
               {% if tw != "" %}
-              <a href="{{ tw }}" class="current-member-link" title="Twitter">
-                <i class="fab fa-twitter"></i>
+              <a href="{{ tw }}" class="current-member-link" title="X">
+                <i class="fab fa-x-twitter"></i>
               </a>
               {% endif %}
               <a href="{{ person.url }}" class="current-member-link" title="Profile">
@@ -73,7 +73,7 @@ title: "Meet the People"
   </section>
 
   <!-- 'section' for the team alumni. Collapsed by default; grouped by role. -->
-  <section class="alumni py-4">
+  <section class="alumni py-4" id="alumni">
     <div class="container d-flex align-items-center flex-column">
       <h1>Lab Alumni</h1>
 
@@ -139,3 +139,23 @@ title: "Meet the People"
     </div>
   </section>
 </div>
+
+<script>
+  // The alumni list is collapsed by default, so a deep link such as
+  // /people#alumni has to open it and then scroll to it itself.
+  (function () {
+    function openAlumni() {
+      if (window.location.hash !== '#alumni') return;
+      var panel = document.getElementById('alumni-list');
+      var toggle = document.querySelector('.alumni-toggle');
+      var section = document.getElementById('alumni');
+      if (!panel || !toggle || !section) return;
+      panel.classList.add('show');
+      toggle.classList.remove('collapsed');
+      toggle.setAttribute('aria-expanded', 'true');
+      section.scrollIntoView();
+    }
+    document.addEventListener('DOMContentLoaded', openAlumni);
+    window.addEventListener('hashchange', openAlumni);
+  })();
+</script>

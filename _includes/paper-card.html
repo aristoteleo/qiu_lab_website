@@ -1,0 +1,54 @@
+{% assign paper = include.paper %}
+{% comment %}
+  paper_url points at the publisher when set; otherwise fall back to the
+  generated collection page for this entry.
+{% endcomment %}
+{% assign link = paper.paper_url | default: paper.url %}
+<article class="paper-card">
+  {% if paper.image_url %}
+  <a class="paper-thumb" href="{{ link }}">
+    <img src="{{ paper.image_url }}" alt="{{ paper.paper_alt | default: paper.paper_title }}" loading="lazy" />
+  </a>
+  {% endif %}
+
+  <div class="paper-body">
+    <h3 class="paper-title">
+      <a href="{{ link }}">{{ paper.paper_title }}</a>
+    </h3>
+
+    {% if paper.paper_subtitle %}
+    <p class="paper-subtitle">{{ paper.paper_subtitle | remove_first: "-" }}</p>
+    {% endif %}
+
+    <p class="paper-authors">{{ paper.author_list }}</p>
+
+    <div class="paper-meta">
+      {% if paper.journal %}<span class="paper-venue">{{ paper.journal }}</span>{% endif %}
+      {% if paper.year %}<span class="paper-year">{{ paper.year }}</span>{% endif %}
+    </div>
+
+    <div class="paper-actions">
+      {% if paper.pdf_url %}
+      <a class="paper-action" href="{{ paper.pdf_url }}">
+        <i class="fas fa-file-pdf"></i> PDF
+      </a>
+      {% endif %}
+      {% assign bare_doi = paper.doi | remove_first: "https://doi.org/" | remove_first: "doi.org/" %}
+      {% assign doi_link = "https://doi.org/" | append: bare_doi %}
+      {% if paper.doi %}
+      <a class="paper-action" href="{{ doi_link }}">
+        <i class="fas fa-link"></i> DOI
+      </a>
+      {% endif %}
+      {% comment %}skip Publisher when it just repeats the DOI link{% endcomment %}
+      {% if paper.paper_url and paper.paper_url != doi_link %}
+      <a class="paper-action" href="{{ paper.paper_url }}">
+        <i class="fas fa-external-link-alt"></i> Publisher
+      </a>
+      {% endif %}
+      <a class="paper-action paper-action--muted" href="{{ paper.url }}">
+        <i class="fas fa-align-left"></i> Abstract
+      </a>
+    </div>
+  </div>
+</article>

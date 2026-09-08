@@ -1,7 +1,7 @@
 ---
 layout: people
 title: Meet the People
-name: "Yash Rana"
+name: "Yash Rana, PhD"
 position: "Post-doc"
 current: true
 headshot: "yash.jpeg"

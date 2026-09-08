@@ -122,8 +122,13 @@
     letter-spacing: 0.08em
     margin-bottom: 1rem
 
-  // no max-width: the bio should reach the same right edge as the hero card
+  // A padded card, so the justified text has breathing room on both sides and
+  // lines up with the hero card's edges rather than running to them.
   .person-bio
+    padding: 1.6rem 1.9rem
+    border-radius: 12px
+    background-color: rgba(255, 255, 255, 0.85)
+    border: 1px solid rgba(142, 123, 107, 0.22)
     font-size: 1rem
     line-height: 1.75
     text-align: justify
@@ -185,7 +190,10 @@
   .person-papers
     list-style: none
     margin: 0
-    padding: 0
+    padding: 0.4rem 1.9rem
+    border-radius: 12px
+    background-color: rgba(255, 255, 255, 0.85)
+    border: 1px solid rgba(142, 123, 107, 0.22)
 
   .person-paper
     display: flex

@@ -5,6 +5,7 @@ name: "Valentina Giunchiglia"
 position: "Visiting Researcher from Imperial College London and Harvard"
 current: false
 category: "Visiting Researchers"
+order: 3
 start: ""
 end: ""
 headshot: "valentina.jpeg"

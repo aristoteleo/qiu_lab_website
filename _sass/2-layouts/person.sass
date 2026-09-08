@@ -1,0 +1,226 @@
+.person-page
+  background: linear-gradient(180deg, $off-white 0%, #ffffff 45%, $off-white 100%)
+
+  .person-back
+    display: inline-flex
+    align-items: center
+    gap: 0.4rem
+    margin-bottom: 1.5rem
+    font-family: 'Josefin Sans', sans-serif
+    font-size: 0.8rem
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    color: $brown
+    text-decoration: none
+
+    &:hover
+      color: $red
+
+  .person-hero
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    gap: 2rem
+    padding: 2rem
+    border-radius: 14px
+    background-color: rgba(255, 255, 255, 0.85)
+    border: 1px solid rgba(142, 123, 107, 0.22)
+
+  .person-avatar
+    flex: 0 0 auto
+
+    img
+      width: 180px
+      height: 180px
+      border-radius: 50%
+      object-fit: cover
+      border: 5px solid $white
+      box-shadow: 0 12px 30px rgba(172, 62, 59, 0.28)
+
+    @media screen and (max-width: 576px)
+      img
+        width: 130px
+        height: 130px
+
+  .person-hero-body
+    flex: 1 1 20rem
+    min-width: 0
+
+  .person-name
+    font-size: 2rem
+    line-height: 1.2
+    text-transform: none
+    color: $brown
+    margin-bottom: 0.3rem
+    @media screen and (max-width: 768px)
+      font-size: 1.5rem
+
+  .person-position
+    font-size: 1.05rem
+    font-style: italic
+    color: $red
+    margin-bottom: 0.75rem
+
+  .person-now
+    display: inline-flex
+    flex-wrap: wrap
+    align-items: baseline
+    gap: 0.5rem
+    margin-bottom: 1rem
+    padding: 0.4rem 0.85rem
+    border-radius: 6px
+    background-color: rgba(172, 62, 59, 0.07)
+    border-left: 3px solid rgba(172, 62, 59, 0.4)
+    font-size: 0.92rem
+
+    .person-now-label
+      font-family: 'Josefin Sans', sans-serif
+      font-size: 0.7rem
+      text-transform: uppercase
+      letter-spacing: 0.12em
+      color: $brown
+
+  .person-links
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem
+
+  .person-link
+    display: inline-flex
+    align-items: center
+    gap: 0.4rem
+    padding: 0.35rem 0.8rem
+    border-radius: 5px
+    border: 1px solid rgba(142, 123, 107, 0.35)
+    font-size: 0.78rem
+    color: $black
+    text-decoration: none
+    transition: all 0.25s ease-in-out
+
+    i
+      font-size: 0.75rem
+      color: $brown
+
+    &:hover
+      border-color: $red
+      color: $red
+      background-color: rgba(172, 62, 59, 0.06)
+
+      i
+        color: $red
+
+  .person-section
+    margin-top: 2.5rem
+
+  .person-section-title
+    display: inline-block
+    font-size: 1.1rem
+    padding: 0.2rem 1rem
+    border-radius: 999px
+    background-color: $red
+    color: $off-white
+    letter-spacing: 0.08em
+    margin-bottom: 1rem
+
+  .person-bio
+    font-size: 1rem
+    line-height: 1.75
+    text-align: justify
+    max-width: 62rem
+
+    + .person-bio
+      margin-top: 1rem
+
+  .person-lab
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1rem
+
+    @media screen and (min-width: 768px)
+      grid-template-columns: 1fr 1fr
+
+  .person-lab-item
+    padding: 1.25rem 1.5rem
+    border-radius: 10px
+    background-color: $white
+    border: 1px solid rgba(142, 123, 107, 0.22)
+
+    h3
+      display: flex
+      align-items: center
+      gap: 0.5rem
+      font-size: 0.78rem
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      color: $brown
+      margin-bottom: 0.6rem
+
+      i
+        font-size: 0.72rem
+
+    p, li
+      font-size: 0.92rem
+      line-height: 1.6
+      color: #4b5563
+
+    p
+      margin: 0
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+      li
+        position: relative
+        padding-left: 0.95rem
+        margin-bottom: 0.35rem
+
+        &::before
+          content: '\25B8'
+          position: absolute
+          left: 0
+          color: $brown
+
+  .person-papers
+    list-style: none
+    margin: 0
+    padding: 0
+
+  .person-paper
+    display: flex
+    flex-wrap: wrap
+    align-items: baseline
+    justify-content: space-between
+    gap: 0.5rem 1.5rem
+    padding: 0.85rem 0
+    border-bottom: 1px solid rgba(142, 123, 107, 0.18)
+
+    &:last-child
+      border-bottom: none
+
+  .person-paper-title
+    flex: 1 1 24rem
+    font-size: 0.96rem
+    line-height: 1.5
+    color: $red
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+  .person-paper-meta
+    flex: 0 0 auto
+    display: flex
+    align-items: center
+    gap: 0.6rem
+
+  .person-paper-venue
+    font-size: 0.76rem
+    font-style: italic
+    color: $brown
+
+  .person-paper-year
+    font-size: 0.78rem
+    color: $brown
+    font-variant-numeric: tabular-nums

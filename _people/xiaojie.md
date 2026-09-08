@@ -4,6 +4,7 @@ title: Meet the People
 name: "Xiaojie Qiu, PhD"
 position: "Principal Investigator"
 current: true
+all_papers: true
 headshot: "xiaojie.jpg"
 google_scholar: "https://scholar.google.com/citations?user=XlMd8TAAAAAJ&hl=en"
 GitHub: "https://github.com/Xiaojieqiu"
@@ -17,13 +18,3 @@ bio: "I’m an Assistant Professor at the Department of Genetics, the BASE progr
     mostly on predictive modeling of single cells through a uniuqe synthesis of genomics and machine learning. Outside the lab, I like going to the gym, run and read all kinds of books."
 twitter: "https://twitter.com/Xiaojie_Qiu"
 ---
-
-<div class="bigspacer"></div>
-<h3>Papers</h3>
-<div class="spacer"></div>
-<ul>
-    {% assign sorted_array = site.papers | sort: "rank" %}
-    {% for paper in sorted_array %}
-        <li><a href="{{ paper.url }}">{{ paper.paper_title }}</a></li>
-    {% endfor %}
-</ul>

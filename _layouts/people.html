@@ -2,103 +2,114 @@
 layout: "wrapper"
 ---
 
-<div class="container">
-        <div class="bigspacer"></div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="media">
-                    <img class="pull-left pad-right media-object" width="160" src="{{ site.baseurl }}/assets/images/headshots/{% if page.headshot %}{{ page.headshot }}{% else %}placeholder-headshot.png{% endif %}">
-                    <div class="media-body">
-                        <div class="bigtitle" style="color: #AC3E3B;">
-                            {{ page.name }}
-                        </div>
-                        <p>
-                            <div class="smallhead">
-                                {{ page.position }}
-                            </div>
-                        </p>
-                    </div>
-                </div>
-            </div>
+{% comment %}
+  Papers are matched by surname-and-given-name appearing in a paper's
+  author_list. Some older "previous involved work" entries have truncated
+  author lists, so the PI opts out of matching with `all_papers: true`.
+{% endcomment %}
+{% assign short_name = page.name | split: "," | first | strip %}
+{% assign sorted_papers = site.papers | sort: "year" | reverse %}
+{% capture paper_rows %}
+  {% for paper in sorted_papers %}
+    {% if page.all_papers or paper.author_list contains short_name %}
+    <li class="person-paper">
+      <a class="person-paper-title" href="{{ paper.url }}">{{ paper.paper_title }}</a>
+      <span class="person-paper-meta">
+        {% if paper.journal %}<span class="person-paper-venue">{{ paper.journal }}</span>{% endif %}
+        {% if paper.year %}<span class="person-paper-year">{{ paper.year }}</span>{% endif %}
+      </span>
+    </li>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign body = content | strip %}
+{% assign bio = page.bio | default: "" | strip %}
+
+<div class="person-page">
+  <div class="container py-5">
+
+    <a class="person-back" href="{{ site.baseurl }}/people">
+      <i class="fas fa-arrow-left"></i> All people
+    </a>
+
+    <header class="person-hero">
+      <div class="person-avatar">
+        <img
+          src="{{ site.baseurl }}/assets/images/headshots/{% if page.headshot %}{{ page.headshot }}{% else %}placeholder-headshot.png{% endif %}"
+          alt="{{ page.name }}"
+        />
+      </div>
+
+      <div class="person-hero-body">
+        <h1 class="person-name">{{ page.name }}</h1>
+        <p class="person-position">{{ page.position }}</p>
+
+        {% if page.current_role %}
+        {% assign role_url = page.current_role_url | default: "" %}
+        <p class="person-now">
+          <span class="person-now-label">Now</span>
+          {% if role_url != "" %}<a href="{{ role_url }}">{{ page.current_role }}</a>{% else %}{{ page.current_role }}{% endif %}
+        </p>
+        {% endif %}
+
+        {% assign gs = page.google_scholar | default: "" %}
+        {% assign gh = page.GitHub | default: "" %}
+        {% assign web = page.website | default: "" %}
+        {% assign tw = page.twitter | default: "" %}
+        {% assign li = page.linkedin | default: "" %}
+        {% assign em = page.email | default: "" %}
+        {% assign cv = page.cv_url | default: "" %}
+        <div class="person-links">
+          {% if gs != "" %}<a class="person-link" href="{{ gs }}"><i class="fa fa-book"></i> Scholar</a>{% endif %}
+          {% if gh != "" %}<a class="person-link" href="{{ gh }}"><i class="fab fa-github"></i> GitHub</a>{% endif %}
+          {% if web != "" %}<a class="person-link" href="{{ web }}"><i class="fas fa-globe"></i> Website</a>{% endif %}
+          {% if li != "" %}<a class="person-link" href="{{ li }}"><i class="fab fa-linkedin"></i> LinkedIn</a>{% endif %}
+          {% if tw != "" %}<a class="person-link" href="{{ tw }}"><i class="fab fa-x-twitter"></i> X</a>{% endif %}
+          {% if cv != "" %}<a class="person-link" href="{{ site.baseurl }}/{{ cv }}"><i class="fas fa-file-pdf"></i> CV</a>{% endif %}
+          {% if em != "" %}<a class="person-link" href="mailto:{{ em }}"><i class="fas fa-envelope"></i> {{ em }}</a>{% endif %}
         </div>
-        <div class="bigspacer"></div>
-        <div class="row">
-            <div class="col-lg-2">
-                {% if page.cv_url %}
-                <div class="smallhead">
-                    CV
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="far fa-file"></i>
-                    <a class="off" href="{{ site.baseurl }}/{{ page.cv_url }}">cv.pdf</a>
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
-                {% if page.GitHub %}
-                <div class="smallhead">
-                    GitHub
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="fab fa-github"></i>
-                    <a class="off" href="{{ page.GitHub }}">{{ page.name }}</a>
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
-                {% if page.website %}
-                <div class="smallhead">
-                    Website
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="fas fa-globe"></i>
-                    <a class="off" href="{{ page.website }}">{{ page.name }}</a>
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
-                {% if page.google_scholar %}
-                <div class="smallhead">
-                    Google Scholar
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="fa fa-book fa-fw"></i>
-                    <a class="off" href="{{ page.google_scholar }}">{{ page.name }}</a>
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
-                {% if page.twitter %}
-                <div class="smallhead">
-                    X
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="fab fa-x-twitter"></i>
-                    <a class="off" href={{ page.twitter }}>{{ page.name }}</a>
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
-                {% if page.email %}
-                <div class="smallhead">
-                    Email
-                </div>
-                <div class="pad-left note">
-                    <div class="smallspacer"></div>
-                    <i class="fa fa-inbox fa-fw"></i>
-                    {{ page.email }}
-                </div>
-                <div class="bigspacer"></div>
-                {% endif %}
-            </div>
-            <div class="col-lg-10">
-                <div class="justified-paragraph">
-                  {{ page.bio }}
-                </div>
-                <div class="bigspacer"></div>
-                <div class="justified-paragraph">
-                    {{ content }}
-                </div>
-            </div>
+      </div>
+    </header>
+
+    {% if bio != "" or body != "" %}
+    <section class="person-section">
+      <h2 class="person-section-title">About</h2>
+      {% if bio != "" %}<div class="person-bio">{{ page.bio }}</div>{% endif %}
+      {% if body != "" %}<div class="person-bio">{{ content }}</div>{% endif %}
+    </section>
+    {% endif %}
+
+    {% if page.projects or page.papers %}
+    <section class="person-section">
+      <h2 class="person-section-title">In the lab</h2>
+      <div class="person-lab">
+        {% if page.projects %}
+        <div class="person-lab-item">
+          <h3><i class="fas fa-flask"></i> Projects</h3>
+          {% if page.projects.first %}
+          <ul>{% for item in page.projects %}<li>{{ item }}</li>{% endfor %}</ul>
+          {% else %}<p>{{ page.projects }}</p>{% endif %}
         </div>
-    </div>
+        {% endif %}
+        {% if page.papers %}
+        <div class="person-lab-item">
+          <h3><i class="fas fa-file-alt"></i> Key papers</h3>
+          {% if page.papers.first %}
+          <ul>{% for item in page.papers %}<li>{{ item }}</li>{% endfor %}</ul>
+          {% else %}<p>{{ page.papers }}</p>{% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </section>
+    {% endif %}
+
+    {% if paper_rows contains "person-paper" %}
+    <section class="person-section">
+      <h2 class="person-section-title">Papers</h2>
+      <ul class="person-papers">{{ paper_rows }}</ul>
+    </section>
+    {% endif %}
+
+  </div>
+</div>

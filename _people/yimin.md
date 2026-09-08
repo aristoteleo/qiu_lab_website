@@ -5,6 +5,7 @@ name: "Yimin Fan"
 position: "Visiting Researcher from CUHK"
 current: false
 category: "Visiting Researchers"
+order: 3
 start: ""
 end: ""
 headshot: "yimin.jpeg"

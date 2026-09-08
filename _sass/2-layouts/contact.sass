@@ -1,50 +1,50 @@
-// Moved out of an inline <style> that lived in a stray <head> inside the body,
-// and page-scoped: the old rules redefined the global .container as flex, which
-// leaked into the site header and footer on this page.
+// Page-scoped: the old rules lived in a stray <head><style> inside the body and
+// redefined the global .container as flex, leaking into the header and footer.
 .contact-page
-  display: flex
-  justify-content: space-between
-  flex-wrap: wrap
-  gap: 1.5rem
-  max-width: 1200px
-  margin: 0 auto
-  padding: 2rem 25px 3rem
+  background: linear-gradient(180deg, $off-white 0%, #ffffff 45%, $off-white 100%)
 
-  h1
-    text-transform: uppercase
+  .contact-block
+    margin-bottom: 3rem
 
-  img
-    max-width: 100%
-    height: auto
-    display: block
-    margin-bottom: 0.6rem
-    border-radius: 8px
+    &:last-child
+      margin-bottom: 0
 
-  .contact-section
-    order: 1
-    flex: 1 1 18rem
+  .contact-heading
+    display: inline-block
+    font-size: 1.15rem
+    padding: 0.2rem 1rem
+    border-radius: 999px
+    background-color: $red
+    color: $off-white
+    letter-spacing: 0.08em
+    margin-bottom: 1.25rem
 
-  .image-section
-    order: 2
-    flex: 1 1 18rem
-
-  .address-section
-    order: 3
-    flex: 1 1 18rem
-
-  // one block per person, so a long role never wraps away from its address
+  // three people across, so the block reads as a row rather than a stack
   .contact-people
     list-style: none
-    margin: 0 0 1.25rem
+    margin: 0
     padding: 0
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1rem
+
+    @media screen and (min-width: 576px)
+      grid-template-columns: 1fr 1fr
+
+    @media screen and (min-width: 992px)
+      grid-template-columns: repeat(3, 1fr)
 
     li
-      padding: 0.85rem 1rem
-      margin-bottom: 0.6rem
-      border-radius: 8px
-      background-color: $white
+      padding: 1.1rem 1.25rem
+      border-radius: 10px
+      background-color: rgba(255, 255, 255, 0.85)
       border: 1px solid rgba(142, 123, 107, 0.22)
       border-left: 3px solid $red
+      transition: all 0.3s ease-in-out
+
+      &:hover
+        transform: translateY(-3px)
+        box-shadow: 0 10px 22px rgba(43, 43, 43, 0.08)
 
   .contact-role
     display: block
@@ -56,9 +56,9 @@
 
   .contact-name
     display: block
-    font-size: 0.98rem
+    font-size: 1rem
     font-weight: 600
-    margin: 0.15rem 0 0.3rem
+    margin: 0.2rem 0 0.4rem
 
   .contact-email
     display: inline-flex
@@ -76,63 +76,111 @@
     &:hover
       text-decoration: underline
 
-  .get-directions
-    background: $white
-    padding: 1rem
-    border-radius: 8px
+  // address beside the two photos, so nothing leaves a tall empty column
+  .contact-visit
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1.25rem
+    align-items: start
+
+    @media screen and (min-width: 768px)
+      grid-template-columns: 1fr 1fr
+
+    @media screen and (min-width: 992px)
+      grid-template-columns: 1fr 1.15fr 1.15fr
+
+  .contact-address
+    padding: 1.4rem 1.5rem
+    border-radius: 10px
+    background-color: rgba(255, 255, 255, 0.85)
     border: 1px solid rgba(142, 123, 107, 0.22)
-    margin-top: 0.5rem
 
-  .displayAddress
-    margin-bottom: 0.6rem
-    font-size: 0.9rem
-    line-height: 1.6
+    address
+      font-style: normal
+      font-size: 0.95rem
+      line-height: 1.7
+      margin-bottom: 1rem
 
-  .directions-link
+  .contact-directions
     display: inline-flex
     align-items: center
-    gap: 0.4rem
-    text-decoration: none
-    color: $black
-    background: rgba(142, 123, 107, 0.12)
-    padding: 0.4rem 0.8rem
+    gap: 0.45rem
+    padding: 0.45rem 0.9rem
     border-radius: 5px
+    border: 1px solid rgba(142, 123, 107, 0.35)
     font-size: 0.85rem
+    color: $black
+    text-decoration: none
     transition: all 0.25s ease-in-out
 
+    i
+      font-size: 0.8rem
+      color: $brown
+
     &:hover
-      background: rgba(172, 62, 59, 0.12)
+      border-color: $red
       color: $red
+      background-color: rgba(172, 62, 59, 0.06)
 
-  strong
-    font-weight: bold
-    color: $red
-    background-color: rgba(172, 62, 59, 0.1)
-    padding: 2px 4px
-    border-radius: 3px
+      i
+        color: $red
 
-  .faq-section
-    order: 4
-    flex-basis: 100%
-    margin-top: 1.5rem
+  .contact-figure
+    margin: 0
+
+    img
+      display: block
+      width: 100%
+      height: 220px
+      object-fit: cover
+      border-radius: 10px
+      border: 1px solid rgba(142, 123, 107, 0.25)
+      transition: all 0.3s ease-in-out
+
+      &:hover
+        border-color: $red
+        box-shadow: 0 10px 24px rgba(172, 62, 59, 0.16)
+
+    figcaption
+      margin-top: 0.5rem
+      font-size: 0.82rem
+      color: $brown
+      text-align: center
+
+  .contact-faq
+    display: grid
+    grid-template-columns: 1fr
+    gap: 1.25rem
+
+    @media screen and (min-width: 768px)
+      grid-template-columns: 1fr 1fr
 
   .faq-item
-    margin-bottom: 1.25rem
-    padding: 1.25rem 1.5rem
-    background-color: $white
-    border-radius: 8px
-    border: 1px solid rgba(142, 123, 107, 0.2)
+    padding: 1.4rem 1.6rem
+    border-radius: 10px
+    background-color: rgba(255, 255, 255, 0.85)
+    border: 1px solid rgba(142, 123, 107, 0.22)
     border-left: 4px solid $red
 
     h3
       font-size: 1rem
       text-transform: none
-      margin-bottom: 0.5rem
-
-  .faq-content
-    margin-top: 0.5rem
+      margin-bottom: 0.6rem
 
     p
-      margin-bottom: 0.6rem
+      font-size: 0.92rem
       line-height: 1.65
-      font-size: 0.93rem
+      margin-bottom: 0.6rem
+
+      &:last-child
+        margin-bottom: 0
+
+    strong
+      color: $red
+
+    a
+      color: $red
+
+  .faq-item--cta
+    border-left-color: $brown
+    background-color: rgba(142, 123, 107, 0.08)

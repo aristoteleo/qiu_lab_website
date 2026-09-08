@@ -2,104 +2,131 @@
 layout: "wrapper"
 title: "welcome to discuss our research!"
 ---
+
 <div class="contact-page">
-  <div class="contact-section">
-    <h1>Contact</h1>
-    <ul class="contact-people">
-      <li>
-        <span class="contact-role">Principal Investigator</span>
-        <span class="contact-name">Xiaojie Qiu</span>
-        <a class="contact-email" href="mailto:xiaojie@stanford.edu">
-          <i class="fas fa-envelope"></i> xiaojie@stanford.edu
-        </a>
-      </li>
-      <li>
-        <span class="contact-role">Administrative Contact</span>
-        <span class="contact-name">Hailey Emery</span>
-        <a class="contact-email" href="mailto:hbemery@stanford.edu">
-          <i class="fas fa-envelope"></i> hbemery@stanford.edu
-        </a>
-      </li>
-      <li>
-        <span class="contact-role">Operations Manager</span>
-        <span class="contact-name">Hadley Bickford</span>
-        <a class="contact-email" href="mailto:hadleyb@stanford.edu">
-          <i class="fas fa-envelope"></i> hadleyb@stanford.edu
-        </a>
-      </li>
-    </ul>
+  <div class="container py-5">
 
-    <div class="get-directions">
-      <div class="displayAddress">
-        <span>BioMedical Innovations Building</span><br>  
-        <span>240 Pasteur Drive</span><br />
-        <span>Palo Alto</span><br />
-        <span>California</span><br />
-        <span>ZIP code: 94304</span><br />
+    <!-- Who to write to -->
+    <section class="contact-block">
+      <h2 class="contact-heading">Get in touch</h2>
+      <ul class="contact-people">
+        <li>
+          <span class="contact-role">Principal Investigator</span>
+          <span class="contact-name">Xiaojie Qiu</span>
+          <a class="contact-email" href="mailto:xiaojie@stanford.edu">
+            <i class="fas fa-envelope"></i> xiaojie@stanford.edu
+          </a>
+        </li>
+        <li>
+          <span class="contact-role">Administrative Contact</span>
+          <span class="contact-name">Hailey Emery</span>
+          <a class="contact-email" href="mailto:hbemery@stanford.edu">
+            <i class="fas fa-envelope"></i> hbemery@stanford.edu
+          </a>
+        </li>
+        <li>
+          <span class="contact-role">Operations Manager</span>
+          <span class="contact-name">Hadley Bickford</span>
+          <a class="contact-email" href="mailto:hadleyb@stanford.edu">
+            <i class="fas fa-envelope"></i> hadleyb@stanford.edu
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Where to find us -->
+    <section class="contact-block">
+      <h2 class="contact-heading">Find us</h2>
+      <div class="contact-visit">
+        <div class="contact-address">
+          <address>
+            BioMedical Innovations Building<br />
+            240 Pasteur Drive<br />
+            Palo Alto, California 94304
+          </address>
+          <a
+            class="contact-directions"
+            href="https://maps.google.com/maps?q=from%3A+current+location+to%3A+240+Pasteur+Drive+Palo+Alto+CA+94304+USA"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fas fa-location-dot"></i> Get directions
+          </a>
+        </div>
+
+        <figure class="contact-figure">
+          <a href="https://med.stanford.edu/base.html?tab=proxy" target="_blank" rel="noopener">
+            <img
+              src="{{ site.baseurl }}/assets/images/bmi-exterior.jpg"
+              alt="Exterior of the Biomedical Innovation Building at Stanford"
+            />
+          </a>
+          <figcaption>The Biomedical Innovation Building</figcaption>
+        </figure>
+
+        <figure class="contact-figure">
+          <a href="https://campus-map.stanford.edu/?id=07-600&lat=37.432896&lng=-122.177414&zoom=17&srch=biome" target="_blank" rel="noopener">
+            <img
+              src="{{ site.baseurl }}/assets/images/BMI_campus_map.png"
+              alt="Stanford campus map showing the Biomedical Innovation Building"
+            />
+          </a>
+          <figcaption>Interactive campus map</figcaption>
+        </figure>
       </div>
-      <p></p>
-      <a href="https://maps.google.com/maps?q=from%3A+current+location+to%3A+240+Pasteur+Drive+Palo+Alto+CA+94304+USA" target="_blank" class="directions-link">
-        <i class="fa fa-external-link" aria-hidden="true"></i>
-        Google Map
-      </a>
-    </div>
-  </div>
+    </section>
 
-  <div class="image-section">
-    <a href="https://med.stanford.edu/base.html?tab=proxy">
-      <img src="{{ site.baseurl }}/assets/images/bmi-exterior.jpg" alt="Exterior of the Biomedical Innovation Building at Stanford">
-    </a>
-    <p>
-      <strong>Stanford BMI exterior</strong><br>
-<!--       Xiaojie Qiu<br>
-      Room 3753<br>
-      Biomedical Innovation Building<br>
-      240 Pasteur Drive<br>
-      Stanford University<br>
-      CA 94305 -->
-    </p>
-  </div>
+    <!-- Before you write -->
+    <section class="contact-block">
+      <h2 class="contact-heading">Before you write</h2>
+      <div class="contact-faq">
 
-  <div class="address-section">
-    <a href="https://campus-map.stanford.edu/?id=07-600&lat=37.432896&lng=-122.177414&zoom=17&srch=biome">
-      <img src="{{ site.baseurl }}/assets/images/BMI_campus_map.png" alt="Stanford campus map showing the Biomedical Innovation Building">
-    </a>
-    <p>
-      <strong>Stanford interactive campus map</strong><br>
-<!--       Qiu Lab<br>
-      Biomedical Innovation Building<br>
-      240 Pasteur Drive<br>
-      Stanford University<br>
-      CA 94305 -->
-    </p>
-  </div>
+        <div class="faq-item">
+          <h3>I contacted you and didn't hear back</h3>
+          <p>
+            It is possible the email was missed. Please send a reminder if you haven't heard
+            back after two weeks. If you still don't hear back, it is likely the email was
+            read but could not be answered, given the volume of inquiries.
+          </p>
+          <p>
+            <strong>For urgent matters</strong> please copy our administrative contact,
+            Hailey Emery, at <a href="mailto:hbemery@stanford.edu">hbemery@stanford.edu</a>.
+          </p>
+        </div>
 
-  <div class="faq-section">
-    
-    <div class="faq-item">
-      <h3 class="highlight">I contacted you and didn't hear back</h3>
-      <div class="faq-content">
-        <p>It is possible that I missed your email. Feel free to send me a reminder if you didn't hear back after two weeks. <br/>
-        If you still didn't hear back, it is likely that I have read your email but cannot respond due to the high volume of inquiries. Check out this note to see if there are helpful information. <br/>
-        <strong>For urgent matters:</strong> Please consider cc'ing my admin, Hailey Emery, at <a href="mailto:hbemery@stanford.edu">hbemery@stanford.edu</a>.</p>
+        <div class="faq-item">
+          <h3>PhD program applications</h3>
+          <p>
+            I am usually not able to reply to inquiries about PhD applications, given the
+            volume of email. Stanford PhD programs are committee-based, so there is little
+            we can do before your full application is reviewed.
+          </p>
+          <p>
+            <strong>Current Stanford PhD students</strong> can work with any professor in
+            the university. If you are already at Stanford and interested in the lab, please
+            get in touch whichever program you are enrolled in.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Collaborations</h3>
+          <p>
+            I am actively looking for collaborations with researchers in academia and
+            industry. Please get in touch if you would like to work together on a project.
+          </p>
+        </div>
+
+        <div class="faq-item faq-item--cta">
+          <h3>Looking to join the lab?</h3>
+          <p>
+            Open positions, what we look for, and how to apply are all on the
+            <a href="{{ site.baseurl }}/opening">openings</a> page. Please read it before
+            writing, so your email can address what we ask for there.
+          </p>
+        </div>
+
       </div>
-    </div>
+    </section>
 
-    <div class="faq-item">
-      <h3 class="highlight">PhD Program Application</h3>
-      <div class="faq-content">
-        <p>I am likely not able to reply to your inquiry about PhD applications due to the high volume of emails I receive. <br/>
-        <strong>Important:</strong> Stanford PhD programs are committee-based, so there is little we can do before your full application package gets reviewed. <br/>
-        <strong>For current Stanford PhD students:</strong> You can work with any professor in the university. If you are a PhD student at Stanford and interested in working with me, please contact me regardless of the program you are enrolled in.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <h3 class="highlight">Collaborations</h3>
-      <div class="faq-content">
-        <p>I am actively looking for collaborations with other researchers in academia and industry. Please feel free to contact me if you are interested in collaborating on research projects.</p>
-      </div>
-    </div>
   </div>
 </div>
-

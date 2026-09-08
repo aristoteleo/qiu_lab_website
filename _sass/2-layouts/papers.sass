@@ -143,52 +143,58 @@
     &:hover
       color: $red
 
-  .paper-hero
-    display: flex
-    flex-wrap: wrap
-    gap: 2.5rem
-    align-items: flex-start
-    padding: 2rem
-    border-radius: 14px
-    background-color: rgba(255, 255, 255, 0.85)
-    border: 1px solid rgba(142, 123, 107, 0.22)
+  .paper-head
+    padding-bottom: 1.75rem
+    margin-bottom: 2rem
+    border-bottom: 2px solid rgba(142, 123, 107, 0.25)
 
-  .paper-hero-text
-    flex: 1 1 24rem
-    min-width: 0
-
-  .paper-hero-title
-    font-size: 1.9rem
+  .paper-head-title
+    font-size: 2rem
     line-height: 1.25
     text-transform: none
     margin-bottom: 0.6rem
+    max-width: 55rem
     @media screen and (max-width: 768px)
       font-size: 1.45rem
 
-  .paper-hero-subtitle
+  .paper-head-subtitle
     font-size: 0.95rem
     font-style: italic
     color: $brown
-    margin-bottom: 0.85rem
-
-  .paper-hero-authors
-    font-size: 0.88rem
-    line-height: 1.6
-    color: #4b5563
     margin-bottom: 0.9rem
 
-  .paper-hero-meta
+  .paper-head-authors
+    font-size: 0.9rem
+    line-height: 1.65
+    color: #4b5563
+    margin-bottom: 1rem
+    max-width: 58rem
+
+  .paper-head-meta
     display: flex
     flex-wrap: wrap
     align-items: center
     gap: 0.6rem
     margin-bottom: 1.25rem
 
-  // Figure sits large enough to actually read
-  .paper-hero-figure
-    flex: 0 0 auto
-    width: 100%
-    max-width: 420px
+  // Figure beside the abstract so both stay readable
+  .paper-columns
+    display: flex
+    flex-wrap: wrap
+    gap: 2.5rem
+    align-items: flex-start
+
+  .paper-figure-col
+    flex: 1 1 20rem
+    max-width: 30rem
+    position: sticky
+    top: 1.5rem
+
+    @media screen and (max-width: 992px)
+      position: static
+      max-width: 100%
+
+  .paper-figure
     display: block
     border-radius: 8px
     overflow: hidden
@@ -205,24 +211,49 @@
       border-color: $red
       box-shadow: 0 10px 24px rgba(172, 62, 59, 0.16)
 
-  .paper-abstract
-    margin-top: 2.5rem
+  .paper-figure-cap
+    margin-top: 0.5rem
+    font-size: 0.78rem
+    color: $brown
+    text-align: center
 
-    h2
-      font-size: 1.2rem
-      display: inline-block
-      padding: 0.2rem 1rem
-      border-radius: 999px
-      background-color: $red
-      color: $off-white
-      letter-spacing: 0.08em
-      margin-bottom: 1rem
+  .paper-abstract-col
+    flex: 1 1 26rem
+    min-width: 0
+
+  .paper-abstract-title
+    font-size: 1.15rem
+    display: inline-block
+    padding: 0.2rem 1rem
+    border-radius: 999px
+    background-color: $red
+    color: $off-white
+    letter-spacing: 0.08em
+    margin-bottom: 1rem
 
   .paper-abstract-body
     font-size: 1rem
-    line-height: 1.7
+    line-height: 1.75
     text-align: justify
-    max-width: 60rem
+
+    p
+      margin-bottom: 1rem
+
+.paper-action--primary
+  background-color: $red
+  border-color: $red
+  color: $off-white
+
+  i
+    color: $off-white
+
+  &:hover
+    background-color: $brown
+    border-color: $brown
+    color: $off-white
+
+    i
+      color: $off-white
 
 // Shared by the paper cards and the single-paper page
 .paper-venue
@@ -234,18 +265,15 @@
   font-size: 0.76rem
   letter-spacing: 0.03em
 
-
 .paper-year
   font-size: 0.78rem
   color: $brown
   font-variant-numeric: tabular-nums
 
-
 .paper-actions
   display: flex
   flex-wrap: wrap
   gap: 0.5rem
-
 
 .paper-action
   display: inline-flex
@@ -270,7 +298,6 @@
 
     i
       color: $red
-
 
 .paper-action--muted
   border-style: dashed

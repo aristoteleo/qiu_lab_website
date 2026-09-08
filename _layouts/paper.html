@@ -4,6 +4,7 @@ layout: "wrapper"
 
 {% assign bare_doi = page.doi | remove_first: "https://doi.org/" | remove_first: "doi.org/" %}
 {% assign doi_link = "https://doi.org/" | append: bare_doi %}
+{% assign body = content | strip %}
 
 <div class="paper-page">
   <div class="container py-5">
@@ -12,48 +13,53 @@ layout: "wrapper"
       <i class="fas fa-arrow-left"></i> All papers
     </a>
 
-    <header class="paper-hero">
-      <div class="paper-hero-text">
-        <h1 class="paper-hero-title">{{ page.paper_title }}</h1>
-        {% if page.paper_subtitle %}
-        <p class="paper-hero-subtitle">{{ page.paper_subtitle | remove_first: "-" }}</p>
-        {% endif %}
-        <p class="paper-hero-authors">{{ page.author_list }}</p>
-        <div class="paper-hero-meta">
-          {% if page.journal %}<span class="paper-venue">{{ page.journal }}</span>{% endif %}
-          {% if page.year %}<span class="paper-year">{{ page.year }}</span>{% endif %}
-        </div>
-        <div class="paper-actions">
-          {% if page.pdf_url %}
-          <a class="paper-action" href="{{ site.baseurl }}{{ page.pdf_url }}">
-            <i class="fas fa-file-pdf"></i> Read the PDF
-          </a>
-          {% endif %}
-          {% if page.doi %}
-          <a class="paper-action" href="{{ doi_link }}"><i class="fas fa-link"></i> DOI</a>
-          {% endif %}
-          {% if page.paper_url and page.paper_url != doi_link %}
-          <a class="paper-action" href="{{ page.paper_url }}">
-            <i class="fas fa-external-link-alt"></i> Publisher
-          </a>
-          {% endif %}
-        </div>
-      </div>
-
-      {% if page.image_url %}
-      <a class="paper-hero-figure" href="{% if page.pdf_url %}{{ site.baseurl }}{{ page.pdf_url }}{% else %}{{ page.image_url }}{% endif %}">
-        <img src="{{ page.image_url }}" alt="{{ page.paper_alt | default: page.paper_title }}" />
-      </a>
+    <!-- Title block spans the full width; the figure sits beside the abstract below. -->
+    <header class="paper-head">
+      <h1 class="paper-head-title">{{ page.paper_title }}</h1>
+      {% if page.paper_subtitle %}
+      <p class="paper-head-subtitle">{{ page.paper_subtitle | remove_first: "-" }}</p>
       {% endif %}
+      <p class="paper-head-authors">{{ page.author_list }}</p>
+      <div class="paper-head-meta">
+        {% if page.journal %}<span class="paper-venue">{{ page.journal }}</span>{% endif %}
+        {% if page.year %}<span class="paper-year">{{ page.year }}</span>{% endif %}
+      </div>
+      <div class="paper-actions">
+        {% if page.pdf_url %}
+        <a class="paper-action paper-action--primary" href="{{ site.baseurl }}{{ page.pdf_url }}">
+          <i class="fas fa-file-pdf"></i> Read the PDF
+        </a>
+        {% endif %}
+        {% if page.doi %}
+        <a class="paper-action" href="{{ doi_link }}"><i class="fas fa-link"></i> DOI</a>
+        {% endif %}
+        {% if page.paper_url and page.paper_url != doi_link %}
+        <a class="paper-action" href="{{ page.paper_url }}">
+          <i class="fas fa-external-link-alt"></i> Publisher
+        </a>
+        {% endif %}
+      </div>
     </header>
 
-    {% assign body = content | strip %}
-    {% if body != "" %}
-    <section class="paper-abstract">
-      <h2>Abstract</h2>
-      <div class="paper-abstract-body">{{ content }}</div>
-    </section>
-    {% endif %}
+    <div class="paper-columns">
+      {% if page.image_url %}
+      <aside class="paper-figure-col">
+        <a class="paper-figure" href="{% if page.pdf_url %}{{ site.baseurl }}{{ page.pdf_url }}{% else %}{{ page.image_url }}{% endif %}">
+          <img src="{{ page.image_url }}" alt="{{ page.paper_alt | default: page.paper_title }}" />
+        </a>
+        <p class="paper-figure-cap">
+          {% if page.pdf_url %}Open the full paper{% else %}Figure from the paper{% endif %}
+        </p>
+      </aside>
+      {% endif %}
+
+      <div class="paper-abstract-col">
+        {% if body != "" %}
+        <h2 class="paper-abstract-title">Abstract</h2>
+        <div class="paper-abstract-body">{{ content }}</div>
+        {% endif %}
+      </div>
+    </div>
 
   </div>
 </div>

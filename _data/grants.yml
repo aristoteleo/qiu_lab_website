@@ -1,5 +1,13 @@
 # Funding shown on the Support page. `logo` is optional -- entries without one
 # render as a text card. Newest first.
+- name: "Moonshot"
+  funder: "Laude Institute"
+  title: "The Virtual Embryo Moonshot: Predictive Modeling of Human Development and Congenital Defects"
+  note: "With Stanford Profs. Emily Fox and James Zou, and Harvard Prof. Marinka Zitnik."
+  year: "2026"
+  logo: "laude.svg"
+  url: "https://www.laude.org/moonshots"
+
 - name: "Big Ideas in Neuroscience"
   funder: "Wu Tsai Neurosciences Institute"
   title: "In Vivo Functional Genomics and Foundational Virtual Models of Brain Homeostasis and Resilience"
@@ -7,6 +15,13 @@
   year: "2026"
   logo: "wu_tsai.svg"
   url: "https://neuroscience.stanford.edu/news/big-ideas-neuroscience-tackle-brain-science-everyday-life-and-more"
+
+- name: "Stinehart-Reed Collaborative Seed Grant"
+  funder: "Stanford Institute for Stem Cell Biology and Regenerative Medicine"
+  title: "A Spatial Transcriptomic Atlas of Embryo-Endometrial Crosstalk During Human Implantation"
+  note: "With Matteo Mol&egrave;. Pairs an advanced model of the human uterus with 3D spatial transcriptomics to map embryo-mother interactions during implantation."
+  year: "2025"
+  url: "https://med.stanford.edu/stemcell/news/iscbrmarticles/ISCBRM-awards-to-advance-stem-cell-research.html"
 
 - name: "New Innovator Award (DP2)"
   funder: "NIH Common Fund"

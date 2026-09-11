@@ -5,6 +5,8 @@ name: "Yue Wu"
 position: "Research Assistant"
 current: false
 category: "Research Staff"
+headshot: "yue.jpg"
+twitter: "https://x.com/yuewu1a"
 start: ""
 end: ""
 bio: "I am a research assistant in the Qiu Lab, where I am helping complete an ongoing collaborative project with Naoki Konno."

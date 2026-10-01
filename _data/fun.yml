@@ -1,0 +1,171 @@
+# Lab fun page (/fun): a list of activities, each with its photos.
+#
+# Activity fields
+#   id:      anchor slug (letters, digits, hyphens)
+#   title:   chapter heading
+#   date:    when it happened, as shown
+#   place:   optional, shown after the date
+#   blurb:   one or two sentences introducing the activity
+#
+# Photo fields (image files live in assets/images/fun/)
+#   image:   file name
+#   span:    grid width on desktop out of 6 columns (6 = full row, 4, 3 or 2)
+#   ratio:   crop shown in the grid, e.g. "2/1", "16/9", "4/3", "3/2", "3/4", "2/3"
+#   title:   short caption heading
+#   text:    one or two sentences
+#   date:    optional, when a photo's date differs from the activity's
+#   alt:     accessible description
+#
+# Rows should add up to 6 so the desktop grid has no gaps. Pairs that look
+# good together: 4 at 4/3 beside 2 at 2/3; 3 at 3/4 beside 3 at 3/4;
+# 3 at 3/2 beside 3 at 3/2.
+
+- id: scavenger-hunt
+  title: BASE scavenger hunt
+  date: Sep 2026
+  place: Stanford campus
+  blurb: >-
+    An afternoon of clues across campus with the whole BASE community, from
+    the seminar room to the Rodin Sculpture Garden and back, ending at a canvas
+    and a lot of paint on hands.
+  photos:
+    - image: base-scavenger-hunt-2026.jpg
+      span: 6
+      ratio: 16/9
+      title: The whole crew
+      text: >-
+        Scavenger-hunt sheets still on the tables, and a freshly hand-printed
+        BASE canvas in the middle.
+      alt: >-
+        A large group of smiling people in a seminar room, two of them holding
+        a white canvas covered in red, pink and yellow handprints with the word
+        BASE in the middle.
+    - image: rodin-three-shades-2026.jpg
+      span: 3
+      ratio: 3/4
+      title: Becoming the Three Shades
+      text: >-
+        Three of us recreating Rodin's <i>The Three Shades</i>, with less
+        bronze and considerably more smiling.
+      alt: >-
+        Three lab members posing in front of Rodin's bronze sculpture The
+        Three Shades, copying its hunched, arm-linked pose, with cypress trees
+        behind them.
+    - image: rodin-burgher-yash-2026.jpg
+      span: 3
+      ratio: 3/4
+      title: Yash versus Jean d'Aire
+      text: >-
+        Squaring up to a Burgher of Calais. The statue has had a century to
+        practice the fists; Yash is catching up fast.
+      alt: >-
+        Yash Rana standing beside the bronze statue of Jean d'Aire, clenching
+        both fists to mirror the statue's pose, in front of tall cypress trees.
+
+- id: genetics-retreat
+  title: Genetics retreat
+  date: Sep 18, 2026
+  blurb: >-
+    A day away with the Stanford Genetics community. Talks in the morning,
+    sand in the shoes by the afternoon.
+  photos:
+    - image: naoki-genetics-retreat-2026.jpg
+      span: 3
+      ratio: 3/2
+      title: Naoki on stage
+      text: >-
+        Naoki Konno presenting his cross-species single-cell work to a full
+        room. The curved mirrors on the wall doubled as a second audience.
+      alt: >-
+        Naoki Konno speaking at a podium in a wood-panelled hall, with a
+        projected title slide to the right and an audience seated in the
+        foreground.
+    - image: retreat-volleyball-2026.jpg
+      span: 3
+      ratio: 3/2
+      title: Sand court, second session
+      text: >-
+        Beach volleyball between the talks, ball frozen mid-air and the golf
+        course looking on.
+      alt: >-
+        Six people playing volleyball on a sand court under eucalyptus trees,
+        one player jumping to hit the ball, with a green golf course behind.
+
+- id: summer-barbecue
+  title: Summer barbecue
+  date: Jul 26, 2026
+  blurb: >-
+    Grill duty, paper plates and bottles of green tea in a sunny courtyard on
+    a July Sunday.
+  photos:
+    - image: bbq-courtyard-2026.jpg
+      span: 6
+      ratio: 16/9
+      title: The courtyard table
+      text: >-
+        Mid-lunch, while the grill crew in the back kept the plates coming.
+      alt: >-
+        Seven people seated around a picnic table full of food in a sunny
+        courtyard, with two more cooking at a grill in the background.
+    - image: bbq-table-2026.jpg
+      span: 4
+      ratio: 4/3
+      title: Second helpings
+      text: >-
+        Same table, a few minutes later. The melon survived; little else did.
+      alt: >-
+        A closer view of the same picnic table, with trays of food, blue paper
+        plates and a melon, and lab members smiling at the camera.
+    - image: bbq-crowd-2026.jpg
+      span: 2
+      ratio: 2/3
+      title: Standing room
+      text: >-
+        By the end, more people than bench. The paper towels did heroic work.
+      alt: >-
+        Lab members standing and sitting around a picnic table covered in
+        plates and bottles after the meal, in a paved courtyard.
+
+- id: sweets
+  title: Sweets from near and far
+  date: 2026
+  blurb: >-
+    The lab runs on sugar. A record of what showed up on the desk and how
+    fast it disappeared.
+  photos:
+    - image: solar-terms-box-2026.jpg
+      span: 6
+      ratio: 2/1
+      date: Sep 2026
+      title: The twenty-four solar terms
+      text: >-
+        A gift box designed around the twenty-four solar terms, a different one
+        on every panel from Grain Rain to Winter Solstice, delivered in time for
+        Qiufen, the autumn equinox.
+      alt: >-
+        A colourful gift box lid printed with Chinese solar-term names and
+        illustrations, including a plum branch, a swallow and a teapot, with
+        the title The Twenty-Four Solar Terms of the Chinese in large
+        characters.
+    - image: mooncakes-2026.jpg
+      span: 4
+      ratio: 4/3
+      date: Sep 25, 2026
+      title: Mid-Autumn mooncakes
+      text: >-
+        A box of mooncakes for the Mid-Autumn Festival, fanned out around the
+        one everyone reached for first.
+      alt: >-
+        Nine small blue boxes labelled Moon Cake, decorated with a rabbit and
+        a full moon, arranged in a circle inside a brown gift box.
+    - image: yokan-gift-2026.jpg
+      span: 2
+      ratio: 2/3
+      date: Jan 2026
+      title: Yōkan from Japan
+      text: >-
+        Ten slim bars of Toraya yōkan in colours named for honey, new greenery
+        and plum blossoms at night. It did not survive the week.
+      alt: >-
+        An open gift box of ten colourful yōkan bars with Japanese
+        calligraphy labels, sitting on a desk in front of a keyboard.

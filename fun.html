@@ -1,0 +1,173 @@
+---
+layout: "wrapper"
+title: "Lab fun"
+description: >-
+  Photos from life in the Qiu Lab at Stanford: scavenger hunts, retreats,
+  barbecues and the occasional delivery of sweets.
+image_url: /assets/images/fun/base-scavenger-hunt-2026.jpg
+---
+
+<div class="fun-page">
+  <div class="fun container py-5">
+
+    <header class="fun-intro">
+      <p class="fun-lede">
+        Science is better with friends. This is a running album of life outside
+        the figures. For papers, grants and arrivals, see the
+        <a href="{{ site.baseurl }}/news">lab news</a>.
+      </p>
+    </header>
+
+    <!-- Chapter index. Sticks to the top of the window while scrolling; it
+         sits outside .fun-intro so it can stay pinned through every chapter. -->
+    <div class="fun-toc-sentinel" aria-hidden="true"></div>
+    <nav class="fun-toc" aria-label="Activities">
+      {% for activity in site.data.fun %}
+      <a class="fun-toc-link" href="#{{ activity.id }}">
+        <span class="fun-toc-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        {{ activity.title }}
+      </a>
+      {% endfor %}
+    </nav>
+
+    {% for activity in site.data.fun %}
+    <article class="fun-activity" id="{{ activity.id }}">
+      <header class="fun-activity-head">
+        <span class="fun-activity-num" aria-hidden="true">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        <div class="fun-activity-text">
+          <p class="fun-activity-meta">
+            <span>{{ activity.date }}</span>
+            {% if activity.place %}<span class="fun-activity-sep" aria-hidden="true">&middot;</span><span>{{ activity.place }}</span>{% endif %}
+          </p>
+          <h2 class="fun-activity-title">{{ activity.title }}</h2>
+          {% if activity.blurb %}<p class="fun-activity-blurb">{{ activity.blurb }}</p>{% endif %}
+        </div>
+      </header>
+
+      <div class="fun-grid">
+        {% for photo in activity.photos %}
+        <figure class="fun-card" data-span="{{ photo.span | default: 3 }}">
+          <button
+            class="fun-photo"
+            type="button"
+            style="--ratio: {{ photo.ratio | default: '3/2' }};"
+            data-full="{{ site.baseurl }}/assets/images/fun/{{ photo.image }}"
+            data-caption="{{ activity.title | escape }} &middot; {{ photo.title | escape }}"
+            aria-label="Open larger photo: {{ photo.title | escape }}"
+          >
+            <img
+              src="{{ site.baseurl }}/assets/images/fun/{{ photo.image }}"
+              alt="{{ photo.alt | strip_newlines | strip | escape }}"
+              loading="{% if forloop.parentloop.first and forloop.first %}eager{% else %}lazy{% endif %}"
+            />
+          </button>
+          <figcaption class="fun-caption">
+            <h3 class="fun-caption-title">
+              {{ photo.title }}{% if photo.date %}<span class="fun-caption-date">{{ photo.date }}</span>{% endif %}
+            </h3>
+            {% if photo.text %}<p class="fun-caption-text">{{ photo.text }}</p>{% endif %}
+          </figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+
+    <p class="fun-footnote">
+      Have a photo that belongs here? Send it to
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+    </p>
+
+  </div>
+</div>
+
+<!-- Lightbox: a native <dialog>, with previous/next across every photo. -->
+<dialog class="fun-lightbox" id="fun-lightbox" aria-label="Enlarged photo">
+  <button class="fun-lightbox-close" type="button" aria-label="Close">&times;</button>
+  <button class="fun-lightbox-nav fun-lightbox-prev" type="button" aria-label="Previous photo">&lsaquo;</button>
+  <figure class="fun-lightbox-figure">
+    <img class="fun-lightbox-img" src="" alt="" />
+    <figcaption class="fun-lightbox-caption"></figcaption>
+  </figure>
+  <button class="fun-lightbox-nav fun-lightbox-next" type="button" aria-label="Next photo">&rsaquo;</button>
+</dialog>
+
+<script>
+  (function () {
+    var box = document.getElementById('fun-lightbox');
+    if (!box || typeof box.showModal !== 'function') return;
+    var img = box.querySelector('.fun-lightbox-img');
+    var cap = box.querySelector('.fun-lightbox-caption');
+    var photos = Array.prototype.slice.call(document.querySelectorAll('.fun-photo'));
+    var current = 0;
+
+    function show(i) {
+      current = (i + photos.length) % photos.length;
+      var btn = photos[current];
+      img.src = btn.dataset.full;
+      img.alt = btn.querySelector('img').alt;
+      cap.innerHTML = btn.dataset.caption;
+    }
+
+    photos.forEach(function (btn, i) {
+      btn.addEventListener('click', function () {
+        show(i);
+        box.showModal();
+      });
+    });
+
+    box.querySelector('.fun-lightbox-prev').addEventListener('click', function () { show(current - 1); });
+    box.querySelector('.fun-lightbox-next').addEventListener('click', function () { show(current + 1); });
+    box.querySelector('.fun-lightbox-close').addEventListener('click', function () { box.close(); });
+    box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+    box.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    });
+    box.addEventListener('close', function () { img.src = ''; });
+  })();
+
+  // Chapter index: smooth scrolling on click, and highlight the chapter
+  // currently in view.
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.fun-toc-link'));
+    if (!links.length) return;
+    var toc = document.querySelector('.fun-toc');
+
+    function setActive(id) {
+      links.forEach(function (a) {
+        a.classList.toggle('is-active', a.getAttribute('href') === '#' + id);
+      });
+    }
+
+    links.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var target = document.getElementById(a.getAttribute('href').slice(1));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', a.getAttribute('href'));
+        setActive(target.id);
+      });
+    });
+
+    if ('IntersectionObserver' in window) {
+      // The strip only gets a backdrop once it is actually pinned, which is
+      // when the sentinel just above it has scrolled out of view.
+      var sentinel = document.querySelector('.fun-toc-sentinel');
+      if (toc && sentinel) {
+        new IntersectionObserver(function (entries) {
+          toc.classList.toggle('is-stuck', !entries[0].isIntersecting);
+        }, { threshold: 0 }).observe(sentinel);
+      }
+
+      var offset = (toc ? toc.offsetHeight : 0) + 8;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      }, { rootMargin: '-' + offset + 'px 0px -70% 0px', threshold: 0 });
+      document.querySelectorAll('.fun-activity').forEach(function (el) { observer.observe(el); });
+    }
+  })();
+</script>

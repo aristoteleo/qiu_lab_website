@@ -8,9 +8,11 @@ layout: "wrapper"
   author lists, so the PI opts out of matching with `all_papers: true`.
 {% endcomment %}
 {% assign short_name = page.name | split: "," | first | strip %}
-{% assign sorted_papers = site.papers | sort: "year" | reverse %}
+{% assign papers_by_year = site.papers | group_by: "year" | sort: "name" | reverse %}
 {% capture paper_rows %}
-  {% for paper in sorted_papers %}
+  {% for group in papers_by_year %}
+  {% assign group_papers = group.items | sort: "rank" %}
+  {% for paper in group_papers %}
     {% if page.all_papers or paper.author_list contains short_name %}
     <li class="person-paper">
       <a class="person-paper-title" href="{{ paper.url }}">{{ paper.paper_title }}</a>
@@ -20,6 +22,7 @@ layout: "wrapper"
       </span>
     </li>
     {% endif %}
+  {% endfor %}
   {% endfor %}
 {% endcapture %}
 

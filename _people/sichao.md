@@ -16,7 +16,7 @@ bio: "I am a remote software engineer at Qiu Lab. My current project is mainly o
     techniques to tackle a wide array of biological challenges and create meaningful applications. In my free time, I 
     enjoy reading, sports, cooking and travelling."
 projects: "maintaining and developing Dynamo"
-papers: "Dynamo protocol paper (co-first, accepted by Nature Protocol)"
+papers: "Predictive modeling of single-cell transcriptomic dynamics with Dynamo (co-first author, Nature Protocols, 2026)"
 current_role: "Software engineer at Scientific Computation Research Center"
 contact_email: "sichaoy@bu.edu"
 ---

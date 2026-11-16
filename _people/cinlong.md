@@ -16,7 +16,7 @@ bio: "I am currently a research assistant working in the Qiu Lab. I received my 
     a neuromuscular junction model using iPSCs. I'm interested in morphogenesis and learning how to leverage machine 
     learning and multi-omic approaches. Outside of the lab, I enjoy drawing and listening to a broad spectrum of music."
 projects: "Metabolic labeling enabled multi-omics"
-papers: "Dynamo protocol paper (co-author, Nature protocol, accepted)"
+papers: "Predictive modeling of single-cell transcriptomic dynamics with Dynamo (co-author, Nature Protocols, 2026)"
 current_role: "MD-PhD Student at Yale School of Medicine"
 featured_placement: 1
 contact_email: "cinlong.huang@yale.edu"

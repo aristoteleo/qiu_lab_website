@@ -6,8 +6,11 @@ title: "Read our work"
 <div class="papers-page">
   <div class="papers container py-5">
 
-    {% comment %}Selected work is ordered by publication year, newest first.{% endcomment %}
-    {% assign selected = site.papers | where: "type", "selected work" | sort: "year" | reverse %}
+    {% comment %}
+      Selected work is ordered by publication year, newest first; within a year,
+      by rank (lower first), so the latest paper can be pinned to the top.
+    {% endcomment %}
+    {% assign selected_by_year = site.papers | where: "type", "selected work" | group_by: "year" | sort: "name" | reverse %}
     {% assign preprints = site.papers | where: "type", "preprints" | sort: "rank" %}
     {% assign previous = site.papers | where: "type", "previous involved work" | sort: "rank" %}
 
@@ -17,7 +20,7 @@ title: "Read our work"
         <sup>*</sup>Equal contribution &nbsp;&middot;&nbsp; <sup>+</sup>Corresponding author
       </p>
       <div class="papers-list">
-        {% for paper in selected %}{% include paper-card.html paper=paper %}{% endfor %}
+        {% for group in selected_by_year %}{% assign group_papers = group.items | sort: "rank" %}{% for paper in group_papers %}{% include paper-card.html paper=paper %}{% endfor %}{% endfor %}
       </div>
     </section>
 
